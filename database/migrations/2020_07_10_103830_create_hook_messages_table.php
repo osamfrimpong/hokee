@@ -18,8 +18,9 @@ class CreateHookMessagesTable extends Migration
             $table->timestamps();
             $table->unsignedBigInteger('hookee');
             $table->mediumText('message');
+            $table->string('location');
             $table->foreign('hookee')->references('id')->on('users');
-
+            
         });
     }
 

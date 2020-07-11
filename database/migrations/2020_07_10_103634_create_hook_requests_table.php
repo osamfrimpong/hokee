@@ -16,6 +16,11 @@ class CreateHookRequestsTable extends Migration
         Schema::create('hook_requests', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('location');
+            $table->mediumText('message');
+            $table->unsignedBigInteger('hookee');
+            $table->foreign('hookee')->references('id')->on('users');
+            
         });
     }
 
