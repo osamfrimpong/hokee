@@ -39,16 +39,40 @@
 					<div class="clear"></div>
 				 </div>
 				 <div class="form-left-to-w3l">
-					<input type="text" name="name" placeholder="Last Name" required="">
+					<input type="text" name="age" placeholder="age" required="">
 					<div class="clear"></div>
 				 </div>
+				 <div class="form-group form-left-w3l ">
+						<label class="form-check-label" for="sel1">Occupation</label>
+						<select class="form-control" id="sel1">
+						  <option>Banker</option>
+						  <option>Doctor</option>
+
+						</select>
+					  </div> 
+				 <div class="form-left-to-w3l">
+						<input type="text" name="telephone" placeholder="Phone Number" required="">
+						<div class="clear"></div>
+					 </div>
 				 <div class="form-left-w3l">
 					<input type="email" name="email" placeholder="Email" required="">
 				 </div>
+				 <div class="form-group form-left-w3l ">
+						<label class="form-check-label" for="sel1">Interested In?</label>
+						<select class="form-control" id="sel1">
+						  <option>1</option>
+
+						</select>
+					  </div> 
+
 				 <div class="form-right-w3ls ">
 					<input type="password" name="password" placeholder="Password" required="">
 					<div class="clear"></div>
 				 </div>
+				 <div class="form-right-w3ls ">
+						<input type="password" name="confirm_password" placeholder="Confirm Password" required="">
+						<div class="clear"></div>
+					 </div>
 				 <div class="btnn">
 					<button type="submit">Sign Up</button><br>
 					<div class="clear"></div>
