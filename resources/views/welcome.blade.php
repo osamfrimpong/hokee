@@ -17,12 +17,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
 <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
-<link href="css/font-awesome.css" rel="stylesheet"> 
-<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+<link href="{{asset('css/font-awesome.css')}}" rel="stylesheet"> 
+<link rel="stylesheet" href="{{asset('css/chocolat.css')}}" type="text/css" media="screen">
 <link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+<link rel="stylesheet" href="{{asset('css/flexslider.css')}}" type="text/css" media="screen" property="" />
 <link rel="stylesheet" href="css/jquery-ui.css" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
 <!--fonts-->
 <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
@@ -177,13 +177,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="col-md-9 book-form">
 			   <form action="#" method="post">
 					<div class="fields-w3ls form-left-agileits-w3layouts ">
-							<p>Room Type</p>
+							<p>Gender</p>
 							<select class="form-control">
-								<option>Select a Room</option>
-								<option>Luxury Room</option>
-								<option>Deluxe Room</option>
-								<option>Single Room</option>
-								<option>Double Room</option>
+								<option>Select Gender</option>
+								<option>Male</option>
+								<option>Female</option>
+
 							</select>
 					</div>
 					<div class="fields-w3ls form-date-w3-agileits">
