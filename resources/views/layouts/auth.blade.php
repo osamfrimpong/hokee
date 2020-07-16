@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>user profile form Responsive Widget Template :: W3layouts</title>
+<title>{{config('app.name')}} - {{$title}}</title>
 <!-- Meta tag Keywords -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -40,11 +40,42 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 </head>
 <body>
+	
 @yield('contents')
 
 
 <footer>
-&copy; 2018 user profile form. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a>
+&copy; {{date('Y')}} {{config('app.name')}} 
 </footer>
+	<!--js working-->
+	<script src='js/jquery-2.2.3.min.js'></script>
+	<!--//js working-->
+	<script>
+	   $('input[type="file"]').each(function(){
+		 // Refs
+		 var $file = $(this),
+			 $label = $file.next('label'),
+			 $labelText = $label.find('span'),
+			 labelDefault = $labelText.text();
+	   
+		 // When a new file is selected
+		 $file.on('change', function(event){
+		   var fileName = $file.val().split( '\\' ).pop(),
+			   tmppath = URL.createObjectURL(event.target.files[0]);
+		   //Check successfully selection
+		   if( fileName ){
+			 $label
+			   .addClass('file-ok')
+			   .css('background-image', 'url(' + tmppath + ')');
+			 $labelText.text(fileName);
+		   }else{
+			 $label.removeClass('file-ok');
+			 $labelText.text(labelDefault);
+		   }
+		 });
+	   
+	   // End loop of file input elements
+	   });
+	</script>
 </body>
 </html>

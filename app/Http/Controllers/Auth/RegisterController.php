@@ -53,6 +53,12 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'age' => ['required','numeric'],
+            'interested_in' => ['required','string'],
+            'occupation' => ['required','string'],
+            'sex' => ['required','string'],
+            'phone' => ['required','string'],
+            '' => ['required',''],
         ]);
     }
 
@@ -68,10 +74,17 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'age' => $data['age'],
+            'interested_in' => $data['interested_in'],
+            'occupation' => $data['occupation'],
+            'sex' => $data['sex'],
+            'phone' => $data['phone'],
+
         ]);
     }
 
     public function showRegistrationForm(){
-        return view('auth.new_signup');
+        $title = "Register";
+        return view('auth.new_signup',compact('title'));
     }
 }

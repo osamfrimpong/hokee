@@ -7,12 +7,13 @@
 <div class="w3-main">
 		<div class="form-w3l">
 
-			<form action="#" method="post">
+			<form method="POST" action="{{ route('login') }}">
+				@csrf
 
 				
 				<div class="w3l-email">
 					<span><i class="fa fa-envelope-o w3l-3" aria-hidden="true"></i></span>
-					<input type="email" name="e-mail" placeholder="info@example.com" required=""/>
+					<input type="email" name="email" placeholder="info@example.com" required=""/>
 					<div class="clear"></div>
 				</div>
 				<div class="w3l-password">
@@ -27,7 +28,7 @@
 				</div>
 
 				<div class="w3l-btn">
-					<a href="#" class="btn btn-large btn-danger"><strong>New User? <br> <hr>Sign Up Here</strong></a>
+					<a href="{{route('register')}}" class="btn btn-large btn-danger"><strong>New User? <br> <hr>Sign Up Here</strong></a>
 				</div>
 			</form>
 		</div>

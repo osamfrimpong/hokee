@@ -6,12 +6,13 @@
 		   Sign Up and Get Hooked
 		</h1>
 		<div class="mid-cls">
-		   <form action="#" method="post">
+			<form method="POST" action="{{ route('register') }}">
+				@csrf
 			  <div class="main">
 				 <div class="icon-head-wthree">
 					<div class="images-headder">
 					   <div class="wrap-custom-file">
-						  <input type="file" name="image1" id="image1" accept=".gif, .jpg, .png" />
+						  <input type="file" name="profile" id="image1" accept=".gif, .jpg, .png" required/>
 						  <label  for="image1">
 						  <span><img src="images/t1.jpg" alt="" class="image-fluid"></span>
 						  <span class="fas fa-camera-retro"></span>
@@ -21,13 +22,13 @@
 					<div class="personal-info">
 					   <p>Gender</p>
 					   <div class="form-check">
-						  <input class="form-check-input" type="radio" name="select4" value="option1" checked="">
+						  <input class="form-check-input" type="radio" name="sex" value="option1" required>
 						  <label class="form-check-label">
 						  Male
 						  </label>
 					   </div>
 					   <div class="form-check">
-						  <input class="form-check-input" type="radio" name="select4" value="option2" checked="">
+						  <input class="form-check-input" type="radio" name="sex" value="option2" required>
 						  <label class="form-check-label">
 						  Female
 						  </label>
@@ -44,14 +45,14 @@
 				 </div>
 				 <div class="form-group form-left-w3l ">
 						<label class="form-check-label" for="sel1">Occupation</label>
-						<select class="form-control" id="sel1">
-						  <option>Banker</option>
-						  <option>Doctor</option>
+						<select class="form-control" id="sel1" name="occupation" required>
+						  <option value="banker">Banker</option>
+						  <option value="doctor">Doctor</option>
 
 						</select>
 					  </div> 
 				 <div class="form-left-to-w3l">
-						<input type="text" name="telephone" placeholder="Phone Number" required="">
+						<input type="tel" name="phone" placeholder="Phone Number" required="">
 						<div class="clear"></div>
 					 </div>
 				 <div class="form-left-w3l">
@@ -59,8 +60,10 @@
 				 </div>
 				 <div class="form-group form-left-w3l ">
 						<label class="form-check-label" for="sel1">Interested In?</label>
-						<select class="form-control" id="sel1">
-						  <option>1</option>
+						<select class="form-control" id="sel1" name="interested_in" required>
+						  <option value="males">Males</option>
+						  <option value="females">Females</option>
+						  <option value="both">Both</option>
 
 						</select>
 					  </div> 
@@ -70,7 +73,7 @@
 					<div class="clear"></div>
 				 </div>
 				 <div class="form-right-w3ls ">
-						<input type="password" name="confirm_password" placeholder="Confirm Password" required="">
+						<input type="password" name="password_confirmation" placeholder="Confirm Password" required="">
 						<div class="clear"></div>
 					 </div>
 				 <div class="btnn">
@@ -80,39 +83,7 @@
 			  </div>
 		   </form>
 		</div>
-		<div class="copy">
-		   <p>&copy;2018 Solo profile Form. All Rights Reserved | Design by <a href="http://www.W3Layouts.com" target="_blank">W3Layouts</a></p>
-		</div>
-		<!--js working-->
-		<script src='js/jquery-2.2.3.min.js'></script>
-		<!--//js working-->
-		<script>
-		   $('input[type="file"]').each(function(){
-			 // Refs
-			 var $file = $(this),
-				 $label = $file.next('label'),
-				 $labelText = $label.find('span'),
-				 labelDefault = $labelText.text();
-		   
-			 // When a new file is selected
-			 $file.on('change', function(event){
-			   var fileName = $file.val().split( '\\' ).pop(),
-				   tmppath = URL.createObjectURL(event.target.files[0]);
-			   //Check successfully selection
-			   if( fileName ){
-				 $label
-				   .addClass('file-ok')
-				   .css('background-image', 'url(' + tmppath + ')');
-				 $labelText.text(fileName);
-			   }else{
-				 $label.removeClass('file-ok');
-				 $labelText.text(labelDefault);
-			   }
-			 });
-		   
-		   // End loop of file input elements
-		   });
-		</script>
+	
 	 </body>
 	
 @endsection
