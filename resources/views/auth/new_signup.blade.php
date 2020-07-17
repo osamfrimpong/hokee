@@ -6,7 +6,7 @@
 		   Sign Up and Get Hooked
 		</h1>
 		<div class="mid-cls">
-			<form method="POST" action="{{ route('register') }}">
+			<form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
 				@csrf
 			  <div class="main">
 				 <div class="icon-head-wthree">
@@ -22,13 +22,13 @@
 					<div class="personal-info">
 					   <p>Gender</p>
 					   <div class="form-check">
-						  <input class="form-check-input" type="radio" name="sex" value="option1" required>
+						  <input class="form-check-input" type="radio" name="sex" value="male" required>
 						  <label class="form-check-label">
 						  Male
 						  </label>
 					   </div>
 					   <div class="form-check">
-						  <input class="form-check-input" type="radio" name="sex" value="option2" required>
+						  <input class="form-check-input" type="radio" name="sex" value="female" required>
 						  <label class="form-check-label">
 						  Female
 						  </label>

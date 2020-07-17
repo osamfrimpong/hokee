@@ -58,7 +58,7 @@ class RegisterController extends Controller
             'occupation' => ['required','string'],
             'sex' => ['required','string'],
             'phone' => ['required','string'],
-            '' => ['required',''],
+            'profile' => ['required','image'],
         ]);
     }
 
@@ -70,7 +70,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        return  User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
@@ -79,12 +79,22 @@ class RegisterController extends Controller
             'occupation' => $data['occupation'],
             'sex' => $data['sex'],
             'phone' => $data['phone'],
+            'profile_picture' => $this->uploadProfileImage(),
+            ]);
 
-        ]);
+            
     }
 
     public function showRegistrationForm(){
         $title = "Register";
         return view('auth.new_signup',compact('title'));
+    }
+
+    public function uploadProfileImage(){
+        $profilePicture = '';
+        if(request()->hasFile('profile')){
+            $profilePicture = request()->file('profile')->store('public/profiles');
+        }
+        return $profilePicture;
     }
 }
