@@ -17,9 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admins', function () {
-    return view('admin.home');
-});
 
 Route::get('/user', function () {
     return view('user');
@@ -28,3 +25,10 @@ Route::get('/user', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('admin')->namespace('Admin')->name('admin.')->group(function(){
+    Route::get('/home','AdminController@index')->name('home');
+    Route::resource('services','ServicesController');
+    Route::resource('requests','HookRequestController');
+    Route::resource('messages','HookMessageController');
+});

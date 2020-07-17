@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    //
+    public function index(){
+        $title = 'Dashboard';
+        return view('admin.home',compact('title'));
+    }
 }
