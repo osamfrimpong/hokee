@@ -2,13 +2,19 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
+
+use App\User;
+use App\Models\HookRequest;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class AdminController extends Controller
 {
     public function index(){
         $title = 'Dashboard';
-        return view('admin.home',compact('title'));
+        $requests = HookRequest::all();
+        $vipcount = User::where('paid',1)->get()->count();
+        $regularcount = User::where('paid',0)->get()->count();
+        return view('admin.home',compact('title','requests','regularcount','vipcount'));
     }
 }

@@ -12,7 +12,7 @@
                 </div>
                  <div class="col-md-8 market-update-left">
                  <h4>Regular Users</h4>
-                <h3>13,500</h3>
+                <h3>{{$regularcount}}</h3>
               </div>
               <div class="clearfix"> </div>
             </div>
@@ -24,7 +24,7 @@
                 </div>
                 <div class="col-md-8 market-update-left">
                 <h4>VIPs</h4>
-                    <h3>1,250</h3>
+                    <h3>{{$vipcount}}</h3>
                 </div>
               <div class="clearfix"> </div>
             </div>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="col-md-8 market-update-left">
                     <h4>Requests Made</h4>
-                    <h3>1,500</h3>
+                    <h3>{{$requests->count()}}</h3>
                 </div>
               <div class="clearfix"> </div>
             </div>
