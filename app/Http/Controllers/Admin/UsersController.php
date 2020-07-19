@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 
-class HookRequestController extends Controller
+class UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,8 @@ class HookRequestController extends Controller
      */
     public function index()
     {
-        //
+        $title = "Users";
+        return view('admin.users',compact('title'));
     }
 
     /**

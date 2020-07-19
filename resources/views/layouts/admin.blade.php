@@ -264,16 +264,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </li>
  
                 <li class="sub-menu">
-                    <a href="users.html">
+                    <a href="{{route('admin.users.index')}}">
                         <i class="fa fa-th"></i>
                         <span>Users</span>
                     </a>
                     
                 </li>
                 <li class="sub-menu">
-                    <a href="services.html">
+                    <a href="{{route('admin.services.index')}}">
                         <i class="fa fa-tasks"></i>
                         <span>Services</span>
+                    </a>
+
+                </li>
+
+                <li class="sub-menu">
+                    <a href="{{route('admin.logout')}}">
+                        <i class="fa fa-tasks"></i>
+                        <span>Logout</span>
                     </a>
 
                 </li>
