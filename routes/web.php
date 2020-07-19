@@ -18,17 +18,31 @@ Route::get('/', function () {
 });
 
 
-Route::get('/user', function () {
-    return view('user');
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::prefix('admin')->namespace('Admin')->name('admin.')->group(function(){
+Route::prefix('admin')->namespace('Admin')->middleware('auth:admin')->name('admin.')->group(function(){
     Route::get('/home','AdminController@index')->name('home');
     Route::resource('services','ServicesController');
     Route::resource('requests','HookRequestController');
     Route::resource('messages','HookMessageController');
+    Route::resource('users','UsersController');
 });
+
+
+ /****Admin Auth Routes*****/
+Route::prefix('admin')->namespace('Auth\Admin')->name('admin.')->group(function(){
+Route::get('login', 'LoginController@showLoginForm')->name('login');
+Route::post('login', 'LoginController@login')->name('login');
+Route::get('logout', 'LoginController@logout')->name('logout');
+
+Route::get('register', 'RegisterController@showRegistrationForm')->name('register');
+Route::post('register', 'RegisterController@register')->name('register');
+
+});
+
+
+  
+
+ 
