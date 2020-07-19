@@ -36,4 +36,28 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function hookRequests(){
+        return $this->hasMany(HookRequest::class);
+    }
+
+    public function payments(){
+        return $this->hasMany(Payment::class);
+    }
+
+    public function hookedMatches(){
+        return $this->hasMany(MatchedHook::class,'hookee','id');
+    }
+
+    public function hookerMatches(){
+        return $this->hasMany(MatchedHook::class,'hooker','id');
+    }
+
+    public function hookMessages(){
+        return $this->hasMany(HookMessage::class);
+    }
+
+    public function emails(){
+        return $this->hasMany(Email::class);
+    }
 }
