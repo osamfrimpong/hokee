@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Resort Inn a Hotel Category Flat Bootstrap Responsive  Website Template | Home :: W3layouts</title>
+<title>{{config('app.name')}} - Home</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -496,31 +496,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 <div class="container">
 				 <h3 class="title-w3-agileits title-black-wthree">Services And Rates</h3>
 						<div class="priceing-table-main">
-
-				<div class="col-md-3 price-grid wthree lost">
-					<div class="price-block agile">
-						<div class="price-gd-top ">
-							<img src="images/r4.jpg" alt=" " class="img-responsive" />
-							<h4>Home Massage</h4>
-						</div>
-						<div class="price-gd-bottom">
-							<div class="price-list">
-								<ul>
-									<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-									<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-								</ul>
+							@forelse ($services as $service)
+							<div class="col-md-3 price-grid wthree lost">
+								<div class="price-block agile">
+									<div class="price-gd-top ">
+									<img src="{{asset(Storage::url($service->picture))}}" alt=" " class="img-responsive" />
+										<h4>{{$service->title}}</h4>
+									</div>
+									<div class="price-gd-bottom">
+										<div class="price-list">
+											<ul>
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+												<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+											</ul>
+										</div>
+										<div class="price-selet">
+											<h3><span>&cent;</span> {{$service->price}}</h3>
+											<a href="#availability-agileits" class="scroll" >Book Now</a>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="price-selet">
-								<h3><span>$</span> 200</h3>
-								<a href="#availability-agileits" class="scroll" >Book Now</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
+							<div class="clearfix"> </div>
+							@empty
+								
+							@endforelse
+				
 			</div>
 		</div>
 	</div>

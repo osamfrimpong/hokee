@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
+use App\Models\Service;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 
 class ServicesController extends Controller
 {
@@ -36,7 +38,14 @@ class ServicesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title' => 'required|unique:services',
+            'price' => 'required|numeric',
+            'picture' => 'required|image',
+        ]);
+        $file = $request->file('picture')->store('public/services');
+        Service::firstOrCreate(['title'=>$request->title,'price'=> $request->price],['picture'=>$file]);
+        return redirect()->route('admin.services.index');
     }
 
     /**
@@ -56,9 +65,10 @@ class ServicesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Service $service)
     {
-        //
+        $title = "Services";
+        return view('admin.edit_service',compact('title','service'));
     }
 
     /**
@@ -68,9 +78,20 @@ class ServicesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Service $service)
     {
-        //
+       $data = $request->all();       
+
+        // $data['uuid'] = Str::uuid();
+        if($request->hasFile('picture'))
+        {
+        Storage::disk('local')->delete($service->picture);
+        $data['picture'] = $request->file('picture')->store('public/services');}
+        else{
+            $data['picture'] = $service->picture;
+        }
+        $service->fill($data)->save();
+        return redirect()->route('admin.services.index');
     }
 
     /**
@@ -79,8 +100,11 @@ class ServicesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Service $service)
     {
-        //
+        Storage::disk('local')->delete($service->picture);
+        $service->delete();
+        return redirect()->route('admin.home');
+        
     }
 }

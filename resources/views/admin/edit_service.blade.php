@@ -9,23 +9,25 @@
             <div class="col-lg-12">
                     <section class="panel">
                         <header class="panel-heading">
-                            Add Service or Category
+                            Edit Service - {{$service->title}}
                         </header>
                         <div class="panel-body">
                             <div class="position-center">
-                            <form role="form" method="POST" enctype="multipart/form-data" action="{{route('admin.services.store')}}">
+                            <form role="form" method="POST" enctype="multipart/form-data" action="{{route('admin.services.update',$service->id)}}">
+                                @method('PUT')
                                 @csrf
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Name</label>
-                                    <input type="text" name="title" class="form-control" id="" placeholder="" required>
+                                <input type="text" name="title" value="{{$service->title}}" class="form-control" id="" placeholder="" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Price</label>
-                                    <input type="number" name="price" class="form-control" id="" placeholder="" required>
+                                    <input type="number" name="price" value="{{$service->price}}"class="form-control" id="" placeholder="" required>
                                 </div>
                                 <div class="form-group">
+                                    {{$service->picture}}
                                     <label for="exampleInputFile">Upload Image</label>
-                                    <input type="file" id="exampleInputFile" name="picture" required>
+                                    <input type="file" id="exampleInputFile" name="picture">
                                 </div>
 
                                 <button type="submit" class="btn btn-info">Submit</button>

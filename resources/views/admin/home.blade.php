@@ -36,7 +36,7 @@
                 </div>
                 <div class="col-md-8 market-update-left">
                     <h4>Sales</h4>
-                    <h3>1,500</h3>
+                    <h3>{{$sales->total_sales->total_sales}}</h3>
                 </div>
               <div class="clearfix"> </div>
             </div>
@@ -97,18 +97,36 @@
                             <thead>
                                 <tr>
                                     <th>NO</th>
-                                    <th>SERVICE</th>
-                                    <th>STATUS</th>
-                                    <th>REQUESTS</th>
+                                    <th>TITLE</th>
+                                    <th>PRICE</th>
+                                    <th>PICTURE</th>
+                                    <th colspan="2">Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
+                                @php
+                                    $i = 1;
+                                @endphp
+                                @forelse ($services as $service)
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>Lorem ipsum</td>
-                                    <td><span class="label label-success">In progress</span></td>
-                                    <td><h5>100</i></h5></td>
+                                <td>{{$i++}}</td>
+                                <td>{{$service->title}}</td>
+                                <td>{{$service->price}}</td>
+                                <td><img src="{{asset(Storage::url($service->picture))}}"  height='120' width='120' /></td>
+                                <td><a href="{{route('admin.services.edit',$service->id)}}" class="button primary">Edit</a></td>
+
+                                <td><form method="POST" action="{{route('admin.services.destroy',$service->id)}}" id="item-{{$service->id}}">
+                                    @method('DELETE')
+                                    @csrf
+                                </form><a href="#" onclick="event.preventDefault();
+                                document.getElementById('item-{{$service->id}}').submit();" class="button alert">Delete</a></td>
                                 </tr>
+                                @empty
+                                    <tr>
+                                        <td colspan="3"></td>
+                                    </tr>
+                                @endforelse
+                                
                         
                             </tbody>
                         </table>
