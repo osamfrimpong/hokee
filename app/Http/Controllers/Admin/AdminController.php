@@ -23,4 +23,6 @@ class AdminController extends Controller
         $regularcount = User::where('paid',0)->get()->count();
         return view('admin.home',compact('title','requests','regularcount','vipcount','services','sales'));
     }
+
+   
 }

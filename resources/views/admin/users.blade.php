@@ -42,26 +42,30 @@
         <th>Sex</th>
         <th>Occupation</th>
         <th>Telephone</th>
-        <th>Location</th>
-        <th style="width:30px;"></th>
+        {{-- <th>Location</th> --}}
       </tr>
     </thead>
     <tbody>
 
-
+      @forelse ($users as $user)
       <tr>
         <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
-        <td>Videodown</td>
-        <td>Videodown</td>
-        <td>Videodown</td>
-        <td>Videodown</td>
+      <td>{{$user->name}}</td>
+        <td>{{$user->age}}</td>
+        <td>{{$user->sex}}</td>
+        <td>{{$user->occupation}}</td>
 
-        <td>4c</td>
-        <td>Jul 1, 2013</td>
+        <td>{{$user->phone}}</td>
+        {{-- <td>Jul 1, 2013</td> --}}
         <td>
           <a href="" class="active" ui-toggle-class=""><i class="fa fa-edit text-success text-active"></i><i class="fa fa-times text-danger text"></i></a>
         </td>
       </tr>
+      @empty
+          <tr><td colspan="6">No Users Added</td></tr>
+      @endforelse
+
+      
     </tbody>
   </table>
 </div>
