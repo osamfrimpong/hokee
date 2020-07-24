@@ -36,7 +36,7 @@
                 </div>
                 <div class="col-md-8 market-update-left">
                     <h4>Sales</h4>
-                    <h3>{{$sales->total_sales->total_sales}}</h3>
+                    <h3>{{$sales->total_sales->total_sales ?? 0}}</h3>
                 </div>
               <div class="clearfix"> </div>
             </div>
