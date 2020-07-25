@@ -14,7 +14,8 @@ class HookRequestController extends Controller
      */
     public function index()
     {
-        //
+        $title = "Hook Requests";
+        return view('admin.hook_requests',compact('title'));
     }
 
     /**
