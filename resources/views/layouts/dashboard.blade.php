@@ -13,18 +13,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- bootstrap-css -->
-<link rel="stylesheet" href="{{asset('dashboard/css/bootstrap.min.css')}}" >
+<link rel="stylesheet" href="{{asset('dashboard/user/css/bootstrap.min.css')}}" >
 <!-- //bootstrap-css -->
 <!-- Custom CSS -->
-<link href="{{asset('dashboard/css/style.css')}}" rel='stylesheet' type='text/css' />
+<link href="{{asset('dashboard/user/css/style.css')}}" rel='stylesheet' type='text/css' />
 <link href="dashboard/css/style-responsive.css" rel="stylesheet"/>
 <!-- font CSS -->
 <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <!-- font-awesome icons -->
-<link rel="stylesheet" href="dashboard/css/font.css" type="text/css"/>
-<link href="dashboard/css/font-awesome.css" rel="stylesheet"> 
+<link rel="stylesheet" href="{{asset('dashboard/user/css/font.css')}}" type="text/css"/>
+<link href="{{asset('dashboard/user/css/font-awesome.css')}}" rel="stylesheet"> 
 <!-- //font-awesome icons -->
-<script src="dashboard/js/jquery2.0.3.min.js"></script>
+<script src="{{asset('dashboard/user/js/jquery2.0.3.min.js')}}"></script>
 </head>
 <body>
 <section id="container">
@@ -178,54 +178,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </ul>
         </li>
         <!-- inbox dropdown end -->
-        <!-- notification dropdown start-->
-        <li id="header_notification_bar" class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-
-                <i class="fa fa-bell-o"></i>
-                <span class="badge bg-warning">3</span>
-            </a>
-            <ul class="dropdown-menu extended notification">
-                <li>
-                    <p>Notifications</p>
-                </li>
-                <li>
-                    <div class="alert alert-info clearfix">
-                        <span class="alert-icon"><i class="fa fa-bolt"></i></span>
-                        <div class="noti-info">
-                            <a href="#"> Server #1 overloaded.</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="alert alert-danger clearfix">
-                        <span class="alert-icon"><i class="fa fa-bolt"></i></span>
-                        <div class="noti-info">
-                            <a href="#"> Server #2 overloaded.</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="alert alert-success clearfix">
-                        <span class="alert-icon"><i class="fa fa-bolt"></i></span>
-                        <div class="noti-info">
-                            <a href="#"> Server #3 overloaded.</a>
-                        </div>
-                    </div>
-                </li>
-
-            </ul>
-        </li>
-        <!-- notification dropdown end -->
-    </ul>
-    <!--  notification end -->
+        
 </div>
 <div class="top-nav clearfix">
     <!--search & user info start-->
     <ul class="nav pull-right top-menu">
-        <li>
-            <input type="text" class="form-control search" placeholder=" Search">
-        </li>
+   
         <!-- user login dropdown start-->
         <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
