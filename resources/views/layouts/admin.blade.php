@@ -33,6 +33,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="{{asset('dashboard/js/morris.js')}}"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{asset('dashboard/js/lightbox-plus-jquery.min.js')}}"> </script>
 
 </head>
 <body>
@@ -307,14 +308,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </section>
 <!--main content end-->
 </section>
-<script src="js/bootstrap.js"></script>
-<script src="js/jquery.dcjqaccordion.2.7.js"></script>
-<script src="js/scripts.js"></script>
-<script src="js/jquery.slimscroll.js"></script>
-<script src="js/jquery.nicescroll.js"></script>
+<script src="{{asset('dashboard/js/bootstrap.js')}}"></script>
+<script src="{{asset('dashboard/js/jquery.dcjqaccordion.2.7.js')}}"></script>
+<script src="{{asset('dashboard/js/scripts.js')}}"></script>
+<script src="{{asset('dashboard/js/jquery.slimscroll.js')}}"></script>
+<script src="{{asset('dashboard/js/jquery.nicescroll.js')}}"></script>
 <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
 <script src="js/jquery.scrollTo.js"></script>
 <!-- morris JavaScript -->	
+
 <script>
 	$(document).ready(function() {
 		//BOX BUTTON SHOW AND CLOSE
