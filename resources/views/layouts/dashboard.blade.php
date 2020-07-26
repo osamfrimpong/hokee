@@ -17,14 +17,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //bootstrap-css -->
 <!-- Custom CSS -->
 <link href="{{asset('dashboard/css/style.css')}}" rel='stylesheet' type='text/css' />
-<link href="dashboard/css/style-responsive.css" rel="stylesheet"/>
+<link href="{{asset('dashboard/css/style-responsive.css')}}" rel="stylesheet"/>
 <!-- font CSS -->
 <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <!-- font-awesome icons -->
-<link rel="stylesheet" href="dashboard/css/font.css" type="text/css"/>
-<link href="dashboard/css/font-awesome.css" rel="stylesheet"> 
+<link rel="stylesheet" href="{{asset('dashboard/css/font.css" type="text/css')}}"/>
+<link href="{{asset('dashboard/css/font-awesome.css')}}" rel="stylesheet"> 
 <!-- //font-awesome icons -->
-<script src="dashboard/js/jquery2.0.3.min.js"></script>
+<script src="{{asset('dashboard/js/jquery2.0.3.min.js')}}"></script>
 </head>
 <body>
 <section id="container">
@@ -296,12 +296,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!--main content end-->
 </section>
-<script src="js/bootstrap.js"></script>
-<script src="js/jquery.dcjqaccordion.2.7.js"></script>
-<script src="js/scripts.js"></script>
-<script src="js/jquery.slimscroll.js"></script>
-<script src="js/jquery.nicescroll.js"></script>
+<script src="{{asset('dashboard/js/bootstrap.js')}}"></script>
+<script src="{{asset('dashboard/js/jquery.dcjqaccordion.2.7.js')}}"></script>
+<script src="{{asset('dashboard/js/scripts.js')}}"></script>
+<script src="{{asset('dashboard/js/jquery.slimscroll.js')}}"></script>
+<script src="{{asset('dashboard/js/jquery.nicescroll.js')}}"></script>
 <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
-<script src="js/jquery.scrollTo.js"></script>
+<script src="{{asset('dashboard/js/jquery.scrollTo.js')}}"></script>
 </body>
 </html>
