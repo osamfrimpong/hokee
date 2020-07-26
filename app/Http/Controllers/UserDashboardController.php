@@ -10,4 +10,9 @@ class UserDashboardController extends Controller
         $title = "Home";
         return view('dashboard.home',compact('title'));
     }
+
+    public function checkout(){
+        $title = "Checkout";
+        return view('dashboard.checkout',compact('title'));
+    }
 }
