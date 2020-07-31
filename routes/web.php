@@ -26,6 +26,9 @@ Route::prefix('admin')->namespace('Admin')->middleware('auth:admin')->name('admi
     Route::resource('requests','HookRequestController');
     Route::resource('payments','HookPaymentController');
     Route::resource('messages','HookMessageController');
+    Route::resource('userratings','UserRatingsController');
+    
+
     Route::resource('users','UsersController');
 });
 

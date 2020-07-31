@@ -22,7 +22,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <!-- font-awesome icons -->
 <link rel="stylesheet" href="{{asset('dashboard/css/font.css')}}" type="text/css"/>
-<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="{{asset('dashboard/css/font-awesome.css')}}" rel="stylesheet">
+ 
 <link rel="stylesheet" href="{{asset('dashboard/css/morris.css')}}" type="text/css"/>
 <!-- calendar -->
 <link rel="stylesheet" href="{{asset('dashboard/css/monthly.css')}}">
@@ -271,6 +272,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <a href="{{route('admin.users.index')}}">
                         <i class="fa fa-th"></i>
                         <span>Users</span>
+                    </a>
+                    
+                </li>
+                <li class="sub-menu">
+                    <a href="{{route('admin.userratings.index')}}">
+                        <i class="fa fa-th"></i>
+                        <span>User Ratings</span>
                     </a>
                     
                 </li>
