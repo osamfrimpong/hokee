@@ -20,4 +20,8 @@ class UserDashboardController extends Controller
         $title = "UserProfile";
         return view('dashboard.userprofile',compact('title'));
     }
+    public function ratings(){
+        $title = "Ratings";
+        return view('dashboard.ratings',compact('title'));
+    }
 }

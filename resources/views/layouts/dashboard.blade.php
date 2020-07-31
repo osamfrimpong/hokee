@@ -260,9 +260,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </li>
 
                 <li class="sub-menu">
-                    <a class="active" href="users.html">
+                    <a class="active" href="{{route('user.ratings')}}">
                         <i class="fa fa-th"></i>
-                        <span>Users</span>
+                        <span>Rate Us</span>
                     </a>
                  
                 </li>

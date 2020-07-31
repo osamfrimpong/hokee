@@ -137,8 +137,8 @@ ul.social-icons3 {
 }
 /*--search--*/
 .contact-bnr-w3-agile ul li.s-bar {
-    background: #ed74cc;;
-	border-left:1px solid #ed74cc;;
+    background: #ffce14;
+	border-left:1px solid #ffce14;
 }
 .search label.icon-search {
     color: #212121;
@@ -187,7 +187,7 @@ ul.social-icons3 {
 	font-family: 'Federo', sans-serif;
 }
 .search_form input[type='submit']:hover {
-    background: #ed74cc;;
+    background: #ffce14;
     color: #000;
 }
 .search_box{
@@ -245,7 +245,7 @@ label.icon-search span {
     text-transform: uppercase;
 }
 .navbar-default .navbar-nav > li > a:hover{
-    color:#ed74cc;;
+    color:#ffce14;
 }
 .navbar-default .navbar-nav > li > a:focus {
     color: #fff;
@@ -279,7 +279,7 @@ nav.navbar.navbar-default {
     font-weight: bold;
 }
 .navbar-brand span {
-       color: #ed74cc;;
+       color: #ffce14;
 }
 p.logo_w3l_agile_caption {
     text-transform: uppercase;
@@ -307,7 +307,7 @@ p.logo_w3l_agile_caption {
 .agile_short_dropdown > li > a:hover{
     color: #fff;
     text-decoration: none;
-   background-color: #ed74cc;;
+   background-color: #ffce14;
 }
 /*-- nav-effect --*/
 .menu__list {
@@ -355,7 +355,7 @@ li.menu__item:nth-child(6) {
 }
 
 .menu--iris .menu__item--current .menu__link,.menu__link:hover {
-	color:#ed74cc;;
+	color:#ffce14;
 }
 
 .menu--iris .menu__link::before,
@@ -365,7 +365,7 @@ li.menu__item:nth-child(6) {
 	width: 10px;
 	height: 10px;
 	opacity: 0;
-	border: 2px solid #ed74cc;;
+	border: 2px solid #ffce14;
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
 	transition: transform 0.3s, opacity 0.3s;
 	-webkit-transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
@@ -407,7 +407,7 @@ li.menu__item:nth-child(6) {
 }
 .agileits-banner-info h4 {
     font-size: 4em;
-    color: #ed74cc;;
+    color: #ffce14;
     letter-spacing: 27px;
     font-weight: bold;
     text-transform: uppercase;
@@ -431,7 +431,7 @@ li.menu__item:nth-child(6) {
     margin-top: 8em;
 }
 .agileits-banner-info p {
-    color: #ed74cc;;
+    color: #ffce14;
     font-size: 1em;
     line-height: 1.8em;
     letter-spacing: 11px;
@@ -462,7 +462,7 @@ li.menu__item:nth-child(6) {
 .agileits_w3layouts_more a:hover{
 	color:#000;
 	border: 2px solid #fff;
-	background: #ed74cc;;
+	background: #ffce14;
 }
 /*-- //banner-text --*/
 /*-- banner-top --*/
@@ -666,7 +666,7 @@ li.menu__item:nth-child(6) {
     -ms-border-radius: 50%;
 }
 .callbacks_here a:after{
-       background:#ed74cc;;
+       background:#ffce14;
 }
 .thim-click-to-bottom {
     position: absolute;
@@ -680,7 +680,7 @@ li.menu__item:nth-child(6) {
     z-index: 99;
 }
 .thim-click-to-bottom i {
-    color: #ed74cc;;
+    color: #ffce14;
     border: 2px solid #fff;
     font-size: 18px;
     width: 30px;
@@ -715,7 +715,7 @@ li.menu__item:nth-child(6) {
     text-transform: uppercase;
 }
 .modal-content h4 span {
-    color: #ed74cc;;
+    color: #ffce14;
 }
 .modal-content h5 {
     color: #000;
@@ -741,7 +741,7 @@ li.menu__item:nth-child(6) {
 }
 .book-form-left-w3layouts h2 {
     color: #fff;
-    background: #ed74cc;
+    background: #ffce14;
     padding: 60px 0;
     text-align: center;
     font-size: 25px;
@@ -826,7 +826,7 @@ li.menu__item:nth-child(6) {
     padding:0!important;
 }
 .book-form input[type=submit]:hover {
-    background: #ed74cc;
+    background: #ffce14;
     color: #fff;
 }
 /*-- //banner-form--*/
@@ -840,7 +840,7 @@ li.menu__item:nth-child(6) {
 }
 .banner-bottom h3 {
     font-size: 1em;
-    color: #ed74cc;
+    color: #ffce14;
     line-height: 2.3em;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -964,7 +964,7 @@ li.menu__item:nth-child(6) {
 .cbp-ig-grid .cbp-ig-title:before {
 	content: '';
 	position: absolute;
-	background:#ed74cc;
+	background:#ffce14;
 	width: 160px;
 	height: 6px;
 	top: 0px;
@@ -980,7 +980,7 @@ li.menu__item:nth-child(6) {
 	display: inline-block;
 	font-size: 1em;
 	letter-spacing: 1px;
-	color: #ed74cc;
+	color: #ffce14;
 	-webkit-transform: translateY(10px);
 	-moz-transform: -moz-translateY(10px);
 	-ms-transform: -ms-translateY(10px);
@@ -1015,7 +1015,7 @@ li.menu__item:nth-child(6) {
 
 .cbp-ig-grid li > .w3_grid_effect:hover .cbp-ig-icon:before
  {
-	color: #ed74cc;
+	color: #ffce14;
 }
 .cbp-ig-grid li > .w3_grid_effect:hover .cbp-ig-title{
 	color:#fff;
@@ -1090,7 +1090,7 @@ h3.title-w3-agileits {
 .w3ls-info-about h4 {
     font-size: 1.5em;
     letter-spacing: 1px;
-    color: #ed74cc;
+    color: #ffce14;
     /* margin-bottom: 11px; */
     line-height: 1.4em;
     text-transform: capitalize;
@@ -1154,12 +1154,12 @@ p.about-para-w3ls {
     border-right: 1px solid #b1b1b1;
 }
 .advantage-block .fa-credit-card,.advantage-block .fa-clock-o {
-    color: #ed74cc;
+    color: #ffce14;
     font-size: 45px;
     margin-bottom: 10px;
 }
 .advantage-block p i {
-    color: #ed74cc;
+    color: #ffce14;
     font-size: 13px;
     margin-right: 10px;
 }
@@ -1292,7 +1292,7 @@ ul.resp-tabs-list {
     color: #000000;
     display: inline-block;
     padding: 0.5em 2em;
-    background: #ed74cc;
+    background: #ffce14;
     text-decoration: none;
     border: 2px solid #ecbf11;
 }
@@ -1404,7 +1404,7 @@ h3.w3l-agile:before,h2.w3l-agile:before  {
     letter-spacing: 1px;
 }
 .w3layouts_work_grid_right p:nth-child(4) {
-    color: #ed74cc;
+    color: #ffce14;
     text-align: right;
     margin-top: 0!important;
     font-size: 14px;
@@ -1519,7 +1519,7 @@ section.contact-w3ls p.contact-agile2 {
 	font-weight:normal;
 	padding-bottom:20px;
 	line-height:30px;
-	color:#ed74cc;
+	color:#ffce14;
 	text-align:center;
 }
 section.contact-w3ls label.contact-p1 {
@@ -1549,9 +1549,9 @@ section.contact-w3ls input#name, section.contact-w3ls input#email, section.conta
 	font-family: 'Lato', sans-serif;
 }
 section.contact-w3ls button.btn.btn-primary {
-	color:#ed74cc;
+	color:#ffce14;
     background-color:transparent;
-    border: 2px solid #ed74cc;
+    border: 2px solid #ffce14;
     font-size: 17px;
     padding: 10px 20px;	
 	width:100%;
@@ -1560,8 +1560,8 @@ section.contact-w3ls button.btn.btn-primary {
 }
 section.contact-w3ls button.btn.btn-primary:hover {
 	color: #fff;
-    background-color:#ed74cc;
-    border: 2px solid #ed74cc;;
+    background-color:#ffce14;
+    border: 2px solid #ffce14;
 }
 input::-webkit-input-placeholder {
 color: #fff !important;
@@ -1598,7 +1598,7 @@ color: #fff !important;
     padding: 1em;
 }
 .copy p a {
-    color: #ed74cc;;
+    color: #ffce14;
     text-decoration: none;
 	transition: 0.5s all;
     -webkit-transition: 0.5s all;
@@ -2307,7 +2307,7 @@ color: #fff !important;
 		background-color: #fff;
 	}
 	.navbar-default .navbar-toggle {
-		border-color: #ed74cc;;
+		border-color: #ffce14;
 		margin-top: 3px!important;
 	}
 	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
