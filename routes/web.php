@@ -46,6 +46,8 @@ Route::post('register', 'RegisterController@register')->name('register');
 Route::prefix('user')->middleware('auth')->name('user.')->group(function(){
     Route::get('/home','UserDashboardController@index')->name('home');
     Route::get('checkout','UserDashboardController@checkout')->name('checkout');
+    Route::get('userprofile','UserDashboardController@userprofile')->name('userprofile');
+
 });
     
 Route::get('/checkouts','UserDashboardController@checkout')->name('checkout');

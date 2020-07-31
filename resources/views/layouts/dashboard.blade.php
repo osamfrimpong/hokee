@@ -234,7 +234,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu extended logout">
-                <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
+                <li><a href="{{route('user.userprofile')}}"><i class=" fa fa-suitcase"></i>Profile</a></li>
                 <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
                 <li><a href="login.html"><i class="fa fa-key"></i> Log Out</a></li>
             </ul>
@@ -253,7 +253,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="leftside-navigation">
             <ul class="sidebar-menu" id="nav-accordion">
                 <li>
-                    <a href="index.html">
+                    <a href="{{route('user.home')}}">
                         <i class="fa fa-dashboard"></i>
                         <span>Dashboard</span>
                     </a>
@@ -268,11 +268,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </li>
                 
                 <li class="sub-menu">
-                    <a class="active" href="services.html">
+                    <a class="active" href="javascript:;">
                         <i class="fa fa-tasks"></i>
-                        <span>Services</span>
+                        <span>Profile</span>
                     </a>
-                  
+                    <ul class="sub">
+                        <li><a class="active" href="{{route('user.userprofile')}}">Basic Info</a></li>
+                    </ul>
                 </li>
               
 
