@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
+use App\Models\UserRating;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class UserRatingsController extends Controller
 {
@@ -14,8 +15,9 @@ class UserRatingsController extends Controller
      */
     public function index()
     {
-        $title = 'UserRatings';
-        return view('admin.userratings',compact('title'));
+        $title = 'User Ratings';
+        $userRatings = UserRating::orderBy('created_at','desc')->get();
+        return view('admin.userratings',compact('title','userRatings'));
     }
 
     /**
@@ -65,12 +67,16 @@ class UserRatingsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  UserRating $rating
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        //
+        $rating = UserRating::findOrFail($id);
+        // $rating->approved = $request->action_type;
+        $rating->update(['approved'=>$request->action_type]);
+        return redirect()->route('admin.userratings.index');
+        // print_r($rating);
     }
 
     /**
@@ -81,6 +87,8 @@ class UserRatingsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $rating = UserRating::findOrFail($id);
+        $rating->delete();
+        return redirect()->route('admin.userratings.index');
     }
 }
