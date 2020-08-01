@@ -21,24 +21,25 @@
                         </header>
                         <div class="panel-body">
                             <div class=" form">
-                                <form class="cmxform form-horizontal " id="commentForm" method="get" action="" novalidate="novalidate">
+                            <form class="cmxform form-horizontal " id="commentForm" method="post" action="{{route('user.rate')}}" novalidate="novalidate">
+                                    @csrf
                                     <div class="form-group ">
                                         <label for="cname" class="control-label col-lg-3">Name (required)</label>
                                         <div class="col-lg-6">
-                                            <input class=" form-control" id="cname" name="name" minlength="2" type="text" required="">
+                                        <input class=" form-control" id="cname" name="name" minlength="2" type="text" required="" value="{{$user->name}}">
                                         </div>
                                     </div>
                                     <div class="form-group ">
                                         <label for="cemail" class="control-label col-lg-3">E-Mail (required)</label>
                                         <div class="col-lg-6">
-                                            <input class="form-control " id="cemail" type="email" name="email" required="">
+                                            <input class="form-control " id="cemail" type="email" name="email" required="" value="{{$user->email}}">
                                         </div>
                                     </div>
   
                                     <div class="form-group ">
                                         <label for="ccomment" class="control-label col-lg-3">Your Message for us</label>
                                         <div class="col-lg-6">
-                                            <textarea class="form-control " id="ccomment" name="comment" required=""></textarea>
+                                            <textarea class="form-control " id="ccomment" required="" name="message"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">

@@ -50,17 +50,20 @@
     </thead>
     <tbody>
 
-   
-      <tr>
-        <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-
-        <td></td>    
-      </tr>
-           <tr><td colspan="6">No Users Added</td></tr>
+  @forelse ($payments as $payment)
+  <tr>
+    <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
+    <td>{{$payment->bill_id}}</td>
+  <td>{{$payment->user->name}}</td>
+    <td>{{$payment->updated_at}}</td>
+    <td>{{$payment->amount}}</td>
+    <td>{{$payment->payment_method}}</td>    
+  </tr>
+  @empty
+  <tr><td colspan="6">No Payments Made</td></tr>
+  @endforelse
+      
+           
 
       
     </tbody>

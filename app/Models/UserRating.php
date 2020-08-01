@@ -5,17 +5,13 @@ namespace App\Models;
 use App\User;
 use Illuminate\Database\Eloquent\Model;
 
-class HookRequest extends Model
+class UserRating extends Model
 {
     protected $fillable = [
-        'location', 'message', 'hookee','service_id'
+        'approved', 'user_id', 'message'
     ];
 
     public function user(){
         return $this->belongsTo(User::class);
-    }
-
-    public function service(){
-        return $this->belongsTo(Service::class);
     }
 }
