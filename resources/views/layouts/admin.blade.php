@@ -267,7 +267,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <span>Dashboard</span>
                     </a>
                 </li>
- 
+                <li>
+                    <a class="active" href="{{route('admin.requests.index')}}">
+                        <i class="fa fa-dashboard"></i>
+                        <span>Hook Requests</span>
+                    </a>
+                </li>
                 <li class="sub-menu">
                     <a href="{{route('admin.users.index')}}">
                         <i class="fa fa-th"></i>
