@@ -283,7 +283,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     
                 </li>
                 <li class="sub-menu">
-                    <a href="{{route('admin.payments.index')}}">
+                    <a href="{{route('admin.payments')}}">
                         <i class="fa fa-th"></i>
                         <span>Payments</span>
                     </a>
