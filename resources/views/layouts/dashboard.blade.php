@@ -266,7 +266,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </a>
                  
                 </li>
-                
+                <li class="sub-menu">
+                    <a class="active" href="{{route('user.requesthook')}}">
+                        <i class="fa fa-th"></i>
+                        <span>Request Hook</span>
+                    </a>
+                 
+                </li>  
                 <li class="sub-menu">
                     <a class="active" href="javascript:;">
                         <i class="fa fa-tasks"></i>

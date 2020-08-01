@@ -30,6 +30,13 @@ class UserDashboardController extends Controller
         return view('dashboard.ratings',compact('title','user'));
     }
 
+    public function requesthook(){
+        $title = "RequestHook";
+        $user = Auth::user();
+        return view('dashboard.requesthook',compact('title','user'));
+    }
+
+
     public function rate(Request $request){
         $request->validate([
             'message' => 'required|string:255'

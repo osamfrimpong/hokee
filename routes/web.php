@@ -50,6 +50,7 @@ Route::prefix('user')->middleware('auth')->name('user.')->group(function(){
     Route::get('checkout','UserDashboardController@checkout')->name('checkout');
     Route::get('userprofile','UserDashboardController@userprofile')->name('userprofile');
     Route::get('ratings','UserDashboardController@ratings')->name('ratings');
+    Route::get('requesthook','UserDashboardController@requesthook')->name('requesthook');
     Route::post('rate','UserDashboardController@rate')->name('rate');
 
 });
