@@ -51,7 +51,7 @@
       @forelse ($users as $user)
       <tr>
         <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
-        <td><img src="https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425_960_720.png" alt="user profile" width="35px" height="35px"></td>
+        <td><img src="{{asset(Storage::url($user->picture))}}" alt="user profile" width="35px" height="35px"></td>
         <td>{{$user->name}}</td>
         <td>{{$user->age}}</td>
         <td>{{$user->sex}}</td>

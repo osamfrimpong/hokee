@@ -45,6 +45,10 @@ class User extends Authenticatable
         return $this->hasMany(Payment::class);
     }
 
+    public function ratings(){
+        return $this->hasMany(UserRating::class);
+    }
+
     public function hookedMatches(){
         return $this->hasMany(MatchedHook::class,'hookee','id');
     }

@@ -24,11 +24,9 @@ Route::prefix('admin')->namespace('Admin')->middleware('auth:admin')->name('admi
     Route::get('/home','AdminController@index')->name('home');
     Route::resource('services','ServicesController');
     Route::resource('requests','HookRequestController');
-    Route::resource('payments','HookPaymentController');
+    Route::get('payments','HookPaymentController@index')->name('payments');
     Route::resource('messages','HookMessageController');
     Route::resource('userratings','UserRatingsController');
-    
-
     Route::resource('users','UsersController');
 });
 

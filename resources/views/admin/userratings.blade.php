@@ -51,18 +51,33 @@
     </thead>
     <tbody>
 
-   
-      <tr>
-        <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
-        <td>Francis</td>
-        <td>I like your service</td>
-        <td>26/07/20</td>
-        <td><button class="btn btn-info"><i class="fa fa-check"></i></button></td>
-        <td><button class="btn btn-danger"><i class="fa  fa-times"></i></button></td>    
-      </tr>
-           <tr><td colspan="6">No Ratings Submitted</td></tr>
-
+   @forelse ($userRatings as $rating)
+   <tr>
+    <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
+    <td>{{$rating->user->name}}</td>
+    <td>{{$rating->message}}</td>
+    <td>{{$rating->created_at}}</td>
+    <td>
+    <form action="{{route('admin.userratings.update',$rating->id)}}" method="post">
+    @method('PUT')
+    @csrf
+    <input type="hidden" name="action_type" value="{{$rating->approved == false ? 1 : 0}}">
+    <button class="btn btn-info" type="submit">{{$rating->approved == false ? "Approve" : "Disapprove"}}</button>
+    </form>
+     </td>
+    <td>
+      <form action="{{route('admin.userratings.destroy',$rating->id)}}" method="post">
+        @method('DELETE')
+        @csrf
       
+        <button class="btn btn-danger" type="submit"><i class="fa  fa-times"></i></button>
+        </form>
+    </td>    
+  </tr>
+   @empty
+   <tr><td colspan="6">No Ratings Submitted</td></tr> 
+   @endforelse         
+
     </tbody>
   </table>
 </div>
