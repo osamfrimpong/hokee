@@ -37,6 +37,7 @@
             <input type="checkbox"><i></i>
           </label>
         </th>
+        <th>Picture</th>
         <th>Name</th>
         <th>Age</th>
         <th>Sex</th>
@@ -50,7 +51,8 @@
       @forelse ($users as $user)
       <tr>
         <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
-      <td>{{$user->name}}</td>
+        <td><img src="https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425_960_720.png" alt="user profile" width="35px" height="35px"></td>
+        <td>{{$user->name}}</td>
         <td>{{$user->age}}</td>
         <td>{{$user->sex}}</td>
         <td>{{$user->occupation}}</td>
@@ -58,7 +60,7 @@
         <td>{{$user->phone}}</td>
         {{-- <td>Jul 1, 2013</td> --}}
         <td>
-            <!-- Button trigger modal -->
+            <!-- Edit User  modal -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
               Edit
             </button>
