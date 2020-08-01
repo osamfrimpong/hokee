@@ -49,6 +49,7 @@ Route::prefix('user')->middleware('auth')->name('user.')->group(function(){
     Route::get('checkout','UserDashboardController@checkout')->name('checkout');
     Route::get('userprofile','UserDashboardController@userprofile')->name('userprofile');
     Route::get('ratings','UserDashboardController@ratings')->name('ratings');
+    Route::post('rate','UserDashboardController@rate')->name('rate');
 
 });
     
