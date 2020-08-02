@@ -15,7 +15,6 @@ class AddServiceIdToRequests extends Migration
     {
         Schema::table('hook_requests', function (Blueprint $table) {
             $table->unsignedBigInteger('service_id');
-            $table->foreign('hookee')->references('id')->on('users');
             $table->foreign('service_id')->references('id')->on('services');
         });
     }
