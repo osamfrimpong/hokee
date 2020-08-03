@@ -27,7 +27,6 @@ Route::prefix('admin')->namespace('Admin')->middleware('auth:admin')->name('admi
     Route::get('payments','HookPaymentController@index')->name('payments');
     Route::resource('messages','HookMessageController');
     Route::resource('userratings','UserRatingsController');
-    Route::resource('edituser','EditUserController');
     Route::resource('users','UsersController');
 });
 

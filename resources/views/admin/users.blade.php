@@ -61,7 +61,7 @@
         {{-- <td>Jul 1, 2013</td> --}}
         <td>
             <!-- Edit User  button -->
-            <a href="{{route('admin.edituser.index')}}"><button  type="button" class="btn btn-primary">
+            <a href="{{route('admin.users.edit',$user->id)}}"><button  type="button" class="btn btn-primary">
               Edit
             </button></a>
           
