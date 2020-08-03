@@ -406,102 +406,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<section class="slider">
 				<div class="flexslider">
 					<ul class="slides">
+						@forelse ($ratings as $rating)
 						<li>
 							<div class="w3layouts_work_grid_left">
-								<img src="images/5.jpg" alt=" " class="img-responsive" />
+							<img src="{{asset('images/5.jpg')}}" alt=" " class="img-responsive" />
 								<div class="w3layouts_work_grid_left_pos">
-									<img src="images/c1.jpg" alt=" " class="img-responsive" />
+								<img src="{{asset(Storage::url($rating->user->profile_picture))}}" alt=" " class="img-responsive" />
 								</div>
 							</div>
 							<div class="w3layouts_work_grid_right">
-								<h4>
+								{{-- <h4>
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star" aria-hidden="true"></i>
 								Worth to come again
-								</h4>
-								<p>Sed tempus vestibulum lacus blandit faucibus. 
-									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
-									at imperdiet urna. </p>
-								<h5>Julia Rose</h5>
-								<p>Germany</p>
+								</h4> --}}
+								<p>{{$rating->message}} </p>
+								<h5>{{$rating->user->name}}</h5>
+								<p>{{$rating->user->occupation}}</p>
 							</div>
 							<div class="clearfix"> </div>
 						</li>
-						<li>
-							<div class="w3layouts_work_grid_left">
-								<img src="images/5.jpg" alt=" " class="img-responsive" />
-								<div class="w3layouts_work_grid_left_pos">
-									<img src="images/c2.jpg" alt=" " class="img-responsive" />
-								</div>
-							</div>
-							<div class="w3layouts_work_grid_right">
-								<h4>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								Worth to come again
-								</h4>
-								<p>Sed tempus vestibulum lacus blandit faucibus. 
-									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
-									at imperdiet urna. </p>
-								<h5>Jahnatan Smith</h5>
-								<p>United States</p>
-							</div>
-							<div class="clearfix"> </div>
-						</li>
-						<li>
-							<div class="w3layouts_work_grid_left">
-								<img src="images/5.jpg" alt=" " class="img-responsive" />
-								<div class="w3layouts_work_grid_left_pos">
-									<img src="images/c3.jpg" alt=" " class="img-responsive" />
-								</div>
-							</div>
-							<div class="w3layouts_work_grid_right">
-								<h4>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								Worth to come again
-								</h4>
-								<p>Sed tempus vestibulum lacus blandit faucibus. 
-									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
-									at imperdiet urna. </p>
-								<h5>Rosalind Cloer</h5>
-								<p>Italy</p>
-							</div>
-							<div class="clearfix"> </div>
-						</li>
-						<li>
-							<div class="w3layouts_work_grid_left">
-								<img src="images/5.jpg" alt=" " class="img-responsive" />
-								<div class="w3layouts_work_grid_left_pos">
-									<img src="images/c4.jpg" alt=" " class="img-responsive" />
-								</div>
-							</div>
-							<div class="w3layouts_work_grid_right">
-								<h4>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								Worth to come again
-								</h4>
-								<p>Sed tempus vestibulum lacus blandit faucibus. 
-									Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, 
-									at imperdiet urna. </p>
-								<h5>Amie Bublitz</h5>
-								<p>Switzerland</p>
-							</div>
-							<div class="clearfix"> </div>
-						</li>
+						@empty
+							
+						@endforelse
+						
+						
+					
 					</ul>
 				</div>
 			</section>
