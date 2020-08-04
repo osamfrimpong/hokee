@@ -60,7 +60,9 @@ class UsersController extends Controller
      */
     public function edit(User $user)
     {
-        //
+        $title = "Edit User Info";
+        
+        return view('admin.edituser',compact('title','user'));
     }
 
     /**
@@ -72,7 +74,8 @@ class UsersController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        //
+        $user->fill($request->all())->save();
+        return redirect()->back();
     }
 
     /**
