@@ -48,27 +48,31 @@
       </tr>
     </thead>
     <tbody>
-
+      @forelse ($requests as $request)
       <tr>
         <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
         <td><img src="#" alt="user profile" width="35px" height="35px"></td>
-        <td>francis amoah</td>
-        <td>28</td>
-        <td>Male</td>
-        <td>Sogakope</td>
-        <td>0244077952</td>
+        <td>{{$request->user->name}}</td>
+        <td>{{$request->user->age}}</td>
+        <td>{{$request->user->sex}}</td>
+        <td>{{$request->location}}</td>
+        <td>{{$request->user->phone}}</td>
 
         <td></td>
         {{-- <td>Jul 1, 2013</td> --}}
         <td>
             <!-- View Request -->
-            <a href="#"><button  type="button" class="btn btn-sm btn-primary">
+            <a href="{{route('admin.requests.show',$request->id)}}"><button  type="button" class="btn btn-sm btn-primary">
               View
             </button></a>
           
         </td>
-      </tr>
-          <tr><td colspan="6">No Users Added</td></tr>
+      </tr> 
+      @empty
+      <tr><td colspan="6">No Requests Added</td></tr>
+      @endforelse
+
+         
 
       
     </tbody>

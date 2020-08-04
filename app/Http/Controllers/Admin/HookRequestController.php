@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\HookRequest;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -15,7 +16,8 @@ class HookRequestController extends Controller
     public function index()
     {
         $title = "Hook Requests";
-        return view('admin.hook_requests',compact('title'));
+        $requests = HookRequest::all();
+        return view('admin.hook_requests',compact('title','requests'));
     }
 
     /**
