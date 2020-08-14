@@ -51,7 +51,7 @@
       @forelse ($users as $user)
       <tr>
         <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
-        <td><img src="{{asset(Storage::url($user->picture))}}" alt="user profile" width="35px" height="35px"></td>
+        <td><img src="{{asset(Storage::url($user->profile_picture))}}" alt="user profile" width="35px" height="35px"></td>
         <td>{{$user->name}}</td>
         <td>{{$user->age}}</td>
         <td>{{$user->sex}}</td>
@@ -61,7 +61,7 @@
         {{-- <td>Jul 1, 2013</td> --}}
         <td>
             <!-- Edit User  button -->
-            <a href="{{route('admin.edituser.index')}}"><button  type="button" class="btn btn-primary">
+            <a href="{{route('admin.users.edit',$user->id)}}"><button  type="button" class="btn btn-primary">
               Edit
             </button></a>
           

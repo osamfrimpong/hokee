@@ -19,10 +19,7 @@ class CreateHookRequestsTable extends Migration
             $table->string('location');
             $table->mediumText('message');
             $table->unsignedBigInteger('hookee');
-            $table->unsignedBigInteger('service_id');
-            $table->foreign('hookee')->references('id')->on('users');
-            $table->foreign('service_id')->references('id')->on('services');
-            
+            $table->foreign('hookee')->references('id')->on('users');            
         });
     }
 

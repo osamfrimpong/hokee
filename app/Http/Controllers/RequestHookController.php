@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class EditUserController extends Controller
+class RequestHookController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +13,7 @@ class EditUserController extends Controller
      */
     public function index()
     {
-        $title = "Edit User Info";
-        return view('admin.edituser',compact('title'));
+        //
     }
 
     /**
