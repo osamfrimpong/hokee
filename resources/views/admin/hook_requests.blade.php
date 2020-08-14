@@ -7,7 +7,7 @@
     <div class="table-agile-info">
 <div class="panel panel-default">
 <div class="panel-heading">
-  Users
+  <p><strong> Hookee Requests Made</strong></p>
 </div>
 <div class="row w3-res-tb">
   <div class="col-sm-5 m-b-xs">
@@ -62,7 +62,7 @@
         {{-- <td>Jul 1, 2013</td> --}}
         <td>
             <!-- View Request -->
-            <a href="#"><button  type="button" class="btn btn-sm btn-primary">
+            <a href="{{route('admin.viewrequest.index')}}"><button  type="button" class="btn btn-sm btn-primary">
               View
             </button></a>
           
