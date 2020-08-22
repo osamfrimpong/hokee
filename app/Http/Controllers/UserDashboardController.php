@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\UserRating;
+use App\Models\HookRequest;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -34,6 +36,18 @@ class UserDashboardController extends Controller
         $title = "RequestHook";
         $user = Auth::user();
         return view('dashboard.requesthook',compact('title','user'));
+    }
+
+    public function addrequest(Request $request){
+        $request->validate([
+            'message' => 'required|string:255',
+            'location' => 'required|string:255'
+        ]);
+        $data = $request->all();
+        $data['user_id'] = Auth::user()->id;
+        $data['request_id'] = Str::uuid();
+
+        HookRequest::create($data);
     }
 
 
