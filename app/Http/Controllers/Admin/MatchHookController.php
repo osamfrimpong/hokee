@@ -14,7 +14,8 @@ class MatchHookController extends Controller
      */
     public function index()
     {
-        //
+        $title = "Match Hook";
+        return view('admin.matchhook',compact('title'));
     }
 
     /**
