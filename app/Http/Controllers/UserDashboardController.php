@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
 use App\Models\UserRating;
 use App\Models\HookRequest;
 use Illuminate\Support\Str;
@@ -35,7 +36,8 @@ class UserDashboardController extends Controller
     public function requesthook(){
         $title = "RequestHook";
         $user = Auth::user();
-        return view('dashboard.requesthook',compact('title','user'));
+        $services = Service::all();
+        return view('dashboard.requesthook',compact('title','user','services'));
     }
 
     public function addrequest(Request $request){
@@ -44,7 +46,7 @@ class UserDashboardController extends Controller
             'location' => 'required|string:255'
         ]);
         $data = $request->all();
-        $data['user_id'] = Auth::user()->id;
+        $data['hookee'] = Auth::user()->id;
         $data['request_id'] = Str::uuid();
 
         HookRequest::create($data);

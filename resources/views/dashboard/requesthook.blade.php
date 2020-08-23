@@ -11,6 +11,7 @@
         <div class="panel-body">
         <form class="form-horizontal bucket-form" method="POST" action="{{route('user.addrequest')}}">
              @csrf
+             <input type="hidden" name="interested_in" value="{{$user->interested_in}}">
                 <div  class="form-group">
                     <label class="col-sm-3 control-label">Name</label>
                     <div class="col-sm-6">
@@ -51,10 +52,10 @@
                     <label class="col-sm-3 control-label">Interested In?</label>
                     <div class="col-sm-6">
 
-                        <select class="form-control" id="sel1" name="interested_in" required>
-                            <option value="males">Males</option>
-                            <option value="females">Females</option>
-                            <option value="both">Both</option>
+                        <select class="form-control" id="sel1" name="service_id" required>
+                            @foreach ($services as $service)
+                        <option value="{{$service->id}}">{{$service->title}}</option>
+                            @endforeach
   
                           </select>
                     </div>
