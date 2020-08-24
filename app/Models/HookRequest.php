@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class HookRequest extends Model
 {
     protected $fillable = [
-        'location', 'message', 'hookee','service_id'
+        'location', 'message', 'hookee','service_id','interested_in','request_id','hookee'
     ];
 
     public function user(){

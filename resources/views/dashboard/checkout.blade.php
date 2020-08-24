@@ -1,5 +1,4 @@
 
--->
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,61 +40,47 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<h2>Select Payment Method</h2>
 									  <ul class="resp-tabs-list">
 										  <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span><label class="pic1"></label>Credit Card</span></li>
-										  <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span><label class="pic2"></label>Mobile Money</span></li>
 										  <div class="clear"></div>
 									  </ul>	
 								</div>
 								<div class="resp-tabs-container">
-									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+									<div>
 										<div class="payment-info">
-											<h3>Personal Information</h3>
-											<form>
+											<h3>PAYMENT SUMMARY</h3>
+											<form method="POST" action="{{ route('pay') }}" id="paymentForm">
+												{{ csrf_field() }}
+@php
+$array = array('metaname' => 'size', 'metavalue' => 'big','request_id'=>$request_id);
+@endphp
+	<input type="hidden" name="amount" value="{{$service->price}}" /> 
+    <input type="hidden" name="payment_method" value="both" /> 
+	<input type="hidden" name="description" value="Hook Request - {{$service->title}}" /> 
+    <input type="hidden" name="country" value="GH" /> 
+    <input type="hidden" name="currency" value="GHS" /> 
+	<input type="hidden" name="email" value="{{$user->email}}" /> 
+    <input type="hidden" name="firstname" value="{{$user->name}}" /> 
+    <input type="hidden" name="lastname" value="{{$user->name}}" />
+    <input type="hidden" name="metadata" value="{{ json_encode($array) }}" > 
+    <input type="hidden" name="phonenumber" value="{{$user->phone}}" /> 
+
 												<div class="tab-for">				
-													<h5>EMAIL ADDRESS</h5>
-														<input type="text" value="">
-													<h5>FIRST NAME</h5>													
-														<input type="text" value="">
+													<h5>AMOUNT</h5>
+														GHS {{$service->price}}
+													<h5>SERVICE</h5>
+													{{$service->title}}						<br>
+														
+													<input type="submit" value="PROCEED" />
 												</div>			
 											</form>
-											<h3 class="pay-title">Credit Card Info</h3>
-
-
-											<form>
-												<div class="tab-for">				
-													<h5>NAME ON CARD</h5>
-														<input type="text" value="">
-													<h5>CARD NUMBER</h5>													
-														<input class="pay-logo" type="text" value="0000-0000-0000-0000" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '0000-0000-0000-0000';}" required="">
-												</div>	
-												<div class="transaction">
-													<div class="tab-form-left user-form">
-														<h5>EXPIRATION</h5>
-															<ul>
-																<li>
-																	<input type="number" class="text_box" type="text" value="6" min="1" />	
-																</li>
-																<li>
-																	<input type="number" class="text_box" type="text" value="1988" min="1" />	
-																</li>
-																
-															</ul>
-													</div>
-													<div class="tab-form-right user-form-rt">
-														<h5>CVV NUMBER</h5>													
-														<input type="text" value="xxxx" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'xxxx';}" required="">
-													</div>
-													<div class="clear"></div>
-												</div>
-												<input type="submit" value="SUBMIT">
-											</form>
-											<div class="single-bottom">
+											
+											{{-- <div class="single-bottom">
 													<ul>
 														<li>
 															<input type="checkbox"  id="brand" value="">
 															<label for="brand"><span></span>By checking this box, I agree to the Terms & Conditions & Privacy Policy.</label>
 														</li>
 													</ul>
-											</div>
+											</div> --}}
 										</div>
 									</div>
 
@@ -103,25 +88,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 									
-									<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">	
-										<div class="payment-info">
-											
-											<h3 class="pay-title">Click to pay</h3>
-											
-											
-											
-											<form>
-												<input type="submit" value="PAY">
-											</form>				
-
-										</div>	
-									</div>
 								</div>	
 							</div>
 						</div>	
 
 		</div>
-		<p class="footer">Laravel <a href="https://laravel.co/" target="_blank">w3layouts</a></p>
+		{{-- <p class="footer">Laravel <a href="https://laravel.co/" target="_blank">w3layouts</a></p> --}}
 	</div>
 </body>
 </html>
