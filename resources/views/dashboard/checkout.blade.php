@@ -61,7 +61,8 @@ $array = array('metaname' => 'size', 'metavalue' => 'big','request_id'=>$request
     <input type="hidden" name="firstname" value="{{$user->name}}" /> 
     <input type="hidden" name="lastname" value="{{$user->name}}" />
     <input type="hidden" name="metadata" value="{{ json_encode($array) }}" > 
-    <input type="hidden" name="phonenumber" value="{{$user->phone}}" /> 
+	<input type="hidden" name="phonenumber" value="{{$user->phone}}" /> 
+	<input type="hidden" name="ref" value="{{$request_id}}">
 
 												<div class="tab-for">				
 													<h5>AMOUNT</h5>

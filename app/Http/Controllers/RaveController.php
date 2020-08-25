@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Rave;
+use App\Models\Payment;
+use App\Models\HookRequest;
 use Illuminate\Http\Request;
 
 class RaveController extends Controller
@@ -25,20 +27,28 @@ class RaveController extends Controller
    */
   public function callback()
   {
+    $res_json = json_decode(request()->request->get('resp'));
+    $txref = $res_json->data->transactionobject->txRef;
+    $data = Rave::verifyTransaction($txref);
+    $chargeResponsecode = $data->data->chargecode;
+    $chargeAmount = $data->data->amount;
+    $chargeCurrency = $data->data->currency;
+    $amount = $data->data->amount;
+    $currency = "GHS";
+    $payment =  Payment::where('bill_id',$txref)->get()->first();
+    // dd($data->data);
 
-    $data = Rave::verifyTransaction(request()->txref);
-
-    dd($data);
-        // Get the transaction from your DB using the transaction reference (txref)
-        // Check if you have previously given value for the transaction. If you have, redirect to your successpage else, continue
-        // Comfirm that the transaction is successful
-        // Confirm that the chargecode is 00 or 0
-        // Confirm that the currency on your db transaction is equal to the returned currency
-        // Confirm that the db transaction amount is equal to the returned amount
-        // Update the db transaction record (includeing parameters that didn't exist before the transaction is completed. for audit purpose)
-        // Give value for the transaction
-        // Update the transaction to note that you have given value for the transaction
-        // You can also redirect to your success page from here
+    if(($chargeResponsecode == "00" || $chargeResponsecode == "0") && ($amount == $payment->amount)  && ($chargeCurrency == $currency)){
+       
+        $hook_request = HookRequest::where('request_id',$txref)->get()->first();
+        $payment->update(['status'=>1]);
+        $hook_request->update(['paid'=>1]);
+        return redirect()->route('user.home');
+      }
+      else{
+        dd("There was a problem validating your hook request payment");
+      }
+      
 
   }
 
