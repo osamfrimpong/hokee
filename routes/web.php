@@ -54,11 +54,12 @@ Route::prefix('user')->middleware('auth')->name('user.')->group(function(){
     Route::get('requesthook','UserDashboardController@requesthook')->name('requesthook');
     Route::post('addrequest','UserDashboardController@addrequest')->name('addrequest');
     Route::post('rate','UserDashboardController@rate')->name('rate');
+    Route::get('book/{request_id}','controller@function')->name('name');
 
 });
     
-Route::get('/checkouts','UserDashboardController@checkout')->name('checkout');
+// Route::get('/checkouts','UserDashboardController@checkout')->name('checkout');
 
 Route::post('/pay', 'RaveController@initialize')->name('pay');
 Route::get('/rave/callback', 'RaveController@callback')->name('callback');
-Route::get('/testpay','RaveController@testpay')->name('testpay');
+// Route::get('/testpay','RaveController@testpay')->name('testpay');

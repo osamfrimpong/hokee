@@ -36,7 +36,7 @@ class RaveController extends Controller
     $amount = $data->data->amount;
     $currency = "GHS";
     $payment =  Payment::where('bill_id',$txref)->get()->first();
-    // dd($data->data);
+
 
     if(($chargeResponsecode == "00" || $chargeResponsecode == "0") && ($amount == $payment->amount)  && ($chargeCurrency == $currency)){
        
@@ -52,8 +52,5 @@ class RaveController extends Controller
 
   }
 
-  public function testpay(){
-      $title = "Test";
-      return view('testpay',compact('title'));
-  }
+  
 }

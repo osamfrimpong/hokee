@@ -38,7 +38,7 @@ class User extends Authenticatable implements MustVerifyEmail
     ];
 
     public function hookRequests(){
-        return $this->hasMany(HookRequest::class);
+        return $this->hasMany(HookRequest::class,'id','hookee');
     }
 
     public function payments(){
