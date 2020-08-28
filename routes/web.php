@@ -54,7 +54,9 @@ Route::prefix('user')->middleware('auth')->name('user.')->group(function(){
     Route::get('requesthook','UserDashboardController@requesthook')->name('requesthook');
     Route::post('addrequest','UserDashboardController@addrequest')->name('addrequest');
     Route::post('rate','UserDashboardController@rate')->name('rate');
-    Route::get('book/{request_id}','controller@function')->name('name');
+    Route::resource('book','BookingController');
+    Route::get('bookrequest/{request_id}','BookingController@bookrequest')->name('bookrequest');
+    Route::get('booking/checkout','BookingController@checkout')->name('bookingcheckout');
 
 });
     

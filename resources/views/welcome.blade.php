@@ -303,7 +303,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="price-block agile">
 					<div class="price-gd-top ">
 						<img src="images/r4.jpg" alt=" " class="img-responsive" />
-						<a href="#"><h4>Book Now</h4></a>
+					<a href="{{route('user.bookrequest',$item->request_id)}}"><h4>Book Now</h4></a>
 					</div>
 					<div class="price-gd-bottom">
 						 <ul class="list-group list-group-flush">
@@ -327,7 +327,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="price-block agile">
 					<div class="price-gd-top ">
 						<img src="images/r4.jpg" alt=" " class="img-responsive" />
-						<a href="#"><h4>Book Now</h4></a>
+						<a href="{{route('user.bookrequest',$item->request_id)}}"><h4>Book Now</h4></a>
 					</div>
 					<div class="price-gd-bottom">
 						 <ul class="list-group list-group-flush">
@@ -416,7 +416,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 										<div class="price-selet">
 											<h3><span>&cent;</span> {{$service->price}}</h3>
-											<a href="#availability-agileits" class="scroll" >Book Now</a>
+											<a href="{{route('user.requesthook')}}" class="scroll" >Book Now</a>
 										</div>
 									</div>
 								</div>
