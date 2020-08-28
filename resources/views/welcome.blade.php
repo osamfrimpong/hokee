@@ -297,24 +297,57 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 	<h3 class="title-w3-agileits title-black-wthree">Book Hookees</h3>
 		   <div class="priceing-table-main">
-   <div class="col-md-3 price-grid wthree lost">
-	   <div class="price-block agile">
-		   <div class="price-gd-top ">
-			   <img src="images/r4.jpg" alt=" " class="img-responsive" />
-			   <a href="#"><h4>Book Now</h4></a>
-		   </div>
-		   <div class="price-gd-bottom">
-				<ul class="list-group list-group-flush">
-				  <li class="list-group-item"><strong>Age: 26</strong></li>
-				  <li class="list-group-item">Location: Adenta</li>
-				  <li class="list-group-item">Occupation: Banker</li>
-				  <li class="list-group-item">Interested in: Massage</li>
-				  <p id="hookee-message"> I am interested in a tall guy</p>
-				</ul>
-		   </div>
-	   </div>
-   </div>
-   <div class="clearfix"> </div>
+			   @if (Auth::user() && Auth::user()->paid)
+			   @forelse ($requestsforvip as $item)
+			   <div class="col-md-3 price-grid wthree lost">
+				<div class="price-block agile">
+					<div class="price-gd-top ">
+						<img src="images/r4.jpg" alt=" " class="img-responsive" />
+					<a href="{{route('user.bookrequest',$item->request_id)}}"><h4>Book Now</h4></a>
+					</div>
+					<div class="price-gd-bottom">
+						 <ul class="list-group list-group-flush">
+						   <li class="list-group-item"><strong>Age: {{$item->user->age}}</strong></li>
+						   <li class="list-group-item"><strong>Gender: {{$item->user->sex}}</strong></li>
+						   <li class="list-group-item">Location: {{$item->location}}</li>
+						   <li class="list-group-item">Occupation: {{$item->user->occupation}}</li>
+						   <li class="list-group-item">Interested in: {{$item->service->title}}</li>
+						   <p id="hookee-message"> {{$item->message}}</p>
+						 </ul>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+			   @empty
+				   
+			   @endforelse
+			   @else
+			   @forelse ($requestsfornormal as $item)
+			   <div class="col-md-3 price-grid wthree lost">
+				<div class="price-block agile">
+					<div class="price-gd-top ">
+						<img src="images/r4.jpg" alt=" " class="img-responsive" />
+						<a href="{{route('user.bookrequest',$item->request_id)}}"><h4>Book Now</h4></a>
+					</div>
+					<div class="price-gd-bottom">
+						 <ul class="list-group list-group-flush">
+						   <li class="list-group-item"><strong>Age: {{$item->user->age}}</strong></li>
+						   <li class="list-group-item"><strong>Gender: {{$item->user->sex}}</strong></li>
+						   <li class="list-group-item">Location: {{$item->location}}</li>
+						   <li class="list-group-item">Occupation: {{$item->user->occupation}}</li>
+						   <li class="list-group-item">Interested in: {{$item->service->title}}</li>
+						   <p id="hookee-message"> {{$item->message}}</p>
+						 </ul>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+			   @empty
+				   
+			   @endforelse 
+			   @endif
+			  
+   
 </div>
 </div>
 </div>
@@ -383,7 +416,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 										<div class="price-selet">
 											<h3><span>&cent;</span> {{$service->price}}</h3>
-											<a href="#availability-agileits" class="scroll" >Book Now</a>
+											<a href="{{route('user.requesthook')}}" class="scroll" >Book Now</a>
 										</div>
 									</div>
 								</div>

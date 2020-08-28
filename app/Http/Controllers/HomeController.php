@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use App\Models\Service;
 use App\Models\UserRating;
+use App\Models\HookRequest;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,6 +26,8 @@ class HomeController extends Controller
     {
         $services = Service::orderBy('title','asc')->get();
         $ratings = UserRating::where('approved',1)->orderBy('created_at','desc')->get();
-        return view('welcome',compact('services','ratings'));
+        $requestsforvip = HookRequest::where('paid',1)->get();
+        $requestsfornormal = HookRequest::where('paid',1)->where('created_at','<=',Carbon::now()->subHours(1))->get();
+        return view('welcome',compact('services','ratings','requestsforvip','requestsfornormal'));
     }
 }

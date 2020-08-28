@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Rave;
+use App\Models\Booking;
 use App\Models\Payment;
 use App\Models\HookRequest;
 use Illuminate\Http\Request;
@@ -36,24 +37,30 @@ class RaveController extends Controller
     $amount = $data->data->amount;
     $currency = "GHS";
     $payment =  Payment::where('bill_id',$txref)->get()->first();
-    // dd($data->data);
+
 
     if(($chargeResponsecode == "00" || $chargeResponsecode == "0") && ($amount == $payment->amount)  && ($chargeCurrency == $currency)){
        
+        if($payment->payment_method == 0)
+        {
         $hook_request = HookRequest::where('request_id',$txref)->get()->first();
-        $payment->update(['status'=>1]);
         $hook_request->update(['paid'=>1]);
+        }
+        elseif($payment->payment_method == 1)
+        {
+          $booking = Booking::where('booking_id',$txref)->get()->first();
+          $booking->update(['paid'=>1]);
+        }
+        $payment->update(['status'=>1]);
+        session()->flush();
         return redirect()->route('user.home');
       }
       else{
-        dd("There was a problem validating your hook request payment");
+        dd("There was a problem validating your payment");
       }
       
 
   }
 
-  public function testpay(){
-      $title = "Test";
-      return view('testpay',compact('title'));
-  }
+  
 }
