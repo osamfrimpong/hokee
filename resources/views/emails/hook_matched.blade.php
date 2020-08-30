@@ -14,7 +14,7 @@
   <div class="jumbotron">
     @if ($messageType == "requester")
     <h1>Hi {{$hookRequest->user->name}}</h1>      
-  <p>Your Hook request with ID {{$hookRequest->request_id}} has been matched to {{$booking->user->name}} with a booking ID of {{$booking->booking_id}}</p>
+  <p>Your Hook request with ID <b>{{$hookRequest->request_id}}</b> has been matched to <b>{{$booking->user->name}}</b> with a booking ID of <b>{{$booking->booking_id}}</b></p>
 
   <h4> User Details </h4>
   <ul>
@@ -23,7 +23,7 @@
   </ul>
     @else
     <h1>Hi {{$booking->user->name}}</h1>      
-    <p>Your Booking request with ID {{$booking->booking_id}} has been matched to {{$hookRequest->user->name}} with a Hook Request ID of {{$hookRequest->request_id}}</p>
+    <p>Your Booking request with ID <b>{{$booking->booking_id}}</b> has been matched to <b>{{$hookRequest->user->name}}</b> with a Hook Request ID of <b>{{$hookRequest->request_id}}</b></p>
   
     <h4> User Details </h4>
     <ul>
@@ -32,7 +32,8 @@
     </ul>
     @endif
     
-    
+    Best of Regards!<br>
+    Hookee GH
   </div>
     
 </div>
