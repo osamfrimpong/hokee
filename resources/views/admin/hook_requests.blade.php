@@ -51,7 +51,7 @@
       @forelse ($requests as $request)
       <tr>
         <td><label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label></td>
-        <td><img src="#" alt="user profile" width="35px" height="35px"></td>
+        <td><img src="{{asset(Storage::url($request->user->profile_picture))}}" alt="user profile" width="35px" height="35px"></td>
         <td>{{$request->user->name}}</td>
         <td>{{$request->user->age}}</td>
         <td>{{$request->user->sex}}</td>
@@ -62,10 +62,14 @@
         {{-- <td>Jul 1, 2013</td> --}}
         <td>
             <!-- View Request -->
-
-            <a href="{{route('admin.requests.show',$request->id)}}"><button  type="button" class="btn btn-sm btn-primary">
-              View
+            @if ($request->matched == 1)
+                Matched
+            @else
+            <a href="{{route('admin.requests.viewbooking',$request->request_id)}}"><button  type="button" class="btn btn-sm btn-primary">
+              View Bookings
             </button></a>
+            @endif
+            
           
         </td>
       </tr> 
