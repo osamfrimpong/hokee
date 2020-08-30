@@ -37,6 +37,6 @@ class HookRequestController extends Controller
             Mail::to($hookRequest->user->email)->send(new HookMatched($booking,$hookRequest,"requester"));
             Mail::to($booking->user->email)->send(new HookMatched($booking,$hookRequest,"booker"));
         }
-        return redirect()->route('admin.request.index');
+        return redirect()->route('admin.requests.index');
     }
 }
