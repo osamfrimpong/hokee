@@ -2,87 +2,41 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\Booking;
+use App\Mail\HookMatched;
 use App\Models\HookRequest;
+use App\Models\MatchedHook;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Mail;
 
 class HookRequestController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function index()
     {
         $title = "Hook Requests";
-        $requests = HookRequest::all();
+        $requests = HookRequest::where('paid',1)->orderBy('matched','asc')->get();
         return view('admin.hook_requests',compact('title','requests'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+    public function viewBooking($uuid){
+        $request = HookRequest::where('request_id',$uuid)->get()->first();
+        $bookings = Booking::where('request_id',$uuid)->where('paid',1)->where('matched',0)->get();
+        return view('admin.match_hook',compact('bookings','request'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
+    public function matchHook(Request $request){
+        $hookRequest = HookRequest::where('request_id',$request->request_id)->get()->first();
+        $booking = Booking::where('booking_id',$request->booking_id)->get()->first();
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
+        if($hookRequest->update(['matched'=>1]) && $booking->update(['matched'=>1])){
+            MatchedHook::create(['hooker'=>$hookRequest->user->id,'hookee'=>$booking->user->id,'request_id'=>$hookRequest->request_id,'booking_id'=>$booking->booking_id,'match_id'=>Str::uuid()]);
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+            Mail::to($hookRequest->user->email)->send(new HookMatched($booking,$hookRequest,"requester"));
+            Mail::to($booking->user->email)->send(new HookMatched($booking,$hookRequest,"booker"));
+        }
+        return redirect()->route('admin.request.index');
     }
 }

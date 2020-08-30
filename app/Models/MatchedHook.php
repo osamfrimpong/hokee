@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class MatchedHook extends Model
 {
     protected $fillable = [
-        'hookeer', 'hookee'
+        'hooker', 'hookee','match_id','request_id','booking_id'
     ];
 
     public function hooker(){

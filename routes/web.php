@@ -23,12 +23,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::prefix('admin')->namespace('Admin')->middleware('auth:admin')->name('admin.')->group(function(){
     Route::get('/home','AdminController@index')->name('home');
     Route::resource('services','ServicesController');
-    Route::resource('requests','HookRequestController');
-    Route::resource('matchhook','MatchHookController');
+    Route::get('requests','HookRequestController@index')->name('requests.index');
+    Route::get('requests/booking/{request_id}','HookRequestController@viewBooking')->name('requests.viewbooking');
+    Route::post('requests/match','HookRequestController@matchHook')->name('requests.matchhook');
     Route::get('payments','HookPaymentController@index')->name('payments');
-    Route::resource('messages','HookMessageController');
+    // Route::resource('messages','HookMessageController');
     Route::resource('userratings','UserRatingsController');
-
     Route::resource('users','UsersController');
 });
 
