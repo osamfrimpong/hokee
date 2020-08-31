@@ -98,15 +98,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="callbacks_container">
 				<ul class="rslides callbacks callbacks1" id="slider4">
 					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top2">
+							<div class="container">
+								<div class="agileits-banner-info">
+								<h4>Hookee</h4>
+								<h3>want luxurious vacation?</h3>
+										<p><strong>Get Hooked Up</strong></p>
+									<div class="agileits_w3layouts_more menu__item">
+											<a href="#" class="menu__link" data-toggle="modal" >Sign Up</a>
+										</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
 						<div class="w3layouts-banner-top">
 
 							<div class="container">
 								<div class="agileits-banner-info">
 								<h4>Hookee</h4>
 									<h3>Connecting People</h3>
-										<p>Who want to feel some intimacy</p>
+										<p><strong>Who want to feel some intimacy</strong></p>
 									<div class="agileits_w3layouts_more menu__item">
-				<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More</a>
+				<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >Sign Up</a>
 			</div>
 								</div>	
 							</div>
@@ -118,28 +132,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="agileits-banner-info">
 								<h4>Hookee</h4>
 									<h3>Rent a Boyfriend or Girlfriend</h3>
-										<p>Enjoy precious moment with others</p>
+										<p><strong>Enjoy precious moment with others</strong></p>
 									<div class="agileits_w3layouts_more menu__item">
-				<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More</a>
+				<a href="hookeegh.com/signup"" class="menu__link" >Sign Up</a>
 			</div>
 								</div>	
 							</div>
 						</div>
 					</li>
-					<li>
-						<div class="w3layouts-banner-top w3layouts-banner-top2">
-							<div class="container">
-								<div class="agileits-banner-info">
-								<h4>Hookee</h4>
-								<h3>want luxurious vacation?</h3>
-										<p>Get accommodation today</p>
-									<div class="agileits_w3layouts_more menu__item">
-											<a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Learn More</a>
-										</div>
-								</div>
-							</div>
-						</div>
-					</li>
+					
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -153,88 +154,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>	
 	<!-- //banner --> 
 <!--//Header-->
-<!-- //Modal1 -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-						<!-- Modal1 -->
-							<div class="modal-dialog">
-							<!-- Modal content-->
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal">&times;</button>
-										<h4>Hookee<span>GH</span></h4>
-										<img src="images/1.jpg" alt=" " class="img-responsive">
-										<h5>We know what you love</h5>
-										<p>Providing guests unique and enchanting views from their rooms with its exceptional amenities, makes Star Hotel one of bests in its kind.Try our food menu, awesome services and friendly staff while you are here.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-<!-- //Modal1 -->
-<div id="availability-agileits">
-<div class="col-md-3 book-form-left-w3layouts">
-	<h2>CHECK AVAILABILITY</h2>
-</div>
-<div class="col-md-9 book-form">
-			   <form action="#" method="post">
-					<div class="fields-w3ls form-left-agileits-w3layouts ">
-							<p>Gender</p>
-							<select class="form-control">
-								<option>Select Gender</option>
-								<option>Male</option>
-								<option>Female</option>
 
-							</select>
-					</div>
-					<div class="fields-w3ls form-date-w3-agileits">
-						        <p>Arrival Date</p>
-									<input  id="datepicker1" name="Text" type="text" value="Select Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
-								</div>
-								<div class="fields-w3ls form-date-w3-agileits">
-						        <p>Departure Date</p>
-									<input  id="datepicker2" name="Text" type="text" value="Select Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
-								</div>
-					
-					<div class=" form-left-agileits-submit">
-						  <input type="submit" value="Check Availability">
-					</div>
-				</form>
-			</div>
-			<div class="clearfix"> </div>
-</div>
 <!-- banner-bottom -->
 	<div class="banner-bottom">
 		<div class="container">	
 			<div class="agileits_banner_bottom">
-				<h3><span>Experience a good stay, enjoy fantastic offers</span> Find our friendly welcoming reception</h3>
+				<h3><span>Get Hooked Up to a male or female , enjoy fantastic services</span> Find our friendly welcoming reception</h3>
 			</div>
 			<div class="w3ls_banner_bottom_grids">
 				<ul class="cbp-ig-grid">
 					<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_road"></span>
-							<h4 class="cbp-ig-title">MASTER BEDROOMS</h4>
-							<span class="cbp-ig-category">Resort Inn</span>
-						</div>
-					</li>
-					<li>
-						<div class="w3_grid_effect">
-							<span class="cbp-ig-icon w3_cube"></span>
-							<h4 class="cbp-ig-title">SEA VIEW BALCONY</h4>
+							<h4 class="cbp-ig-title">MASSAGE</h4>
 							<span class="cbp-ig-category">Hookee GH</span>
 						</div>
 					</li>
 					<li>
 						<div class="w3_grid_effect">
-							<span class="cbp-ig-icon w3_users"></span>
-							<h4 class="cbp-ig-title">LARGE CAFE</h4>
-							<span class="cbp-ig-category">Resort Inn</span>
+							<span class="cbp-ig-icon w3_cube"></span>
+							<h4 class="cbp-ig-title">ONE NIGHT STAND</h4>
+							<span class="cbp-ig-category">Hookee GH</span>
 						</div>
 					</li>
 					<li>
 						<div class="w3_grid_effect">
-							<span class="cbp-ig-icon w3_ticket"></span>
-							<h4 class="cbp-ig-title">WIFI COVERAGE</h4>
-							<span class="cbp-ig-category">Resort Inn</span>
+							<span class="fa fa-female fa-4x"></span>
+							<h4 class="cbp-ig-title">RENT A BOYFRIEND</h4>
+							<span class="cbp-ig-category">Hookee GH</span>
+						</div>
+					</li>
+					<li>
+						<div class="w3_grid_effect">
+							<span class="fa fa-male fa-4x"></span>
+							<h4 class="cbp-ig-title">RENT A GIRLFRIEND</h4>
+							<span class="cbp-ig-category">Hookee GH</span>
 						</div>
 					</li>
 				</ul>
@@ -247,14 +201,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		  <div class="container">
 				   <div class="ab-w3l-spa">
                             <h3 class="title-w3-agileits title-black-wthree">About Hookee GH</h3> 
-						   <p class="about-para-w3ls">Hookie is a Ghanaian based</p>
+						   <p class="about-para-w3ls"> is a Ghanaian basedkie is a Ghanaian basedHookie is a Ghanaian basedHookie is a Ghanaian basedHookie is a Ghanaian basedHookie is a Ghanaian basedHookie is a Ghanaian basedHookie is a Ghanaian basedHookie is a Ghanaian based</p>
+						   <div class="btn btn-medium btn-info">
+							<a style="color: #ffffff; font-size: 15px;" href="https://hookeegh.com/about" class="menu__link" data-toggle="modal" >Read More</a>
+						</div>
 						   <img src="images/about.jpg" class="img-responsive" alt="Hair Salon">
 										<div class="w3l-slider-img">
 											<img src="images/a1.jpg" class="img-responsive" alt="Hair Salon">
 										</div>
                                        <div class="w3ls-info-about">
-										    <h4>You'll love all the amenities we offer!</h4>
-											<p>Lorem ipsum dolor sit amet, ut magna aliqua. </p>
+										    <h4> Hook up with Mature Adult Male & Females</h4>
+											<p>Feel some sexual intimacy today</p>
 										</div>
 		          </div>
 		   	<div class="clearfix"> </div>
@@ -265,12 +222,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="advantages">
 	<div class="container">
 		<div class="advantages-main">
-				<h3 class="title-w3-agileits">Our Services</h3>
+				<h3 class="title-w3-agileits">Why Choose Us</h3>
 		   <div class="advantage-bottom">
 			 <div class="col-md-6 advantage-grid left-w3ls wow bounceInLeft" data-wow-delay="0.3s">
 			 	<div class="advantage-block ">
 					<i class="fa fa-credit-card" aria-hidden="true"></i>
-			 		<h4>Stay First, Pay After! </h4>
+			 		<h4>Pay Less, Get Hooked Up! </h4>
 			 		<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
 					<p><i class="fa fa-check" aria-hidden="true"></i>Decorated room, proper air conditioned</p>
 					<p><i class="fa fa-check" aria-hidden="true"></i>Private balcony</p>
@@ -280,7 +237,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <div class="col-md-6 advantage-grid right-w3ls wow zoomIn" data-wow-delay="0.3s">
 			 	<div class="advantage-block">
 					<i class="fa fa-clock-o" aria-hidden="true"></i>
-			 		<h4>24 Hour Restaurant</h4>
+			 		<h4>24 Hour Service</h4>
 			 		<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
 					<p><i class="fa fa-check" aria-hidden="true"></i>24 hours room service</p>
 					<p><i class="fa fa-check" aria-hidden="true"></i>24-hour Concierge service</p>
@@ -530,7 +487,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </section>
 <!-- /contact -->
 			<div class="copy">
-		        <p>© 2017 Resort Inn . All Rights Reserved | Design by <a href="http://w3layouts.com/">W3layouts</a> </p>
+		        <p>© 2020 Hookee GH . All Rights Reserved | Design by <a href="https://pcbossonline.com/">PCB Technologies</a> </p>
 		    </div>
 <!--/footer -->
 <!-- js -->
@@ -588,9 +545,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  // Slideshow 4
 						  $("#slider4").responsiveSlides({
 							auto: true,
-							pager:true,
-							nav:false,
-							speed: 500,
+							timeout: 11000,
+							pager:false,
+							nav:true,
+							speed: 1500,
 							namespace: "callbacks",
 							before: function () {
 							  $('.events').append("<li>before event fired.</li>");
