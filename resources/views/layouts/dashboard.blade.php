@@ -34,7 +34,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="brand">
 
     <a href="index.html" class="logo">
-        VISITORS
+        HookeeGH
     </a>
     <div class="sidebar-toggle-box">
         <div class="fa fa-bars"></div>
@@ -283,7 +283,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </ul>
                 </li>
               
-
+                <li class="sub-menu">
+                    <a href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                                  document.getElementById('logout-form').submit();">
+            
+                        <i class="fa fa-th"></i>
+                        <span>Logout</span>
+                    </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                </li>
               
             </ul>            </div>
         <!-- sidebar menu end-->
