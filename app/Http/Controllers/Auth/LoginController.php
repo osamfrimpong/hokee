@@ -42,4 +42,6 @@ class LoginController extends Controller
         $title = "Login";
         return view('auth.new_login',compact('title'));
     }
+
+   
 }
