@@ -355,29 +355,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 <h3 class="title-w3-agileits title-black-wthree">Services And Rates</h3>
 						<div class="priceing-table-main">
 							@forelse ($services as $service)
-							<div class="col-md-3 price-grid wthree lost">
+							<div class="col-md-3 price-grid">
 								<div class="price-block agile">
-									<div class="price-gd-top ">
+									<div class="price-gd-top">
 									<img src="{{asset(Storage::url($service->picture))}}" alt=" " class="img-responsive" />
 										<h4>{{$service->title}}</h4>
 									</div>
 									<div class="price-gd-bottom">
-										<div class="price-list">
-											<ul>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-												<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-											</ul>
+										   <div class="price-list">
+												<ul>
+														<li><i class="fa fa-star" aria-hidden="true"></i></li>
+														<li><i class="fa fa-star" aria-hidden="true"></i></li>
+														<li><i class="fa fa-star" aria-hidden="true"></i></li>
+														<li><i class="fa fa-star" aria-hidden="true"></i></li>
+														<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+												
+												 </ul>
 										</div>
-										<div class="price-selet">
-											<h3><span>&cent;</span> {{$service->price}}</h3>
+										<div class="price-selet">	
+											<h3><span>&cent;</span>{{$service->price}}</h3>						
 											<a href="{{route('user.requesthook')}}" class="scroll" >Book Now</a>
 										</div>
 									</div>
 								</div>
 							</div>
+			
+
+
+
+
 							<div class="clearfix"> </div>
 							@empty
 								
