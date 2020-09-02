@@ -6,7 +6,10 @@ use Rave;
 use App\Models\Booking;
 use App\Models\Payment;
 use App\Models\HookRequest;
+use Illuminate\Support\Str;
+use App\Models\Notification;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class RaveController extends Controller
 {
@@ -45,13 +48,16 @@ class RaveController extends Controller
         {
         $hook_request = HookRequest::where('request_id',$txref)->get()->first();
         $hook_request->update(['paid'=>1]);
+        Notification::create(['user_id'=>Auth::user()->id,'message'=>'Made Hook Request','notification_id'=>Str::uuid()]);
         }
         elseif($payment->payment_method == 1)
         {
           $booking = Booking::where('booking_id',$txref)->get()->first();
           $booking->update(['paid'=>1]);
+          Notification::create(['user_id'=>Auth::user()->id,'message'=>'Made Booking','notification_id'=>Str::uuid()]);
         }
         $payment->update(['status'=>1]);
+        Notification::create(['user_id'=>Auth::user()->id,'message'=>'Made Payment','notification_id'=>Str::uuid()]);
         session()->flush();
         return redirect()->route('user.home');
       }

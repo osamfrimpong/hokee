@@ -70,6 +70,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        Notification::create(['user_id'=>Auth::user()->id,'message'=>'Made Payment','notification_id'=>Str::uuid()]);
         return  User::create([
             'name' => $data['name'],
             'email' => $data['email'],
