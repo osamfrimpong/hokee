@@ -58,10 +58,10 @@ class UserDashboardController extends Controller
 
         $service = Service::findOrFail($request->service_id);
 
-        // DB::transaction(function(){
+        
         HookRequest::create($data);
         Payment::create(['amount'=>$service->price,'user_id'=>Auth::user()->id,'bill_id'=>$data['request_id'],'payment_type'=>0,'payment_method'=>'rave']);
-        // });
+      
         
 
         session(['service'=>$service,'request_id'=>$data['request_id']]);
