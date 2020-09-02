@@ -42,18 +42,13 @@
                 Change Basic Information
             </header>
             <div class="panel-body">
-                <form class="form-horizontal bucket-form" method="get">
+                <form class="form-horizontal bucket-form" method="post">
+                   
                     <div class="form-group">
-                        <label class="col-sm-3 control-label">First Name</label>
+                        <label class="col-sm-3 control-label">Full Name</label>
                         <div class="col-sm-6">
-                            <input type="text" name="FirstName" class="form-control">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 control-label">Last Name</label>
-                        <div class="col-sm-6">
-                            <input type="text" name="LastName" class="form-control">
-                            <span class="help-block">Use a combination of letters, numbers & symbols for a strong password</span>
+                            <input type="text" name="name" class="form-control" value="{{$user->name}}" required>
+                            
                         </div>
                     </div>
                     <div class="form-group">
@@ -77,26 +72,25 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label">Email</label>
                         <div class="col-sm-6">
-                            <input class="form-control"  type="text" placeholder="info@example.com" disabled="">
+                            <input class="form-control"  type="email" value="{{$user->email}}" name="email" disabled="" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 control-label">Telephone Number</label>
                         <div class="col-sm-6">
-                            <input type="number" class="form-control" placeholder="placeholder">
+                        <input type="tel" class="form-control"  name="phone" value="{{$user->phone}}" required>
                         </div>
                     </div>
                     <div class="form-group  ">
                         <label class="col-sm-3">Select Occupation</label>
-                        <select class="col-sm-6 form-control">
-                            <option>Banker</option>
-
+                        <select class="col-sm-6 form-control" name="occupation" required>
+                            <option value="banker">Banker</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <div class="col-lg-offset-2 col-lg-10">
                             <button type="submit" name="update" class="btn btn-info">Update</button>
-                            <button type="submit" class="btn btn-danger">Cancel</button>
+                           
 
                         </div>
                     </div>
