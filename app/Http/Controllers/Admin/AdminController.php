@@ -7,6 +7,7 @@ use App\User;
 use App\Models\Payment;
 use App\Models\Service;
 use App\Models\HookRequest;
+use App\Models\Notification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
@@ -21,7 +22,8 @@ class AdminController extends Controller
        
         $vipcount = User::where('paid',1)->get()->count();
         $regularcount = User::where('paid',0)->get()->count();
-        return view('admin.home',compact('title','requests','regularcount','vipcount','services','sales'));
+        $notification = Notification::orderBy('created_at','desc')->get()->first();
+        return view('admin.home',compact('title','requests','regularcount','vipcount','services','sales','notification'));
     }
 
    
