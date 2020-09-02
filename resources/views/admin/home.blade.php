@@ -73,11 +73,9 @@
                         <div class="notification-info">
                             <ul class="clearfix notification-meta">
                             <li class="pull-left notification-sender"><span><a href="#">{{$notification->user->name}}</a></span> {{$notification->message}} </li>
-                                <li class="pull-right notification-time">1 min ago</li>
+                                <li class="pull-right notification-time">{{$notification->created_at->diffForHumans()}}</li>
                             </ul>
-                            <p>
-                                Urgent meeting for next proposal
-                            </p>
+                            
                         </div>
                     </div>
 
