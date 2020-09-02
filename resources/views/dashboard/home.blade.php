@@ -3,7 +3,9 @@
 @section('contents')
 
 	<section class="wrapper">
-		<!-- //market-->
+		<button class="btn-info btn-small">Hello Name of User</button>
+
+			<!-- //market-->
 		<div class="market-updates">
 			<div class="col-lg-2 market-update-gd">
 				<div class="market-update-block clr-block-2">
