@@ -58,7 +58,8 @@
     <!-- //market-->
 
     <div class="agil-info-calendar">
-    
+    @if (!is_null($notification))
+        
     <div class="col-md-6 w3agile-notifications">
         <div class="notifications">
             <!--notification start-->
@@ -71,12 +72,10 @@
                         <span class="alert-icon"><i class="fa fa-envelope-o"></i></span>
                         <div class="notification-info">
                             <ul class="clearfix notification-meta">
-                                <li class="pull-left notification-sender"><span><a href="#">Jonathan Smith</a></span> Registered </li>
-                                <li class="pull-right notification-time">1 min ago</li>
+                            <li class="pull-left notification-sender"><span><a href="#">{{$notification->user->name}}</a></span> {{$notification->message}} </li>
+                                <li class="pull-right notification-time">{{$notification->created_at->diffForHumans()}}</li>
                             </ul>
-                            <p>
-                                Urgent meeting for next proposal
-                            </p>
+                            
                         </div>
                     </div>
 
@@ -86,6 +85,7 @@
             <!--notification end-->
             </div>
         </div>
+        @endif
         <div class="clearfix"> </div>
     </div>
 
