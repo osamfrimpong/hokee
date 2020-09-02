@@ -10,7 +10,7 @@
 					
 					 <div class="col-md-8 market-update-left">
 					 <h4>Requests Made</h4>
-					<h3>5</h3>
+					<h3>{{$totalRequests}}</h3>
 				  </div>
 				  <div class="clearfix"> </div>
 				</div>
@@ -22,7 +22,7 @@
 					</div>
 					<div class="col-md-8 market-update-left">
 					<h4>Expired</h4>
-						<h3>5</h3>
+					<h3>{{$matchedRequests}}</h3>
 					</div>
 				  <div class="clearfix"> </div>
 				</div>

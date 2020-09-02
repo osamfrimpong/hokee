@@ -16,7 +16,9 @@ class UserDashboardController extends Controller
    
     public function index(){
         $title = "Home";
-        return view('dashboard.home',compact('title'));
+        $totalRequests = HookRequest::where('hookee',Auth::user()->id)->where('paid',1)->get()->count();
+        $matchedRequests = HookRequest::where('hookee',Auth::user()->id)->where('paid',1)->where('matched',1)->get()->count();
+        return view('dashboard.home',compact('title','totalRequests','matchedRequests'));
     }
 
     public function checkout(){
