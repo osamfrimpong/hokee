@@ -8,6 +8,12 @@ use App\Models\UserRating;
 use App\Models\HookRequest;
 use Illuminate\Http\Request;
 
+public function about() {
+
+    return view('about');
+
+}
+
 class HomeController extends Controller
 {
     /**

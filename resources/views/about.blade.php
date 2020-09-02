@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>{{config('app.name')}} - Home</title>
+<title>{{config('app.name')}} - About Us</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -361,7 +361,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="col-md-3 price-grid">
 								<div class="price-block agile">
 									<div class="price-gd-top">
-									<img src="{{asset(Storage::url($service->picture))}}" width="250px" height="250px" alt=" " class="img-responsive" />
+									<img src="{{asset(Storage::url($service->picture))}}" alt=" " class="img-responsive" />
 										<h4>{{$service->title}}</h4>
 									</div>
 									<div class="price-gd-bottom">

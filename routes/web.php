@@ -19,6 +19,7 @@ Route::get('/', 'HomeController@index');
 Auth::routes(['verify'=>true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/about',' HomeController@about')->name('about');
 
 Route::prefix('admin')->namespace('Admin')->middleware('auth:admin')->name('admin.')->group(function(){
     Route::get('/home','AdminController@index')->name('home');
