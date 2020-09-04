@@ -33,7 +33,40 @@
                             </div>
                         </div>
                     </section>
-
+                    <section class="panel">
+                        <header class="panel-heading">
+                            Add Locations
+                        </header>
+                        <div class="panel-body">
+                            <div class="position-center">
+                            <form role="form" method="POST" enctype="multipart/form-data" action="">
+                                @csrf
+                                <div class="form-group">
+                                    <label for="">City or Major Town</label>
+                                    <input type="text" name="title" class="form-control" id="" placeholder="" required>
+                                </div>
+                                <button type="submit" class="btn btn-info">Submit</button>
+                            </form>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="panel">
+                        <header class="panel-heading">
+                            Add Occupations
+                        </header>
+                        <div class="panel-body">
+                            <div class="position-center">
+                            <form role="form" method="POST" enctype="multipart/form-data" action="">
+                                @csrf
+                                <div class="form-group">
+                                    <label for="">Name of Occupation</label>
+                                    <input type="text" name="title" class="form-control" id="" placeholder="" required>
+                                </div>
+                                <button type="submit" class="btn btn-info">Submit</button>
+                            </form>
+                            </div>
+                        </div>
+                    </section>
             </div>
         
         </div>
@@ -45,4 +78,5 @@
         <!-- page end-->
         </div>
 </section>
+
 @endsection
