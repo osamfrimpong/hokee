@@ -58,6 +58,7 @@ Route::prefix('user')->middleware('auth')->name('user.')->group(function(){
     Route::resource('book','BookingController');
     Route::get('bookrequest/{request_id}','BookingController@bookrequest')->name('bookrequest');
     Route::get('booking/checkout','BookingController@checkout')->name('bookingcheckout');
+    Route::get('request/view/{request_id}','UserDashboardController@viewRequest')->name('viewrequest');
 
 });
     

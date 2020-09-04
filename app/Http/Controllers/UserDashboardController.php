@@ -6,6 +6,7 @@ use App\Models\Payment;
 use App\Models\Service;
 use App\Models\UserRating;
 use App\Models\HookRequest;
+use App\Models\MatchedHook;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -16,10 +17,16 @@ class UserDashboardController extends Controller
    
     public function index(){
         $title = "Home";
-        $totalRequests = HookRequest::where('hookee',Auth::user()->id)->where('paid',1)->get()->count();
-        $matchedRequests = HookRequest::where('hookee',Auth::user()->id)->where('paid',1)->where('matched',1)->get()->count();
-        return view('dashboard.home',compact('title','totalRequests','matchedRequests'));
+        $user = Auth::user();
+        $totalRequests = HookRequest::where('hookee',$user->id)->where('paid',1)->get()->count();
+        $matchedRequests = HookRequest::where('hookee',$user->id)->where('paid',1)->where('matched',1)->get()->count();
+        $matchedHooks = MatchedHook::where('hooker',$user->id)->with('owner')->with('booker')->orWhere('hookee',$user->id)->orderBy('id','desc')->get()->take(10);
+
+        // dd($matchedHooks);
+
+        return view('dashboard.home',compact('title','totalRequests','matchedRequests','user','matchedHooks'));
     }
+    
 
     public function checkout(){
         $title = "Checkout";
@@ -78,5 +85,10 @@ class UserDashboardController extends Controller
         UserRating::create(['message'=>$request->message,'user_id'=>Auth::user()->id]);
 
         return redirect()->route('user.ratings');
+    }
+
+    public function viewRequest($request_id){
+        $hookRequest = HookRequest::where('request_id',$request_id)->get()->first();
+        return view('dashboard.viewrequest',compact('hookRequest'));
     }
 }
