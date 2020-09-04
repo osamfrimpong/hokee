@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Payment;
 use App\Models\Service;
+use App\Models\Location;
 use App\Models\UserRating;
 use App\Models\HookRequest;
 use App\Models\MatchedHook;
@@ -51,7 +52,8 @@ class UserDashboardController extends Controller
         $title = "RequestHook";
         $user = Auth::user();
         $services = Service::all();
-        return view('dashboard.requesthook',compact('title','user','services'));
+        $locations = Location::all();
+        return view('dashboard.requesthook',compact('title','user','services','locations'));
     }
 
     public function addrequest(Request $request){

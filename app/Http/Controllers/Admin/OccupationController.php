@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\Location;
+use App\Models\Occupation;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class LocationController extends Controller
+class OccupationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -36,7 +36,7 @@ class LocationController extends Controller
      */
     public function store(Request $request)
     {
-        Location::create($request->all());
+        Occupation::create($request->all());
         return redirect()->route('admin.services.index');
     }
 

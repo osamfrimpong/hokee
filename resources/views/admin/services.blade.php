@@ -39,11 +39,11 @@
                         </header>
                         <div class="panel-body">
                             <div class="position-center">
-                            <form role="form" method="POST" enctype="multipart/form-data" action="">
+                            <form role="form" method="POST" enctype="multipart/form-data" action="{{route('admin.locations.store')}}">
                                 @csrf
                                 <div class="form-group">
                                     <label for="">City or Major Town</label>
-                                    <input type="text" name="title" class="form-control" id="" placeholder="" required>
+                                    <input type="text" name="name" class="form-control" id="" placeholder="" required>
                                 </div>
                                 <button type="submit" class="btn btn-info">Submit</button>
                             </form>
@@ -56,11 +56,11 @@
                         </header>
                         <div class="panel-body">
                             <div class="position-center">
-                            <form role="form" method="POST" enctype="multipart/form-data" action="">
+                            <form role="form" method="POST" enctype="multipart/form-data" action="{{route('admin.occupations.store')}}">
                                 @csrf
                                 <div class="form-group">
                                     <label for="">Name of Occupation</label>
-                                    <input type="text" name="title" class="form-control" id="" placeholder="" required>
+                                    <input type="text" name="name" class="form-control" id="" placeholder="" required>
                                 </div>
                                 <button type="submit" class="btn btn-info">Submit</button>
                             </form>
