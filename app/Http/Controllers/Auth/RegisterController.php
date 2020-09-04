@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Models\Occupation;
 use Illuminate\Support\Str;
 use App\Models\Notification;
 use App\Http\Controllers\Controller;
@@ -94,7 +95,8 @@ class RegisterController extends Controller
 
     public function showRegistrationForm(){
         $title = "Register";
-        return view('auth.new_signup',compact('title'));
+        $occupations = Occupation::all();
+        return view('auth.new_signup',compact('title','occupations'));
     }
 
     public function uploadProfileImage(){

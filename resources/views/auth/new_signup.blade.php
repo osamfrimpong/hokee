@@ -46,8 +46,9 @@
 				 <div class="form-group form-left-w3l ">
 						<label class="form-check-label" for="sel1">Occupation</label>
 						<select class="form-control" id="sel1" name="occupation" required>
-						  <option value="banker">Banker</option>
-						  <option value="doctor">Doctor</option>
+						  @foreach ($occupations as $occupation)
+							  <option value="{{$occupation->name}}">{{$occupation->name}}</option>
+						  @endforeach
 
 						</select>
 					  </div> 
