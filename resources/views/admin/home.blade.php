@@ -57,6 +57,7 @@
     </div>	
     <!-- //market-->
 
+    
     <div class="agil-info-calendar">
     @if (!is_null($notification))
         
