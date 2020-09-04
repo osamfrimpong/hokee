@@ -37,11 +37,7 @@ class UserDashboardController extends Controller
        return view('dashboard.checkout',compact('title','service','request_id','user'));
     }
 
-    public function userprofile(){
-        $title = "UserProfile";
-        $user = Auth::user();
-        return view('dashboard.userprofile',compact('title','user'));
-    }
+   
     public function ratings(){
         $title = "Ratings";
         $user = Auth::user();
@@ -93,4 +89,6 @@ class UserDashboardController extends Controller
         $hookRequest = HookRequest::where('request_id',$request_id)->get()->first();
         return view('dashboard.viewrequest',compact('hookRequest'));
     }
+
+    
 }

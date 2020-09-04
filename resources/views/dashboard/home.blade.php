@@ -33,7 +33,7 @@
 		<section class="panel">
 			<div class="panel-body">
 				<button class="btn btn-info btn-large btn-compose">
-				<a href="mail_compose.html">
+				<a href="{{route('user.upgrade')}}">
 					<strong>UPGRADE TO VIP</strong>
 				</a>
 				</button>

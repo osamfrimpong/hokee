@@ -6,42 +6,6 @@
 	<div class="form-w3layouts">
         <!-- page start-->  
                     <!--change profile picture-->
-                    <section class="wrapper">
-                        <div class="form-w3layouts">
-                        <!-- page start-->
-                
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <section class="panel">
-                                    <header class="panel-heading">
-                                        Dropzone
-                                        <span class="tools pull-right">
-                                            <a href="javascript:;" class="fa fa-chevron-down"></a>
-                                            <a href="javascript:;" class="fa fa-cog"></a>
-                                            <a href="javascript:;" class="fa fa-times"></a>
-                                         </span>
-                                    </header>
-                                    <div class="panel-body">
-                                        <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
-                                            <div id="drop">
-                                                Drop Here
-                
-                                                <a>Browse</a>
-                                                <input type="file" name="upl" multiple="">
-                                            </div>
-                
-                                            <ul>
-                                                <!-- The file uploads will be shown here -->
-                                            </ul>
-                
-                                        </form>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                        <!-- page end-->
-                        </div>
-                </section>
 
         <div class="col-lg-12">
         <section class="panel">
@@ -49,8 +13,8 @@
                 Change Basic Information
             </header>
             <div class="panel-body">
-                <form class="form-horizontal bucket-form" method="post">
-                   
+            <form class="form-horizontal bucket-form" method="post" action="{{route('user.updateprofile')}}" enctype="multipart/form-data">
+                   @csrf
                     <div class="form-group">
                         <label class="col-sm-3 control-label">Full Name</label>
                         <div class="col-sm-6">
@@ -61,19 +25,19 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label">Current Password</label>
                         <div class="col-sm-6">
-                            <input type="text" name="CurrentPassword" class="form-control round-input">
+                            <input type="password" name="old_password" class="form-control round-input">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 control-label">New Password</label>
                         <div class="col-sm-6">
-                            <input class="form-control" name="password" type="text" value="">
+                            <input class="form-control" name="new_password" type="password" value="">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 control-label">Repeat Password</label>
                         <div class="col-sm-6">
-                            <input class="form-control" name="password" type="text" value="">
+                            <input class="form-control" name="new_password_confirmation" type="password">
                         </div>
                     </div>
                     <div class="form-group">
@@ -88,11 +52,22 @@
                         <input type="tel" class="form-control"  name="phone" value="{{$user->phone}}" required>
                         </div>
                     </div>
-                    <div class="form-group  ">
-                        <label class="col-sm-3">Select Occupation</label>
-                        <select class="col-sm-6 form-control" name="occupation" required>
-                            <option value="banker">Banker</option>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Select Occupation</label>
+                        <div class="col-sm-6">
+                        <select class="form-control" name="occupation" required>
+                            @foreach ($occupations as $occupation)
+                            <option value="{{$occupation->name}}" {{$user->occupation == $occupation->name ? 'selected' : ''}}>{{$occupation->name}}</option>
+                            @endforeach
+                           
                         </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Profile Picture</label>
+                        <div class="col-sm-6">
+                        <input type="file" class="form-control"  name="profile_image">
+                        </div>
                     </div>
                     <div class="form-group">
                         <div class="col-lg-offset-2 col-lg-10">
