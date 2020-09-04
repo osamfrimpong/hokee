@@ -93,4 +93,6 @@ class UserDashboardController extends Controller
         $hookRequest = HookRequest::where('request_id',$request_id)->get()->first();
         return view('dashboard.viewrequest',compact('hookRequest'));
     }
+
+    
 }

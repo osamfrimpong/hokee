@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Payment;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class UserProfileController extends Controller
 {
@@ -81,5 +85,20 @@ class UserProfileController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function upgradeAccount(){
+        $bill_id = Str::uuid();
+        Payment::create(['amount'=>10,'user_id'=>Auth::user()->id,'bill_id'=>$bill_id,'payment_type'=>2,'payment_method'=>'rave']);
+        session(['amount'=>10,'bill_id'=>$bill_id]);
+        return redirect()->route('user.upgradecheckout');
+    }
+
+    public function checkout(){
+        $title = "Checkout";
+        $amount = session('amount');
+        $bill_id = session('bill_id');
+        $user = Auth::user();
+       return view('dashboard.upgradecheckout',compact('title','amount','bill_id','user'));
     }
 }

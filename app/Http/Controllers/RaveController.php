@@ -56,6 +56,11 @@ class RaveController extends Controller
           $booking->update(['paid'=>1]);
           Notification::create(['user_id'=>Auth::user()->id,'message'=>'Made Booking','notification_id'=>Str::uuid()]);
         }
+        elseif($payment->payment_method == 2){
+          $user = User::findOrFail(Auth::user()->id);
+          $user->update(['paid'=>1]);
+          Notification::create(['user_id'=>Auth::user()->id,'message'=>'Upgraded Account to VIP','notification_id'=>Str::uuid()]);
+        }
         $payment->update(['status'=>1]);
         Notification::create(['user_id'=>Auth::user()->id,'message'=>'Made Payment','notification_id'=>Str::uuid()]);
         session()->flush();

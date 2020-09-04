@@ -43,15 +43,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <header class="header fixed-top clearfix">
 <!--logo start-->
 <div class="brand">
-    <a href="index.html" class="logo">
-        VISITORS
+    <a href="{{route('admin.home')}}" class="logo">
+        HOOKEEGH
     </a>
     <div class="sidebar-toggle-box">
         <div class="fa fa-bars"></div>
     </div>
 </div>
 <!--logo end-->
-<div class="nav notify-row" id="top_menu">
+{{-- <div class="nav notify-row" id="top_menu">
     <!--  notification start -->
     <ul class="nav top-menu">
         <!-- settings start -->
@@ -252,7 +252,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
        
     </ul>
     <!--search & user info end-->
-</div>
+</div> --}}
 </header>
 <!--header end-->
 <!--sidebar start-->
