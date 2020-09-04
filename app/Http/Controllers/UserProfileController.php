@@ -2,89 +2,59 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use App\Models\Payment;
+use App\Models\Occupation;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 
 class UserProfileController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function index()
     {
-        $title = "User Profile";
-        return view('dashboard.userprofile',compact('title'));
+        $title = "UserProfile";
+        $user = Auth::user();
+        $occupations = Occupation::all();
+        return view('dashboard.userprofile',compact('title','user','occupations'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+    public function update(Request $request){
+        $user = User::findOrFail(Auth::user()->id);
+        $data = $request->all();
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'occupation' => 'required|string',
+            'phone' => 'required|string'
+        ]);
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
+        
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
+        if($request->has('old_password') || $request->has('new_password') || $request->has('new_password_confirm')){
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
+            $request->validate(['new_password' => 'required|string|min:8|confirmed']);
+            $request->validate(['old_password' => 'required|string|min:8']);
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
+           if(Hash::check($request->old_password,$user->password))
+           {
+            $data['password'] = Hash::make($request->new_password);
+           }
+           
+        }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+        if($request->hasFile('profile_image')){
+           $request->validate(['profile_image' => 'required|image']);
+           $data['profile_picture'] =  $request->file('profile_image')->store('public/profiles');
+           $this->deleteImage($user->profile_picture);
+        }
+
+       
+        $user->update($data);
+
     }
 
     public function upgradeAccount(){
@@ -101,4 +71,9 @@ class UserProfileController extends Controller
         $user = Auth::user();
        return view('dashboard.upgradecheckout',compact('title','amount','bill_id','user'));
     }
+
+   public function deleteImage($imageUrl){
+    Storage::disk('local')->delete($imageUrl);
+   }
+    
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\User;
+use App\Models\Occupation;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -61,8 +62,9 @@ class UsersController extends Controller
     public function edit(User $user)
     {
         $title = "Edit User Info";
+        $occupations = Occupation::all();
         
-        return view('admin.edituser',compact('title','user'));
+        return view('admin.edituser',compact('title','user','occupations'));
     }
 
     /**

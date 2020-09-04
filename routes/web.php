@@ -52,7 +52,8 @@ Route::post('register', 'RegisterController@register')->name('register');
 Route::prefix('user')->middleware('auth')->name('user.')->group(function(){
     Route::get('/home','UserDashboardController@index')->name('home');
     Route::get('/checkouts','UserDashboardController@checkout')->name('checkout');
-    Route::get('userprofile','UserDashboardController@userprofile')->name('userprofile');
+    Route::get('userprofile','UserProfileController@index')->name('userprofile');
+    Route::post('updateprofile','UserProfileController@update')->name('updateprofile');
     Route::get('upgrade','UserProfileController@upgradeAccount')->name('upgrade');
     Route::get('upgrade/checkout','UserProfileController@checkout')->name('upgradecheckout');
     Route::get('ratings','UserDashboardController@ratings')->name('ratings');
