@@ -17,8 +17,8 @@ class CreateLocationsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name')->unique();
-            $table->string('region');
-            $table->unique(['name','region']);
+            // $table->string('region');
+            // $table->unique(['name','region']);
         });
     }
 

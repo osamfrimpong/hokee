@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
+use App\Models\Location;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class LocationController extends Controller
 {
@@ -35,7 +36,8 @@ class LocationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Location::create($request->all());
+        return redirect()->route('admin.services.index');
     }
 
     /**
