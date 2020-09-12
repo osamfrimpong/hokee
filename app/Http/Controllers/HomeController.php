@@ -41,4 +41,31 @@ class HomeController extends Controller
         return view('about',compact('services','ratings','requestsforvip','requestsfornormal'));
     
     }
+    public function hotels() {
+
+        $services = Service::orderBy('title','asc')->get();
+        $ratings = UserRating::where('approved',1)->orderBy('created_at','desc')->get();
+        $requestsforvip = HookRequest::where('paid',1)->get();
+        $requestsfornormal = HookRequest::where('paid',1)->where('created_at','<=',Carbon::now()->subHours(1))->get();
+        return view('hotels',compact('services','ratings','requestsforvip','requestsfornormal'));
+    
+    }
+    public function enhancers() {
+
+        $services = Service::orderBy('title','asc')->get();
+        $ratings = UserRating::where('approved',1)->orderBy('created_at','desc')->get();
+        $requestsforvip = HookRequest::where('paid',1)->get();
+        $requestsfornormal = HookRequest::where('paid',1)->where('created_at','<=',Carbon::now()->subHours(1))->get();
+        return view('enhancers',compact('services','ratings','requestsforvip','requestsfornormal'));
+    
+    }
+    public function contactUs() {
+
+        $services = Service::orderBy('title','asc')->get();
+        $ratings = UserRating::where('approved',1)->orderBy('created_at','desc')->get();
+        $requestsforvip = HookRequest::where('paid',1)->get();
+        $requestsfornormal = HookRequest::where('paid',1)->where('created_at','<=',Carbon::now()->subHours(1))->get();
+        return view('contactUs',compact('services','ratings','requestsforvip','requestsfornormal'));
+    
+    }
 }
