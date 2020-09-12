@@ -43,8 +43,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="contact-bnr-w3-agile">
 				<ul>
-					<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">INFO@EXAMPLE.COM</a></li>
-					<li><i class="fa fa-phone" aria-hidden="true"></i>+1 (100)222-23-33</li>	
+					<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:hookeegh@gmail.com">hookeegh@gmail.com</a></li>
+					<li><i class="fa fa-phone" aria-hidden="true"></i>+233 200 000 000</li>	
 					<li class="s-bar">
 						<div class="search">
 							<input class="search_box" type="checkbox" id="search_box">
@@ -71,18 +71,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<h1><a class="navbar-brand" href="index.html">Hookee <span>GH</span><p class="logo_w3l_agile_caption">Feel Some Intimacy</p></a></h1>
+					<h1><a class="navbar-brand" href="#"><p class="logo_w3l_agile_caption">Feel Some Intimacy</p></a></h1>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="menu menu--iris">
 						<ul class="nav navbar-nav menu__list">
-							<li class="menu__item menu__item--current"><a href="index.html" class="menu__link">Home</a></li>
-							<li class="menu__item"><a href="#about" class="menu__link scroll">About</a></li>
-							<li class="menu__item"><a href="#team" class="menu__link scroll">Team</a></li>
-							<li class="menu__item"><a href="#gallery" class="menu__link scroll">Gallery</a></li>
-							<li class="menu__item"><a href="#rooms" class="menu__link scroll">Rooms</a></li>
-							<li class="menu__item"><a href="#contact" class="menu__link scroll">Contact Us</a></li>
+							<li class=""><a href="{{route('home')}}" class="">Home</a></li>
+							<li class=""><a href="{{route('about')}}" class="">About</a></li>
+							<li class=""><a href="{{route('hotels')}}" class="">Partner Hotels</a></li>
+							<li class=""><a href="{{route('enhancers')}}" class="">Sexual Enhancers</a></li>
+							<li class=""><a href="{{route('contactUs')}}" class="">Contact Us</a></li>
+
 						</ul>
 					</nav>
 				</div>
@@ -101,7 +101,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="w3layouts-banner-top w3layouts-banner-top2">
 							<div class="container">
 								<div class="agileits-banner-info">
-								<h4>Hookee</h4>
+								<h4 style="font-style: Brush Script MT">Hookee</h4>
 								<h3>want luxurious vacation?</h3>
 										<p><strong>Get Hooked Up</strong></p>
 									<div class="agileits_w3layouts_more menu__item">
@@ -478,8 +478,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
 			<h4>Connect With Us</h4>
 			<p class="contact-agile1"><strong>Phone :</strong> +1 (100)222-23-33</p>
-			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:name@example.com">info@example.com</a></p>
-			<p class="contact-agile1"><strong>Address :</strong> Interstate 81 SB, Williamsport, WV 25419, USA.</p>
+			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:hookeegh@gmail.com">hookeegh@gmail.com</a></p>
 																
 			<div class="social-bnr-agileits footer-icons-agileinfo">
 				<ul class="social-icons3">
@@ -489,7 +488,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
 							</ul>
 			</div>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3074.7905052320443!2d-77.84987248482734!3d39.586871613613056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c9f6a80ccf0661%3A0x7210426c67abc40!2sVirginia+Welcome+Center%2FSafety+Rest+Area!5e0!3m2!1sen!2sin!4v1485760915662" ></iframe>
 		</div>
 		<div class="clearfix"></div>
 	</div>
