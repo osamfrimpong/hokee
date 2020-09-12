@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>{{config('app.name')}} - Contact Us</title>
+<title>{{config('app.name')}} - About Us</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -496,7 +496,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </section>
 <!-- /contact -->
 			<div class="copy">
-		        <p>© 2020 Hookee GH . All Rights Reserved | Design by <a href="https://pcbossonline.com/">PCB Technologies</a> </p>
+		        <p>© 2020 Hookee GH . All Rights Reserved </p>
 		    </div>
 <!--/footer -->
 <!-- js -->
