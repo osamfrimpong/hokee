@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>{{config('app.name')}} - Home</title>
+<title>{{config('app.name')}} - Contact Us</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -92,66 +92,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 <!-- //header -->
 		<!-- banner -->
-	<div id="home" class="w3ls-banner">
-		<!-- banner-text -->
-		<div class="slider">
-			<div class="callbacks_container">
-				<ul class="rslides callbacks callbacks1" id="slider4">
-					<li>
-						<div class="w3layouts-banner-top w3layouts-banner-top2">
-							<div class="container">
-								<div class="agileits-banner-info">
-								<h4>Hookee</h4>
-								<h3>want luxurious vacation?</h3>
-										<p><strong>Get Hooked Up</strong></p>
-									<div class="agileits_w3layouts_more menu__item">
-											<a href="#" class="menu__link" data-toggle="modal" >Sign Up</a>
-										</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3layouts-banner-top">
-
-							<div class="container">
-								<div class="agileits-banner-info">
-								<h4>Hookee</h4>
-									<h3>Connecting People</h3>
-										<p><strong>Who want to feel some intimacy</strong></p>
-									<div class="agileits_w3layouts_more menu__item">
-				<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >Sign Up</a>
-			</div>
-								</div>	
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="w3layouts-banner-top w3layouts-banner-top1">
-							<div class="container">
-								<div class="agileits-banner-info">
-								<h4>Hookee</h4>
-									<h3>Rent a Boyfriend or Girlfriend</h3>
-										<p><strong>Enjoy precious moment with others</strong></p>
-									<div class="agileits_w3layouts_more menu__item">
-				<a href="hookeegh.com/signup"" class="menu__link" >Sign Up</a>
-			</div>
-								</div>	
-							</div>
-						</div>
-					</li>
-					
-				</ul>
-			</div>
-			<div class="clearfix"> </div>
-			<!--banner Slider starts Here-->
-		</div>
-		    <div class="thim-click-to-bottom">
-				<a href="#about" class="scroll">
-					<i class="fa fa-long-arrow-down" aria-hidden="true"></i>
-				</a>
-			</div>
-	</div>	
+	
 	<!-- //banner --> 
 <!--//Header-->
 
@@ -159,7 +100,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner-bottom">
 		<div class="container">	
 			<div class="agileits_banner_bottom">
-				<h3><span>Get Hooked Up to a male or female , enjoy fantastic services</span> Find our friendly welcoming reception</h3>
+				<h3><span>Get Hooked Up to a male or female , enjoy fantastic services</span> Connecting people who want to feel some intimacy.
+				<br>Connect and advertise hotel systems <br>
+				Sell sex enhancers and toys  </h3>
 			</div>
 			<div class="w3ls_banner_bottom_grids">
 				<ul class="cbp-ig-grid">
@@ -201,244 +144,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		  <div class="container">
 				   <div class="ab-w3l-spa">
                             <h3 class="title-w3-agileits title-black-wthree">About Hookee GH</h3> 
-						   <p class="about-para-w3ls"> is a Ghanaian basedkie is a Ghanaian basedHookie is a Ghanaian basedHookie is a Ghanaian basedHookie is a Ghanaian basedHookie is a Ghanaian basedHookie is a Ghanaian basedHookie is a Ghanaian basedHookie is a Ghanaian based</p>
-						   <div class="btn btn-medium btn-info">
-							<a style="color: #ffffff; font-size: 15px;" href="https://hookeegh.com/about" class="menu__link" data-toggle="modal" >Read More</a>
-						</div>
-						   <img src="images/about.jpg" class="img-responsive" alt="Hair Salon">
-										<div class="w3l-slider-img">
-											<img src="images/a1.jpg" class="img-responsive" alt="Hair Salon">
-										</div>
-                                       <div class="w3ls-info-about">
-										    <h4> Hook up with Mature Adult Male & Females</h4>
-											<p>Feel some sexual intimacy today</p>
-										</div>
+						   <p style="font-size: 25px; text-align: left;" class="about-para-w3ls">HooKee is a Ghanaian based, internationally operating an online hook-up, sexual content display, sexual health education and social networking website. <br>
+							HooKee features filling a statement or requesting form called "Brief" to match members who want some intimacy.
+						<br>
+						At HooKee, requesting member's data is advertised, concealing the name, address and phone details and only given to the interested HooKee, who has paid for such information.<br>
+					HooKee operates two types of accounts; Regular and VIP. Regular HooKee is not charged for account creation, but VIP HooKee is charged $20 for account creation (to be renewed quarterly). The  VIP account holder enjoys the privilege of getting to see "requesting HooKee's" info one hour before a Regular HooKee gets to see it on the website. </p>
+						   <p style="font-size: 25px; text-align: left;" class="about-para-w3ls"> HooKee operates two types of accounts; Regular and VIP. Regular HooKee is not charged for account creation, but VIP HooKee is charged $20 for account creation (to be renewed quarterly). The  VIP account holder enjoys the privilege of getting to see "requesting HooKee's" info one hour before a Regular HooKee gets to see it on the website. 
+						<br> HooKee also advertises hotel systems and sex enhancement devices like dildos, vibrators, condoms, penis enlargement devices among others, which are sold at a fee. 
+					<br> HooKee operates an embedded blog that holds sexual contents and write-ups that educate on sexual lifestyle.</p>
+
 		          </div>
 		   	<div class="clearfix"> </div>
     </div>
 </div>
  	<!-- //about -->
 <!--sevices-->
-<div class="advantages">
-	<div class="container">
-		<div class="advantages-main">
-				<h3 class="title-w3-agileits">Why Choose Us</h3>
-		   <div class="advantage-bottom">
-			 <div class="col-md-6 advantage-grid left-w3ls wow bounceInLeft" data-wow-delay="0.3s">
-			 	<div class="advantage-block ">
-					<i class="fa fa-credit-card" aria-hidden="true"></i>
-			 		<h4>Pay Less, Get Hooked Up! </h4>
-			 		<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>Decorated room, proper air conditioned</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>Private balcony</p>
-			 		
-			 	</div>
-			 </div>
-			 <div class="col-md-6 advantage-grid right-w3ls wow zoomIn" data-wow-delay="0.3s">
-			 	<div class="advantage-block">
-					<i class="fa fa-clock-o" aria-hidden="true"></i>
-			 		<h4>24 Hour Service</h4>
-			 		<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>24 hours room service</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>24-hour Concierge service</p>
-			 	</div>
-			 </div>
-			<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-</div>
+
 <!--//sevices-->
 <!-- team -->
-<div class="plans-section" id="rooms">
-	<div class="container">
-	<h3 class="title-w3-agileits title-black-wthree">Book Hookees</h3>
-		   <div class="priceing-table-main">
-			   @if (Auth::user() && Auth::user()->paid)
-			   @forelse ($requestsforvip as $item)
-			   <div class="col-md-3 price-grid wthree lost">
-				<div class="price-block agile">
-					<div class="price-gd-top ">
-						<img src="images/r4.jpg" alt=" " class="img-responsive" />
-					<a href="{{route('user.bookrequest',$item->request_id)}}"><h4>Book Now</h4></a>
-					</div>
-					<div class="price-gd-bottom">
-						 <ul class="list-group list-group-flush">
-						   <li class="list-group-item"><strong>Age: {{$item->user->age}}</strong></li>
-						   <li class="list-group-item"><strong>Gender: {{$item->user->sex}}</strong></li>
-						   <li class="list-group-item">Location: {{$item->location}}</li>
-						   <li class="list-group-item">Occupation: {{$item->user->occupation}}</li>
-						   <li class="list-group-item">Interested in: {{$item->service->title}}</li>
-						   <p id="hookee-message"> {{$item->message}}</p>
-						 </ul>
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"> </div>
-			   @empty
-				   
-			   @endforelse
-			   @else
-			   @forelse ($requestsfornormal as $item)
-			   <div class="col-md-3 price-grid wthree lost">
-				<div class="price-block agile">
-					<div class="price-gd-top ">
-						<img src="images/r4.jpg" alt=" " class="img-responsive" />
-						<a href="{{route('user.bookrequest',$item->request_id)}}"><h4>Book Now</h4></a>
-					</div>
-					<div class="price-gd-bottom">
-						 <ul class="list-group list-group-flush">
-						   <li class="list-group-item"><strong>Age: {{$item->user->age}}</strong></li>
-						   <li class="list-group-item"><strong>Gender: {{$item->user->sex}}</strong></li>
-						   <li class="list-group-item">Location: {{$item->location}}</li>
-						   <li class="list-group-item">Occupation: {{$item->user->occupation}}</li>
-						   <li class="list-group-item">Interested in: {{$item->service->title}}</li>
-						   <p id="hookee-message"> {{$item->message}}</p>
-						 </ul>
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"> </div>
-			   @empty
-				   
-			   @endforelse 
-			   @endif
-			  
-   
-</div>
-</div>
-</div>
+
 <!-- //team -->
 <!-- Gallery -->
-<section class="portfolio-w3ls" id="gallery">
-		 <h3 class="title-w3-agileits title-black-wthree">Hookup at a nearby hotel</h3>
-				<div class="col-md-3 gallery-grid gallery1">
-					<a href="images/g1.jpg" class="swipebox"><img src="images/g1.jpg" class="img-responsive" alt="/">
-						<div class="textbox">
-						<h4>Hookee GH</h4>
-							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
-						</div>
-				</a>
-				</div>
-				<div class="col-md-3 gallery-grid gallery1">
-					<a href="images/g2.jpg" class="swipebox"><img src="images/g2.jpg" class="img-responsive" alt="/">
-						<div class="textbox">
-						<h4>Hookee GH</h4>
-							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
-						</div>
-				</a>
-				</div>
-				<div class="col-md-3 gallery-grid gallery1">
-					<a href="images/g3.jpg" class="swipebox"><img src="images/g3.jpg" class="img-responsive" alt="/">
-						<div class="textbox">
-						<h4>Hookee GH</h4>
-							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
-						</div>
-				</a>
-				</div>
-				<div class="col-md-3 gallery-grid gallery1">
-					<a href="images/g4.jpg" class="swipebox"><img src="images/g4.jpg" class="img-responsive" alt="/">
-						<div class="textbox">
-						<h4>Hookee GH</h4>
-							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
-						</div>
-				</a>
-				</div>
-			
-			
-				<div class="clearfix"> </div>
-</section>
+
 <!-- //gallery -->
 
 
 
 	 <!-- services & rates -->
-      <div class="plans-section" id="rooms">
-				 <div class="container">
-				 <h3 class="title-w3-agileits title-black-wthree">Services And Rates</h3>
-						<div class="priceing-table-main">
-							@forelse ($services as $service)
-							<div class="col-md-3 price-grid">
-								<div class="price-block agile">
-									<div class="price-gd-top">
-									<img src="{{asset(Storage::url($service->picture))}}" width="250px" height="250px" alt=" " class="img-responsive" />
-										<h4>{{$service->title}}</h4>
-									</div>
-									<div class="price-gd-bottom">
-										   <div class="price-list">
-												<ul>
-														<li><i class="fa fa-star" aria-hidden="true"></i></li>
-														<li><i class="fa fa-star" aria-hidden="true"></i></li>
-														<li><i class="fa fa-star" aria-hidden="true"></i></li>
-														<li><i class="fa fa-star" aria-hidden="true"></i></li>
-														<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-												
-												 </ul>
-										</div>
-										<div class="price-selet">	
-											<h3><span>&cent;</span>{{$service->price}}</h3>						
-											<a href="{{route('user.requesthook')}}" >Book Now</a>
-										</div>
-									</div>
-								</div>
-							</div>
-			
-
-							@empty
-								
-							@endforelse
-
-
-							<div class="clearfix"> </div>
-							
-				
-			</div>
-		</div>
-	</div>
+     
 	 <!--// services & rates -->
   <!-- visitors -->
-	<div class="w3l-visitors-agile" >
-		<div class="container">
-                 <h3 class="title-w3-agileits title-black-wthree">What other visitors experienced</h3> 
-		</div>
-		<div class="w3layouts_work_grids">
-			<section class="slider">
-				<div class="flexslider">
-					<ul class="slides">
-						@forelse ($ratings as $rating)
-						<li>
-							<div class="w3layouts_work_grid_left">
-							<img src="{{asset('images/5.jpg')}}" alt=" " class="img-responsive" />
-								<div class="w3layouts_work_grid_left_pos">
-								<img src="{{asset(Storage::url($rating->user->profile_picture))}}" alt=" " class="img-responsive" />
-								</div>
-							</div>
-							<div class="w3layouts_work_grid_right">
-								{{-- <h4>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								Worth to come again
-								</h4> --}}
-								<p>{{$rating->message}} </p>
-								<h5>{{$rating->user->name}}</h5>
-								<p>{{$rating->user->occupation}}</p>
-							</div>
-							<div class="clearfix"> </div>
-						</li>
-						@empty
-							
-						@endforelse
-						
-						
-					
-					</ul>
-				</div>
-			</section>
-		</div>	
-	</div>
+	
   <!-- visitors -->
 <!-- contact -->
 <section class="contact-w3ls" id="contact">
@@ -478,7 +214,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
 			<h4>Connect With Us</h4>
 			<p class="contact-agile1"><strong>Phone :</strong> +1 (100)222-23-33</p>
-			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:name@example.com">info@example.com</a></p>
+			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:name@example.com">hookeegh@gmail.com</a></p>
 																
 			<div class="social-bnr-agileits footer-icons-agileinfo">
 				<ul class="social-icons3">
@@ -494,7 +230,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </section>
 <!-- /contact -->
 			<div class="copy">
-		        <p>© 2020 Hookee GH . All Rights Reserved  </p>
+		        <p>© 2020 Hookee GH . All Rights Reserved </p>
 		    </div>
 <!--/footer -->
 <!-- js -->
