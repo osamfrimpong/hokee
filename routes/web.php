@@ -77,4 +77,5 @@ Route::prefix('user')->middleware('auth')->name('user.')->group(function(){
 
 Route::post('/pay', 'RaveController@initialize')->name('pay');
 Route::get('/rave/callback', 'RaveController@callback')->name('callback');
+Route::get('/requests/service/{service_id}','HomeController@getServiceRequests')->name('service.requests');
 // Route::get('/testpay','RaveController@testpay')->name('testpay');

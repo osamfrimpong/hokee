@@ -68,4 +68,9 @@ class HomeController extends Controller
         return view('contactUs',compact('services','ratings','requestsforvip','requestsfornormal'));
     
     }
+
+    public function getServiceRequests($service_id){
+        $title = "Requests";
+        return view('service_requests',compact('title'));
+    }
 }
