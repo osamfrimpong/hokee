@@ -154,8 +154,52 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>	
 	<!-- //banner --> 
 <!--//Header-->
+<!-- services & rates -->
+<div class="plans-section" id="rooms">
+	<div class="container">
+	<h3 class="title-w3-agileits title-black-wthree">Services And Rates</h3>
+		   <div class="priceing-table-main">
+			   @forelse ($services as $service)
+			   <div class="col-md-3 price-grid">
+				   <div class="price-block agile">
+					   <div class="price-gd-top">
+					   <img src="{{asset(Storage::url($service->picture))}}" width="250px" height="250px" alt=" " class="img-responsive" />
+						   <h4>{{$service->title}}</h4>
+					   </div>
+					   <div class="price-gd-bottom">
+							  <div class="price-list">
+								   {{-- <ul>
+										   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+										   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+										   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+										   <li><i class="fa fa-star" aria-hidden="true"></i></li>
+										   <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+								   
+									</ul> --}}
+									<br>
+						   </div>
+						   <div class="price-selet">	
+							   <h3><span>&cent;</span>{{$service->price}}</h3>						
+							   <a href="{{route('user.requesthook')}}" >Book Now</a>
+						   </div>
+					   </div>
+				   </div>
+			   </div>
 
-<!-- banner-bottom -->
+
+			   @empty
+				   
+			   @endforelse
+
+
+			   <div class="clearfix"> </div>
+			   
+   
+</div>
+</div>
+</div>
+<!--// services & rates -->
+{{-- <!-- banner-bottom -->
 	<div class="banner-bottom">
 		<div class="container">	
 			<div class="agileits_banner_bottom">
@@ -195,7 +239,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
-<!-- //banner-bottom -->
+<!-- //banner-bottom --> --}}
 <!-- /about -->
  	<div class="about-wthree" id="about">
 		  <div class="container">
@@ -352,50 +396,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-	 <!-- services & rates -->
-      <div class="plans-section" id="rooms">
-				 <div class="container">
-				 <h3 class="title-w3-agileits title-black-wthree">Services And Rates</h3>
-						<div class="priceing-table-main">
-							@forelse ($services as $service)
-							<div class="col-md-3 price-grid">
-								<div class="price-block agile">
-									<div class="price-gd-top">
-									<img src="{{asset(Storage::url($service->picture))}}" width="250px" height="250px" alt=" " class="img-responsive" />
-										<h4>{{$service->title}}</h4>
-									</div>
-									<div class="price-gd-bottom">
-										   <div class="price-list">
-												<ul>
-														<li><i class="fa fa-star" aria-hidden="true"></i></li>
-														<li><i class="fa fa-star" aria-hidden="true"></i></li>
-														<li><i class="fa fa-star" aria-hidden="true"></i></li>
-														<li><i class="fa fa-star" aria-hidden="true"></i></li>
-														<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-												
-												 </ul>
-										</div>
-										<div class="price-selet">	
-											<h3><span>&cent;</span>{{$service->price}}</h3>						
-											<a href="{{route('user.requesthook')}}" >Book Now</a>
-										</div>
-									</div>
-								</div>
-							</div>
-			
-
-							@empty
-								
-							@endforelse
-
-
-							<div class="clearfix"> </div>
-							
-				
-			</div>
-		</div>
-	</div>
-	 <!--// services & rates -->
+	 
   <!-- visitors -->
 	<div class="w3l-visitors-agile" >
 		<div class="container">
@@ -595,25 +596,7 @@ fit: true
 });
 </script>
 <!--//tabs-->
-<!-- smooth scrolling -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-		/*
-			var defaults = {
-			containerID: 'toTop', // fading element id
-			containerHoverID: 'toTopHover', // fading element hover id
-			scrollSpeed: 1200,
-			easingType: 'linear' 
-			};
-		*/								
-		$().UItoTop({ easingType: 'easeOutQuart' });
-		});
-	</script>
-	
-	<div class="arr-w3ls">
-	<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	</div>
-<!-- //smooth scrolling -->
+
 <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 </body>
 </html>
