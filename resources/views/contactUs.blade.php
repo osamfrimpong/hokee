@@ -230,7 +230,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </section>
 <!-- /contact -->
 			<div class="copy">
+<<<<<<< HEAD
 		        <p>© 2020 Hookee GH . All Rights Reserved | Design by <a href="https://pcbossonline.com/">PCB Technologies</a> </p>
+=======
+		        <p>© 2020 Hookee GH . All Rights Reserved </p>
+>>>>>>> 96e129c0febac6f5b0d29500ee764a86477f21e8
 		    </div>
 <!--/footer -->
 <!-- js -->

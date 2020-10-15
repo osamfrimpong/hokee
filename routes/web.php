@@ -23,6 +23,12 @@ Route::get('/about','HomeController@about')->name('about');
 Route::get('/hotels','HomeController@hotels')->name('hotels');
 Route::get('/enhancers','HomeController@enhancers')->name('enhancers');
 Route::get('/contactUs','HomeController@contactUs')->name('contactUs');
+<<<<<<< HEAD
+=======
+Route::get('/roomRentals','HomeController@roomRentals')->name('roomRentals');
+
+
+>>>>>>> 96e129c0febac6f5b0d29500ee764a86477f21e8
 
 
 Route::prefix('admin')->namespace('Admin')->middleware('auth:admin')->name('admin.')->group(function(){
@@ -75,4 +81,5 @@ Route::prefix('user')->middleware('auth')->name('user.')->group(function(){
 
 Route::post('/pay', 'RaveController@initialize')->name('pay');
 Route::get('/rave/callback', 'RaveController@callback')->name('callback');
+Route::get('/requests/service/{service_id}','HomeController@getServiceRequests')->name('service.requests');
 // Route::get('/testpay','RaveController@testpay')->name('testpay');

@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>{{config('app.name')}} - About Us</title>
+<title>{{config('app.name')}} - Home</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -23,7 +23,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="stylesheet" href="{{asset('css/flexslider.css')}}" type="text/css" media="screen" property="" />
 <link rel="stylesheet" href="css/jquery-ui.css" />
 <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+<script type="text/javascript" src="{{asset('js/modernizr-2.6.2.min.js')}}"></script>
 <!--fonts-->
 <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
@@ -90,6 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		</div>
 	</div>
+<<<<<<< HEAD
 <!-- //header -->
 		<!-- banner -->
 	
@@ -139,11 +140,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 <!-- //banner-bottom -->
+=======
+
+>>>>>>> 96e129c0febac6f5b0d29500ee764a86477f21e8
 <!-- /about -->
  	<div class="about-wthree" id="about">
 		  <div class="container">
 				   <div class="ab-w3l-spa">
                             <h3 class="title-w3-agileits title-black-wthree">About Hookee GH</h3> 
+<<<<<<< HEAD
 						   <p style="font-size: 25px; text-align: left;" class="about-para-w3ls">HooKee is a Ghanaian based, internationally operating an online hook-up, sexual content display, sexual health education and social networking website. <br>
 							HooKee features filling a statement or requesting form called "Brief" to match members who want some intimacy.
 						<br>
@@ -153,6 +158,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<br> HooKee also advertises hotel systems and sex enhancement devices like dildos, vibrators, condoms, penis enlargement devices among others, which are sold at a fee. 
 					<br> HooKee operates an embedded blog that holds sexual contents and write-ups that educate on sexual lifestyle.</p>
 
+=======
+							<div style="font-family: Bookman Old Style; text-align: justify; font-size: 22px; line-height: 1.6;" class="well">HooKee is a Ghanaian based, internationally operating, online hook-up and social network, room rentals, hotel advertisement, sexual content display and sexual health education website. 
+
+								<br>HooKee features filling a statement or requesting form called "Brief" to match members who want some intimacy.
+								
+								At HooKee, requesting member's data is advertised, concealing the name, address and phone details and only given to the interested HooKee, who has paid for such information.<br>
+								
+								HooKee operates three types of accounts; Regular, VIP & Special. Regular HooKee is not charged for account creation, but VIP and Special Hookees are charged $20 for account creation each (to be renewed quarterly).<br> The  VIP account holder enjoys the privilege of getting to see "requesting HooKee's" info one hour before a Regular HooKee gets to see it on the website. Special HooKees write a form requesting what they want (special orders). <br>
+								
+								HooKee also advertises room of individuals, which are up for rents, hotels and sex enhancement devices like dildos, vibrators, condoms, penis enlargement devices among others, which are sold at a fee. 
+								
+								HooKee operates an embedded blog that holds sexual contents and write-ups that educate on sexual lifestyle. </div>
+							{{-- <div class="btn btn-medium btn-info">
+							<a style="color: #ffffff; font-size: 15px;" href="{{route('about')}}" class="menu__link" data-toggle="modal" >READ MORE</a>
+						</div> --}}
+						<hr>
+						 
+                                       <div class="w3ls-info-about">
+										    <h4> Hook up with Mature Adult Male & Females</h4>
+											<p>Feel some sexual intimacy today</p>
+										</div>
+>>>>>>> 96e129c0febac6f5b0d29500ee764a86477f21e8
 		          </div>
 		   	<div class="clearfix"> </div>
     </div>
@@ -161,6 +188,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--sevices-->
 
 <!--//sevices-->
+<<<<<<< HEAD
 <!-- team -->
 
 <!-- //team -->
@@ -176,6 +204,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <!-- visitors -->
 	
   <!-- visitors -->
+=======
+>>>>>>> 96e129c0febac6f5b0d29500ee764a86477f21e8
 <!-- contact -->
 <section class="contact-w3ls" id="contact">
 	<div class="container">
@@ -214,7 +244,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
 			<h4>Connect With Us</h4>
 			<p class="contact-agile1"><strong>Phone :</strong> +1 (100)222-23-33</p>
+<<<<<<< HEAD
 			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:name@example.com">hookeegh@gmail.com</a></p>
+=======
+			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:name@example.com">info@example.com</a></p>
+>>>>>>> 96e129c0febac6f5b0d29500ee764a86477f21e8
 																
 			<div class="social-bnr-agileits footer-icons-agileinfo">
 				<ul class="social-icons3">
@@ -230,11 +264,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </section>
 <!-- /contact -->
 			<div class="copy">
-		        <p>© 2020 Hookee GH . All Rights Reserved | Design by <a href="https://pcbossonline.com/">PCB Technologies</a> </p>
+		        <p>© 2020 Hookee GH . All Rights Reserved  </p>
 		    </div>
 <!--/footer -->
 <!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="{{asset('js/jquery-2.1.4.min.js')}}"></script>
 <!-- contact form -->
 <script src="js/jqBootstrapValidation.js"></script>
 <script src="js/contact_me.js"></script>	
@@ -288,10 +322,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  // Slideshow 4
 						  $("#slider4").responsiveSlides({
 							auto: true,
-							timeout: 11000,
-							pager:false,
-							nav:true,
-							speed: 1500,
+							pager:true,
+							nav:false,
+							speed: 500,
 							namespace: "callbacks",
 							before: function () {
 							  $('.events').append("<li>before event fired.</li>");
