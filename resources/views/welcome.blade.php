@@ -488,7 +488,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							auto: true,
 							pager:true,
 							nav:false,
-							speed: 500,
+							speed: 1000,
 							namespace: "callbacks",
 							before: function () {
 							  $('.events').append("<li>before event fired.</li>");
