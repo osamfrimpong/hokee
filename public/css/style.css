@@ -467,7 +467,7 @@ li.menu__item:nth-child(6) {
 /*-- //banner-text --*/
 /*-- banner-top --*/
 .w3layouts-banner-top{
-    background: url(../images/sex.jpg) no-repeat 0px 0px;
+    background: url(../images/slide1.jpg) no-repeat 0px 0px;
     background-size: cover;	
 	-webkit-background-size: cover;	
 	-moz-background-size: cover;
@@ -475,7 +475,7 @@ li.menu__item:nth-child(6) {
 	-moz-background-size: cover;
 }
 .w3layouts-banner-top1{
-	background: url(../images/hotel.jpg) no-repeat 0px 0px;
+	background: url(../images/sex.jpg) no-repeat 0px 0px;
     background-size: cover;	
 	-webkit-background-size: cover;	
 	-moz-background-size: cover;
@@ -483,14 +483,47 @@ li.menu__item:nth-child(6) {
 	-moz-background-size: cover;
 }
 .w3layouts-banner-top2{
-	background: url(../images/slide1.jpg) no-repeat 0px 0px;
+	background: url(../images/hotel.jpg) no-repeat 0px 0px;
     background-size: cover;	
 	-webkit-background-size: cover;	
 	-moz-background-size: cover;
 	-o-background-size: cover;		
 	-moz-background-size: cover;	
 }
-.w3layouts-banner-top,.w3layouts-banner-top1,.w3layouts-banner-top2{
+.w3layouts-banner-top3{
+	background: url(../images/massage.jpg) no-repeat 0px 0px;
+    background-size: cover;	
+	-webkit-background-size: cover;	
+	-moz-background-size: cover;
+	-o-background-size: cover;		
+	-moz-background-size: cover;	
+}
+.w3layouts-banner-top4{
+	background: url(../images/enhancers.jpg) no-repeat 0px 0px;
+    background-size: cover;	
+	-webkit-background-size: cover;	
+	-moz-background-size: cover;
+	-o-background-size: cover;		
+	-moz-background-size: cover;	
+}
+.w3layouts-banner-top5{
+	background: url(../images/boyfriend.jpg) no-repeat 0px 0px;
+    background-size: cover;	
+	-webkit-background-size: cover;	
+	-moz-background-size: cover;
+	-o-background-size: cover;		
+	-moz-background-size: cover;	
+}
+.w3layouts-banner-top6{
+	background: url(../images/relationship.jpg) no-repeat 0px 0px;
+    background-size: cover;	
+	-webkit-background-size: cover;	
+	-moz-background-size: cover;
+	-o-background-size: cover;		
+	-moz-background-size: cover;	
+}
+.w3layouts-banner-top,.w3layouts-banner-top1,.w3layouts-banner-top2,.w3layouts-banner-top3,.w3layouts-banner-top4
+,.w3layouts-banner-top5, .w3layouts-banner-top6{
 	min-height:700px;
 }
 .w3ls-banner {
@@ -1659,7 +1692,8 @@ color: #fff !important;
 	.callbacks_tabs {
 		left: 46%;
 	}
-	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2 {
+	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2, .w3layouts-banner-top3,.w3layouts-banner-top4,
+	.w3layouts-banner-top5, .w3layouts-banner-top6{
 		min-height: 640px;
 	}
 	.thim-click-to-bottom {
@@ -1676,7 +1710,8 @@ color: #fff !important;
 	.agileits-banner-info {
 		margin-top: 5em;
 	}
-	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2 {
+	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2, .w3layouts-banner-top3,.w3layouts-banner-top4,
+	.w3layouts-banner-top5, .w3layouts-banner-top6{
 		min-height: 560px;
 	}
 	.callbacks_tabs {
@@ -1739,7 +1774,8 @@ color: #fff !important;
 		font-size: 20px;
 		letter-spacing: 9px;
 	}
-	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2 {
+	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2, .w3layouts-banner-top3,.w3layouts-banner-top4,
+	.w3layouts-banner-top5, .w3layouts-banner-top6{
 		min-height: 500px;
 	}
 	.agileits-banner-info {
@@ -1934,7 +1970,8 @@ color: #fff !important;
 	.agileits-banner-info p {
 		letter-spacing: 9px;
 	}
-	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2 {
+	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2, .w3layouts-banner-top3,.w3layouts-banner-top4,
+	.w3layouts-banner-top5, .w3layouts-banner-top6 {
 		min-height: 480px;
 	}
 	.callbacks_tabs {
@@ -1973,7 +2010,8 @@ color: #fff !important;
 	.agileits-banner-info {
 		padding: 4em 0em;
 	}
-	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2 {
+	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2, .w3layouts-banner-top3, .w3layouts-banner-top4,
+	.w3layouts-banner-top5,.w3layouts-banner-top6 {
 		min-height: 460px;
 	}
 	.thim-click-to-bottom {
@@ -2155,7 +2193,8 @@ color: #fff !important;
 		margin-top: 2em;
 		padding: 6px 20px;
 	}
-	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2 {
+	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2, .w3layouts-banner-top3, .w3layouts-banner-top4,
+	.w3layouts-banner-top5,.w3layouts-banner-top6{
 		min-height: 373px;
 	}
 	.callbacks_tabs {
@@ -2417,7 +2456,8 @@ color: #fff !important;
 	.agileits-banner-info {
 		padding: 2.5em 0em;
 	}
-	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2 {
+	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2, .w3layouts-banner-top3, .w3layouts-banner-top4, 
+	.w3layouts-banner-top5, .w3layouts-banner-top6{
 		min-height: 340px;
 	}
 	.callbacks_tabs {
@@ -2587,7 +2627,8 @@ color: #fff !important;
 	.callbacks_tabs {
 		top: 49.5%;
 	}
-	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2 {
+	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2, .w3layouts-banner-top3,.w3layouts-banner-top4,
+	.w3layouts-banner-top5, .w3layouts-banner-top6 {
 		min-height: 280px;
 	}
 	.agileits-banner-info {
@@ -2817,7 +2858,8 @@ color: #fff !important;
 	.agileits-banner-info {
 		padding: 2em 0em;
 	}
-	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2 {
+	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2, .w3layouts-banner-top3, .w3layouts-banner-top4,
+	.w3layouts-banner-top5, .w3layouts-banner-top6 {
 		min-height: 250px;
 	}
 	.callbacks_tabs {
@@ -3175,7 +3217,8 @@ color: #fff !important;
 	.callbacks_tabs {
 		left: 36.4%;
 	}
-	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2 {
+	.w3layouts-banner-top, .w3layouts-banner-top1, .w3layouts-banner-top2, .w3layouts-banner-top3, .w3layouts-banner-top4,
+	.w3layouts-banner-top5,.w3layouts-banner-top6{
 		min-height: 230px;
 	}
 	.thim-click-to-bottom {
