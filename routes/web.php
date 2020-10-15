@@ -23,6 +23,7 @@ Route::get('/about','HomeController@about')->name('about');
 Route::get('/hotels','HomeController@hotels')->name('hotels');
 Route::get('/enhancers','HomeController@enhancers')->name('enhancers');
 Route::get('/contactUs','HomeController@contactUs')->name('contactUs');
+Route::get('/roomRentals','HomeController@roomRentals')->name('roomRentals');
 
 
 
