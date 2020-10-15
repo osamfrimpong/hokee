@@ -201,7 +201,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						   <div class="btn btn-medium btn-info">
 							<a style="color: #ffffff; font-size: 15px;" href="{{route('about')}}" class="menu__link" data-toggle="modal" >READ MORE</a>
 						</div>
-						<hr>
+						<hr><hr><hr>
 						   <img src="images/about.jpg" class="img-responsive" alt="Hair Salon">
 										<div class="w3l-slider-img">
 											<img src="images/a1.jpg" class="img-responsive" alt="Hair Salon">
