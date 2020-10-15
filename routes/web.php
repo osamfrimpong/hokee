@@ -23,12 +23,9 @@ Route::get('/about','HomeController@about')->name('about');
 Route::get('/hotels','HomeController@hotels')->name('hotels');
 Route::get('/enhancers','HomeController@enhancers')->name('enhancers');
 Route::get('/contactUs','HomeController@contactUs')->name('contactUs');
-<<<<<<< HEAD
-=======
 Route::get('/roomRentals','HomeController@roomRentals')->name('roomRentals');
 
 
->>>>>>> 96e129c0febac6f5b0d29500ee764a86477f21e8
 
 
 Route::prefix('admin')->namespace('Admin')->middleware('auth:admin')->name('admin.')->group(function(){

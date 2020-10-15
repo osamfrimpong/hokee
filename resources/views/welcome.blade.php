@@ -82,11 +82,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li class=""><a href="{{route('hotels')}}" class="">Partner Hotels</a></li>
 							<li class=""><a href="{{route('enhancers')}}" class="">Sexual Enhancers</a></li>
 							<li class=""><a href="{{route('contactUs')}}" class="">Contact Us</a></li>
-<<<<<<< HEAD
-=======
 							<li class=""><a href="{{route('roomRentals')}}" class="">Room Rentals</a></li>
 
->>>>>>> 96e129c0febac6f5b0d29500ee764a86477f21e8
 
 						</ul>
 					</nav>

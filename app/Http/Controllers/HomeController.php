@@ -50,10 +50,6 @@ class HomeController extends Controller
         return view('hotels',compact('services','ratings','requestsforvip','requestsfornormal'));
     
     }
-<<<<<<< HEAD
-    
-=======
->>>>>>> 96e129c0febac6f5b0d29500ee764a86477f21e8
     public function enhancers() {
 
         $services = Service::orderBy('title','asc')->get();
@@ -63,10 +59,6 @@ class HomeController extends Controller
         return view('enhancers',compact('services','ratings','requestsforvip','requestsfornormal'));
     
     }
-<<<<<<< HEAD
-      
-=======
->>>>>>> 96e129c0febac6f5b0d29500ee764a86477f21e8
     public function contactUs() {
 
         $services = Service::orderBy('title','asc')->get();
