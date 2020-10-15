@@ -202,9 +202,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  
 						<hr><br>
 						   <img src="images/about.jpg" class="img-responsive" alt="Hair Salon">
-										<div class="w3l-slider-img">
+										{{-- <div class="w3l-slider-img">
 											<img src="images/a1.jpg" class="img-responsive" alt="Hair Salon">
-										</div>
+										</div> --}}
                                        <div class="w3ls-info-about">
 										    <h4> Hook up with Mature Adult Male & Females</h4>
 											<p>Feel some sexual intimacy today</p>
@@ -544,7 +544,7 @@ fit: true
 });
 </script>
 <!--//tabs-->
-<!-- smooth scrolling -->
+{{-- <!-- smooth scrolling -->
 	<script type="text/javascript">
 		$(document).ready(function() {
 		/*
@@ -561,7 +561,7 @@ fit: true
 	
 	<div class="arr-w3ls">
 	<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	</div>
+	</div> --}}
 <!-- //smooth scrolling -->
 <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 </body>
