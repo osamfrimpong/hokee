@@ -96,11 +96,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!-- banner -->
 	<div id="home" class="w3ls-banner">
 		<!-- banner-text -->
-		<div class="slider">
+		<div style="font-family: Bookman Old Style;" class="slider">
 			<div class="callbacks_container">
 				<ul class="rslides callbacks callbacks1" id="slider4">
 					<li>
-						<div class="w3layouts-banner-top w3layouts-banner-top2">
+						<div class="w3layouts-banner-top">
 							<div class="container">
 								<div class="agileits-banner-info">
 								<h4 style="font-style: Brush Script MT">Hookee</h4>
@@ -114,13 +114,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 					</li>
 					<li>
-						<div class="w3layouts-banner-top">
+						<div class="w3layouts-banner-top w3layouts-banner-top1">
 
 							<div class="container">
 								<div class="agileits-banner-info">
 								<h4>Hookee</h4>
-									<h3>Stressed and Want Sex?</h3>
-										<p><strong> Get Hooked Up</strong></p><br>
+									<h3 >Stressed and Want Sex?</h3>
+										<p ><strong> Get Hooked Up</strong></p><br>
 									<div class="agileits_w3layouts_more menu__item">
 				<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >Sign Up</a>
 			</div>
@@ -129,19 +129,85 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 					</li>
 					<li>
-						<div class="w3layouts-banner-top w3layouts-banner-top1">
+						<div class="w3layouts-banner-top w3layouts-banner-top2">
+
 							<div class="container">
 								<div class="agileits-banner-info">
 								<h4>Hookee</h4>
-									<h3>On vacation and want a luxurious hotel to stay or room to rent? </h3>
-										<p><strong>Get Hooked to our partners </strong></p><br><br><br>
+									<h3>Want a room for vacation??</h3>
+										<p><strong> Get hooked to our partners</strong></p><br>
 									<div class="agileits_w3layouts_more menu__item">
-				<a href="hookeegh.com/signup"" class="menu__link" >Sign Up</a>
+				<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >Sign Up</a>
 			</div>
 								</div>	
 							</div>
 						</div>
 					</li>
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top3">
+
+							<div class="container">
+								<div class="agileits-banner-info">
+								<h4>Hookee</h4>
+									<h3>Stressed and need a massage?</h3>
+										<p><strong>In your home or office?</strong></p><br>
+									<div class="agileits_w3layouts_more menu__item">
+				<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >Sign Up</a>
+			</div>
+								</div>	
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top4">
+
+							<div class="container">
+								<div class="agileits-banner-info">
+								<h4  style="color: #ffff;">Hookee</h4>
+									<h3>Want some sex enhancers</h3>
+										<p><strong>We got you</strong></p><br>
+									<div class="agileits_w3layouts_more menu__item">
+				<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >Sign Up</a>
+			</div>
+								</div>	
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top5">
+
+							<div class="container">
+								<div class="agileits-banner-info">
+								<h4  style="">Hookee</h4>
+									<h3>Does your family want to</h3>
+										<p><strong>See your boyfriend/Girlfriend</strong></p><br>
+									<div class="agileits_w3layouts_more menu__item">
+				<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >Rent a Boyfriend/Girlfriend</a>
+			</div>
+								</div>	
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top6">
+
+							<div class="container">
+								<div class="agileits-banner-info">
+								<h4  style="">Hookee</h4>
+									<h3>Want a relationship?</h3>
+										<p><strong>Get Hooked Up</strong></p><br>
+									<div class="agileits_w3layouts_more menu__item">
+				<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >SIGN UP NOW</a>
+			</div>
+								</div>	
+							</div>
+						</div>
+					</li>
+
+
 					
 				</ul>
 			</div>
@@ -486,16 +552,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  // Slideshow 4
 						  $("#slider4").responsiveSlides({
 							auto: true,
-							pager:true,
+							pager:false,
 							nav:false,
 							speed: 3500,
 							// namespace: "callbacks",
-							before: function () {
-							  $('.events').append("<li>before event fired.</li>");
-							},
-							after: function () {
-							  $('.events').append("<li>after event fired.</li>");
-							}
+							// before: function () {
+							//   $('.events').append("<li>before event fired.</li>");
+							// },
+							// after: function () {
+							//   $('.events').append("<li>after event fired.</li>");
+							// }
 						  });
 					
 						});
