@@ -75,6 +75,7 @@ class HomeController extends Controller
         $requestsforvip = HookRequest::where('paid',1)->get();
         $requestsfornormal = HookRequest::where('paid',1)->where('created_at','<=',Carbon::now()->subHours(1))->get();
         return view('roomRentals',compact('services','ratings','requestsforvip','requestsfornormal'));
+    }
     
 
     public function getServiceRequests($service_id){
