@@ -198,9 +198,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				   <div class="ab-w3l-spa">
                             <h3 class="title-w3-agileits title-black-wthree">About Hookee GH</h3> 
 						   <p style="font-family: Bookman Old Style; font-size: 20px;" class="about-para-w3ls"> HooKee is a Ghanaian based, internationally operating, online hook-up and social network, room rentals, hotel advertisement, sexual content display and sexual health education website. </p>
-						   <div class="btn btn-medium btn-info">
-							<a style="color: #ffffff; font-size: 15px;" href="{{route('about')}}" class="menu__link" data-toggle="modal" >READ MORE</a>
-						</div><br>
+						   <a style="color: #ffffff; font-size: 15px;" href="{{route('about')}}" class="btn btn-info" data-toggle="modal" >READ MORE</a>
+						  
 						<hr><br>
 						   <img src="images/about.jpg" class="img-responsive" alt="Hair Salon">
 										<div class="w3l-slider-img">
