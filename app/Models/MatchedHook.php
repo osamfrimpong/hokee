@@ -11,11 +11,11 @@ class MatchedHook extends Model
         'hooker', 'hookee','match_id','request_id','booking_id'
     ];
 
-    public function hooker(){
-        return $this->belongsTo(User::class,'id','hooker');
+    public function owner(){
+        return $this->belongsTo(User::class,'hooker','id');
     }
 
-    public function hookee(){
-        return $this->belongsTo(User::class,'id','hookee');
+    public function booker(){
+        return $this->belongsTo(User::class,'hookee','id');
     }
 }

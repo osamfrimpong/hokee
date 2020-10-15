@@ -1,10 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Models\Occupation;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class RequestHookController extends Controller
+class OccupationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +36,8 @@ class RequestHookController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Occupation::create($request->all());
+        return redirect()->route('admin.services.index');
     }
 
     /**

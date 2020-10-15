@@ -38,6 +38,8 @@ Route::prefix('admin')->namespace('Admin')->middleware('auth:admin')->name('admi
     // Route::resource('messages','HookMessageController');
     Route::resource('userratings','UserRatingsController');
     Route::resource('users','UsersController');
+    Route::resource('locations','LocationController');
+    Route::resource('occupations','OccupationController');
 });
 
 
@@ -57,7 +59,10 @@ Route::post('register', 'RegisterController@register')->name('register');
 Route::prefix('user')->middleware('auth')->name('user.')->group(function(){
     Route::get('/home','UserDashboardController@index')->name('home');
     Route::get('/checkouts','UserDashboardController@checkout')->name('checkout');
-    Route::get('userprofile','UserDashboardController@userprofile')->name('userprofile');
+    Route::get('userprofile','UserProfileController@index')->name('userprofile');
+    Route::post('updateprofile','UserProfileController@update')->name('updateprofile');
+    Route::get('upgrade','UserProfileController@upgradeAccount')->name('upgrade');
+    Route::get('upgrade/checkout','UserProfileController@checkout')->name('upgradecheckout');
     Route::get('ratings','UserDashboardController@ratings')->name('ratings');
     Route::get('requesthook','UserDashboardController@requesthook')->name('requesthook');
     Route::post('addrequest','UserDashboardController@addrequest')->name('addrequest');
@@ -65,6 +70,7 @@ Route::prefix('user')->middleware('auth')->name('user.')->group(function(){
     Route::resource('book','BookingController');
     Route::get('bookrequest/{request_id}','BookingController@bookrequest')->name('bookrequest');
     Route::get('booking/checkout','BookingController@checkout')->name('bookingcheckout');
+    Route::get('request/view/{request_id}','UserDashboardController@viewRequest')->name('viewrequest');
 
 });
     
@@ -72,4 +78,5 @@ Route::prefix('user')->middleware('auth')->name('user.')->group(function(){
 
 Route::post('/pay', 'RaveController@initialize')->name('pay');
 Route::get('/rave/callback', 'RaveController@callback')->name('callback');
+Route::get('/requests/service/{service_id}','HomeController@getServiceRequests')->name('service.requests');
 // Route::get('/testpay','RaveController@testpay')->name('testpay');

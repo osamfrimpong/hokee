@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Payment;
 use App\Models\Service;
+use App\Models\Location;
 use App\Models\UserRating;
 use App\Models\HookRequest;
+use App\Models\MatchedHook;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -16,8 +18,16 @@ class UserDashboardController extends Controller
    
     public function index(){
         $title = "Home";
-        return view('dashboard.home',compact('title'));
+        $user = Auth::user();
+        $totalRequests = HookRequest::where('hookee',$user->id)->where('paid',1)->get()->count();
+        $matchedRequests = HookRequest::where('hookee',$user->id)->where('paid',1)->where('matched',1)->get()->count();
+        $matchedHooks = MatchedHook::where('hooker',$user->id)->with('owner')->with('booker')->orWhere('hookee',$user->id)->orderBy('id','desc')->get()->take(10);
+
+        // dd($matchedHooks);
+
+        return view('dashboard.home',compact('title','totalRequests','matchedRequests','user','matchedHooks'));
     }
+    
 
     public function checkout(){
         $title = "Checkout";
@@ -27,11 +37,7 @@ class UserDashboardController extends Controller
        return view('dashboard.checkout',compact('title','service','request_id','user'));
     }
 
-    public function userprofile(){
-        $title = "UserProfile";
-        $user = Auth::user();
-        return view('dashboard.userprofile',compact('title','user'));
-    }
+   
     public function ratings(){
         $title = "Ratings";
         $user = Auth::user();
@@ -42,7 +48,8 @@ class UserDashboardController extends Controller
         $title = "RequestHook";
         $user = Auth::user();
         $services = Service::all();
-        return view('dashboard.requesthook',compact('title','user','services'));
+        $locations = Location::all();
+        return view('dashboard.requesthook',compact('title','user','services','locations'));
     }
 
     public function addrequest(Request $request){
@@ -56,10 +63,10 @@ class UserDashboardController extends Controller
 
         $service = Service::findOrFail($request->service_id);
 
-        // DB::transaction(function(){
+        
         HookRequest::create($data);
         Payment::create(['amount'=>$service->price,'user_id'=>Auth::user()->id,'bill_id'=>$data['request_id'],'payment_type'=>0,'payment_method'=>'rave']);
-        // });
+      
         
 
         session(['service'=>$service,'request_id'=>$data['request_id']]);
@@ -77,4 +84,11 @@ class UserDashboardController extends Controller
 
         return redirect()->route('user.ratings');
     }
+
+    public function viewRequest($request_id){
+        $hookRequest = HookRequest::where('request_id',$request_id)->get()->first();
+        return view('dashboard.viewrequest',compact('hookRequest'));
+    }
+
+    
 }

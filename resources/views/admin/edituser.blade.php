@@ -21,7 +21,11 @@
     </div>
     <div class="form-group">
       <label for="occupation">Occupation</label>
-      <input type="text" class="form-control" id="occupation" value="{{$user->occupation}}" name="occupation" required>
+      <select name="occupation" class="form-control" required>
+        @foreach ($occupations as $occupation)
+        <option value="{{$occupation->name}}" {{$user->occupation == $occupation->name ? 'selected' : ''}}>{{$occupation->name}}</option>
+        @endforeach
+      </select>
     </div>
 
     <button type="submit" class="btn btn-default">Save Changes</button>

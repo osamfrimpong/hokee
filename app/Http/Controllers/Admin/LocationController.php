@@ -1,10 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Models\Location;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class RatingsController extends Controller
+class LocationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +36,8 @@ class RatingsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Location::create($request->all());
+        return redirect()->route('admin.services.index');
     }
 
     /**

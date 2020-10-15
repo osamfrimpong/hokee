@@ -42,7 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!--logo end-->
 
-<div class="nav notify-row" id="top_menu">
+{{-- <div class="nav notify-row" id="top_menu">
     <!--  notification start -->
     <ul class="nav top-menu">
         <!-- settings start -->
@@ -219,8 +219,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!-- notification dropdown end -->
     </ul>
     <!--  notification end -->
-</div>
-<div class="top-nav clearfix">
+</div> --}}
+{{-- <div class="top-nav clearfix">
     <!--search & user info start-->
     <ul class="nav pull-right top-menu">
         <li>
@@ -243,7 +243,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
        
     </ul>
     <!--search & user info end-->
-</div>
+</div> --}}
 </header>
 <!--header end-->
 <!--sidebar start-->

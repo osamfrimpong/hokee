@@ -54,7 +54,7 @@ $array = array('metaname' => 'size', 'metavalue' => 'big');
 @endphp
 	<input type="hidden" name="amount" value="{{$amount}}" /> 
     <input type="hidden" name="payment_method" value="both" /> 
-	<input type="hidden" name="description" value="Book Hook Request" /> 
+	<input type="hidden" name="description" value="Upgrade Account to VIP" /> 
     <input type="hidden" name="country" value="GH" /> 
     <input type="hidden" name="currency" value="GHS" /> 
 	<input type="hidden" name="email" value="{{$user->email}}" /> 
@@ -62,13 +62,13 @@ $array = array('metaname' => 'size', 'metavalue' => 'big');
     <input type="hidden" name="lastname" value="{{$user->name}}" />
     <input type="hidden" name="metadata" value="{{ json_encode($array) }}" > 
 	<input type="hidden" name="phonenumber" value="{{$user->phone}}" /> 
-	<input type="hidden" name="ref" value="{{$booking_id}}">
+	<input type="hidden" name="ref" value="{{$bill_id}}">
 
 	<div class="tab-for">				
 		<h5>AMOUNT</h5>
 			GHS {{$amount}}
 		<h5>SERVICE</h5>
-		Booking Hook Request						<br>
+		Upgrade Account to VIP						<br>
 			
 		<input type="submit" value="PROCEED" />
 	</div>			
