@@ -90,75 +90,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		</div>
 	</div>
-<<<<<<< HEAD
-<!-- //header -->
-		<!-- banner -->
-	
-	<!-- //banner --> 
-<!--//Header-->
-
-<!-- banner-bottom -->
-	<div class="banner-bottom">
-		<div class="container">	
-			<div class="agileits_banner_bottom">
-				<h3><span>Get Hooked Up to a male or female , enjoy fantastic services</span> Connecting people who want to feel some intimacy.
-				<br>Connect and advertise hotel systems <br>
-				Sell sex enhancers and toys  </h3>
-			</div>
-			<div class="w3ls_banner_bottom_grids">
-				<ul class="cbp-ig-grid">
-					<li>
-						<div class="w3_grid_effect">
-							<span class="cbp-ig-icon w3_road"></span>
-							<h4 class="cbp-ig-title">MASSAGE</h4>
-							<span class="cbp-ig-category">Hookee GH</span>
-						</div>
-					</li>
-					<li>
-						<div class="w3_grid_effect">
-							<span class="cbp-ig-icon w3_cube"></span>
-							<h4 class="cbp-ig-title">ONE NIGHT STAND</h4>
-							<span class="cbp-ig-category">Hookee GH</span>
-						</div>
-					</li>
-					<li>
-						<div class="w3_grid_effect">
-							<span class="fa fa-female fa-4x"></span>
-							<h4 class="cbp-ig-title">RENT A BOYFRIEND</h4>
-							<span class="cbp-ig-category">Hookee GH</span>
-						</div>
-					</li>
-					<li>
-						<div class="w3_grid_effect">
-							<span class="fa fa-male fa-4x"></span>
-							<h4 class="cbp-ig-title">RENT A GIRLFRIEND</h4>
-							<span class="cbp-ig-category">Hookee GH</span>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-<!-- //banner-bottom -->
-=======
-
->>>>>>> 96e129c0febac6f5b0d29500ee764a86477f21e8
 <!-- /about -->
  	<div class="about-wthree" id="about">
 		  <div class="container">
 				   <div class="ab-w3l-spa">
                             <h3 class="title-w3-agileits title-black-wthree">About Hookee GH</h3> 
-<<<<<<< HEAD
-						   <p style="font-size: 25px; text-align: left;" class="about-para-w3ls">HooKee is a Ghanaian based, internationally operating an online hook-up, sexual content display, sexual health education and social networking website. <br>
-							HooKee features filling a statement or requesting form called "Brief" to match members who want some intimacy.
-						<br>
-						At HooKee, requesting member's data is advertised, concealing the name, address and phone details and only given to the interested HooKee, who has paid for such information.<br>
-					HooKee operates two types of accounts; Regular and VIP. Regular HooKee is not charged for account creation, but VIP HooKee is charged $20 for account creation (to be renewed quarterly). The  VIP account holder enjoys the privilege of getting to see "requesting HooKee's" info one hour before a Regular HooKee gets to see it on the website. </p>
-						   <p style="font-size: 25px; text-align: left;" class="about-para-w3ls"> HooKee operates two types of accounts; Regular and VIP. Regular HooKee is not charged for account creation, but VIP HooKee is charged $20 for account creation (to be renewed quarterly). The  VIP account holder enjoys the privilege of getting to see "requesting HooKee's" info one hour before a Regular HooKee gets to see it on the website. 
-						<br> HooKee also advertises hotel systems and sex enhancement devices like dildos, vibrators, condoms, penis enlargement devices among others, which are sold at a fee. 
-					<br> HooKee operates an embedded blog that holds sexual contents and write-ups that educate on sexual lifestyle.</p>
-
-=======
 							<div style="font-family: Bookman Old Style; text-align: justify; font-size: 22px; line-height: 1.6;" class="well">HooKee is a Ghanaian based, internationally operating, online hook-up and social network, room rentals, hotel advertisement, sexual content display and sexual health education website. 
 
 								<br>HooKee features filling a statement or requesting form called "Brief" to match members who want some intimacy.
@@ -179,7 +115,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										    <h4> Hook up with Mature Adult Male & Females</h4>
 											<p>Feel some sexual intimacy today</p>
 										</div>
->>>>>>> 96e129c0febac6f5b0d29500ee764a86477f21e8
 		          </div>
 		   	<div class="clearfix"> </div>
     </div>
@@ -188,24 +123,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--sevices-->
 
 <!--//sevices-->
-<<<<<<< HEAD
-<!-- team -->
-
-<!-- //team -->
-<!-- Gallery -->
-
-<!-- //gallery -->
-
-
-
-	 <!-- services & rates -->
-     
-	 <!--// services & rates -->
-  <!-- visitors -->
-	
-  <!-- visitors -->
-=======
->>>>>>> 96e129c0febac6f5b0d29500ee764a86477f21e8
 <!-- contact -->
 <section class="contact-w3ls" id="contact">
 	<div class="container">
@@ -244,11 +161,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
 			<h4>Connect With Us</h4>
 			<p class="contact-agile1"><strong>Phone :</strong> +1 (100)222-23-33</p>
-<<<<<<< HEAD
-			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:name@example.com">hookeegh@gmail.com</a></p>
-=======
 			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:name@example.com">info@example.com</a></p>
->>>>>>> 96e129c0febac6f5b0d29500ee764a86477f21e8
 																
 			<div class="social-bnr-agileits footer-icons-agileinfo">
 				<ul class="social-icons3">
