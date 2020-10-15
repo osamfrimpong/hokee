@@ -188,7 +188,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						   <a style="color: #ffffff; font-size: 15px;" href="{{route('about')}}" class="btn btn-info" data-toggle="modal" >READ MORE</a>
 						  
 						<hr><br>
-						   <img src="images/about.jpg" class="img-responsive" alt="Hair Salon">
+						   <img src="images/about1.jpg" class="img-responsive" alt="">
 										{{-- <div class="w3l-slider-img">
 											<img src="images/a1.jpg" class="img-responsive" alt="Hair Salon">
 										</div> --}}
@@ -488,8 +488,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							auto: true,
 							pager:true,
 							nav:false,
-							speed: 1000,
-							namespace: "callbacks",
+							speed: 3500,
+							// namespace: "callbacks",
 							before: function () {
 							  $('.events').append("<li>before event fired.</li>");
 							},
