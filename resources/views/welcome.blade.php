@@ -424,11 +424,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
 			<h4>Connect With Us</h4>
 			<p class="contact-agile1"><strong>Phone :</strong> +1 (100)222-23-33</p>
-<<<<<<< HEAD
-			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:hookeegh@gmail.com">hookeegh@gmail.com</a></p>
-=======
 			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:name@example.com">info@example.com</a></p>
->>>>>>> 96e129c0febac6f5b0d29500ee764a86477f21e8
 																
 			<div class="social-bnr-agileits footer-icons-agileinfo">
 				<ul class="social-icons3">
