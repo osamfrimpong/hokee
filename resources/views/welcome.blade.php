@@ -23,7 +23,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link rel="stylesheet" href="{{asset('css/flexslider.css')}}" type="text/css" media="screen" property="" />
 <link rel="stylesheet" href="css/jquery-ui.css" />
 <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+<script type="text/javascript" src="{{asset('js/modernizr-2.6.2.min.js')}}"></script>
 <!--fonts-->
 <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
@@ -82,6 +82,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li class=""><a href="{{route('hotels')}}" class="">Partner Hotels</a></li>
 							<li class=""><a href="{{route('enhancers')}}" class="">Sexual Enhancers</a></li>
 							<li class=""><a href="{{route('contactUs')}}" class="">Contact Us</a></li>
+							<li class=""><a href="{{route('roomRentals')}}" class="">Room Rentals</a></li>
+
 
 						</ul>
 					</nav>
@@ -154,101 +156,52 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>	
 	<!-- //banner --> 
 <!--//Header-->
-<!-- services & rates -->
-<div class="plans-section" id="rooms">
-	<div class="container">
-	<h3 class="title-w3-agileits title-black-wthree">Services And Rates</h3>
-		   <div class="priceing-table-main">
-			   @forelse ($services as $service)
-			   <div class="col-md-3 price-grid">
-				   <div class="price-block agile">
-					   <div class="price-gd-top">
-					   <img src="{{asset(Storage::url($service->picture))}}" width="250px" height="250px" alt=" " class="img-responsive" />
-						   <h4>{{$service->title}}</h4>
-					   </div>
-					   <div class="price-gd-bottom">
-							  <div class="price-list">
-								   {{-- <ul>
-										   <li><i class="fa fa-star" aria-hidden="true"></i></li>
-										   <li><i class="fa fa-star" aria-hidden="true"></i></li>
-										   <li><i class="fa fa-star" aria-hidden="true"></i></li>
-										   <li><i class="fa fa-star" aria-hidden="true"></i></li>
-										   <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-								   
-									</ul> --}}
-									<br>
-						   </div>
-						   <div class="price-selet">	
-							   <h3><span>&cent;</span>{{$service->price}}</h3>						
-							   <a href="{{route('user.requesthook')}}" >Book Now</a>
-						   </div>
-					   </div>
-				   </div>
-			   </div>
 
-
-			   @empty
-				   
-			   @endforelse
-
-
-			   <div class="clearfix"> </div>
-			   
-   
-</div>
-</div>
-</div>
-<!--// services & rates -->
-{{-- <!-- banner-bottom -->
+<!-- banner-bottom -->
 	<div class="banner-bottom">
 		<div class="container">	
 			<div class="agileits_banner_bottom">
-				<h3><span>Get Hooked Up to a male or female , enjoy fantastic services</span> Find our friendly welcoming reception</h3>
+				<h3><span>Get Hooked Up to a male or female , enjoy fantastic services</span> </h3>
 			</div>
 			<div class="w3ls_banner_bottom_grids">
 				<ul class="cbp-ig-grid">
 					<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_road"></span>
-							<h4 class="cbp-ig-title">MASSAGE</h4>
-							<span class="cbp-ig-category">Hookee GH</span>
+							<h4 class="cbp-ig-title">Relationship & Dating<br> ($50)</h4>
+							<button onclick="location.href='https://google.com';" class="btn btn-small btn-info">Book Now</button>
 						</div>
 					</li>
 					<li>
 						<div class="w3_grid_effect">
-							<span class="cbp-ig-icon w3_cube"></span>
-							<h4 class="cbp-ig-title">ONE NIGHT STAND</h4>
-							<span class="cbp-ig-category">Hookee GH</span>
+							<span class="cbp-ig-icon w3_road"></span>
+							<h4 class="cbp-ig-title"> Rent a Boyfriend or Girlfriend<br> ($50)</h4>
+							<button onclick="location.href='https://google.com';" class="btn btn-small btn-info">Book Now</button>
 						</div>
 					</li>
 					<li>
 						<div class="w3_grid_effect">
-							<span class="fa fa-female fa-4x"></span>
-							<h4 class="cbp-ig-title">RENT A BOYFRIEND</h4>
-							<span class="cbp-ig-category">Hookee GH</span>
+							<span class="cbp-ig-icon w3_road"></span>
+							<h4 class="cbp-ig-title">Special licking & Boobs suck / Blowjob & Handjob<br> ($50)</h4>
+							<button onclick="location.href='https://google.com';" class="btn btn-small btn-info">Book Now</button>
 						</div>
 					</li>
-					<li>
-						<div class="w3_grid_effect">
-							<span class="fa fa-male fa-4x"></span>
-							<h4 class="cbp-ig-title">RENT A GIRLFRIEND</h4>
-							<span class="cbp-ig-category">Hookee GH</span>
-						</div>
-					</li>
+					
 				</ul>
 			</div>
 		</div>
 	</div>
-<!-- //banner-bottom --> --}}
+<!-- //banner-bottom -->
 <!-- /about -->
  	<div class="about-wthree" id="about">
 		  <div class="container">
 				   <div class="ab-w3l-spa">
                             <h3 class="title-w3-agileits title-black-wthree">About Hookee GH</h3> 
-						   <p class="about-para-w3ls"> is a Ghanaian basedkie is a Ghanaian basedHookie is a Ghanaian basedHookie is a Ghanaian basedHookie is a Ghanaian basedHookie is a Ghanaian basedHookie is a Ghanaian basedHookie is a Ghanaian basedHookie is a Ghanaian based</p>
+						   <p style="font-family: Bookman Old Style; font-size: 20px;" class="about-para-w3ls"> HooKee is a Ghanaian based, internationally operating, online hook-up and social network, room rentals, hotel advertisement, sexual content display and sexual health education website. </p>
 						   <div class="btn btn-medium btn-info">
-							<a style="color: #ffffff; font-size: 15px;" href="https://hookeegh.com/about" class="menu__link" data-toggle="modal" >Read More</a>
+							<a style="color: #ffffff; font-size: 15px;" href="{{route('about')}}" class="menu__link" data-toggle="modal" >READ MORE</a>
 						</div>
+						<hr>
 						   <img src="images/about.jpg" class="img-responsive" alt="Hair Salon">
 										<div class="w3l-slider-img">
 											<img src="images/a1.jpg" class="img-responsive" alt="Hair Salon">
@@ -499,7 +452,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		    </div>
 <!--/footer -->
 <!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="{{asset('js/jquery-2.1.4.min.js')}}"></script>
 <!-- contact form -->
 <script src="js/jqBootstrapValidation.js"></script>
 <script src="js/contact_me.js"></script>	
@@ -553,10 +506,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  // Slideshow 4
 						  $("#slider4").responsiveSlides({
 							auto: true,
-							timeout: 11000,
-							pager:false,
-							nav:true,
-							speed: 1500,
+							pager:true,
+							nav:false,
+							speed: 500,
 							namespace: "callbacks",
 							before: function () {
 							  $('.events').append("<li>before event fired.</li>");
@@ -596,7 +548,25 @@ fit: true
 });
 </script>
 <!--//tabs-->
-
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	
+	<div class="arr-w3ls">
+	<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+<!-- //smooth scrolling -->
 <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 </body>
 </html>
