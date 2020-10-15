@@ -168,25 +168,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_road"></span>
-							<h4 class="cbp-ig-title">Relationship & Dating<br> ($50)</h4>
-							<button onclick="location.href='https://google.com';" class="btn btn-small btn-info">Book Now</button>
-						</div>
-					</li>
-					<li>
-						<div class="w3_grid_effect">
-							<span class="cbp-ig-icon w3_road"></span>
-							<h4 class="cbp-ig-title"> Rent a Boyfriend or Girlfriend<br> ($50)</h4>
-							<button onclick="location.href='https://google.com';" class="btn btn-small btn-info">Book Now</button>
-						</div>
-					</li>
-					<li>
-						<div class="w3_grid_effect">
-							<span class="cbp-ig-icon w3_road"></span>
-							<h4 class="cbp-ig-title">Special licking & Boobs suck / Blowjob & Handjob<br> ($50)</h4>
+							<h4 class="cbp-ig-title">Relationship & Dating<br></h4><p style="font-size: 150%; font-family: ; color: #d34836;"><strong> $50</strong></p><br>
 							<button onclick="location.href='https://google.com';" class="btn btn-small btn-info">Book Now</button>
 						</div>
 					</li>
 					
+										
 				</ul>
 			</div>
 		</div>
@@ -239,7 +226,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!--//sevices-->
 <!-- team -->
-<div class="plans-section" id="rooms">
+{{-- <div class="plans-section" id="rooms">
 	<div class="container">
 	<h3 class="title-w3-agileits title-black-wthree">Book Hookees</h3>
 		   <div class="priceing-table-main">
@@ -296,15 +283,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
    
 </div>
 </div>
-</div>
+</div> --}}
 <!-- //team -->
 <!-- Gallery -->
+<hr>
 <section class="portfolio-w3ls" id="gallery">
-		 <h3 class="title-w3-agileits title-black-wthree">Hookup at a nearby hotel</h3>
+		 <h3 class="title-w3-agileits title-black-wthree">Available Hotels</h3>
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g1.jpg" class="swipebox"><img src="images/g1.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>Hookee GH</h4>
+						<h4>Volta Serene</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -312,7 +300,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g2.jpg" class="swipebox"><img src="images/g2.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>Hookee GH</h4>
+						<h4>Work & Happiness</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -320,7 +308,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g3.jpg" class="swipebox"><img src="images/g3.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>Hookee GH</h4>
+						<h4>Royal Senchi</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -328,7 +316,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g4.jpg" class="swipebox"><img src="images/g4.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>Hookee GH</h4>
+						<h4>Freedom Hotel</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
