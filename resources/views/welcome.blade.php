@@ -104,8 +104,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="container">
 								<div class="agileits-banner-info">
 								<h4 style="font-style: Brush Script MT">Hookee</h4>
-								<h3>want luxurious vacation?</h3>
-										<p><strong>Get Hooked Up</strong></p>
+								<h3>Connecting people who  </h3>
+										<p><strong>want to get intimate</strong></p><br>
 									<div class="agileits_w3layouts_more menu__item">
 											<a href="#" class="menu__link" data-toggle="modal" >Sign Up</a>
 										</div>
@@ -119,8 +119,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="container">
 								<div class="agileits-banner-info">
 								<h4>Hookee</h4>
-									<h3>Connecting People</h3>
-										<p><strong>Who want to feel some intimacy</strong></p>
+									<h3>Stressed and Want Sex?</h3>
+										<p><strong> Get Hooked Up</strong></p><br>
 									<div class="agileits_w3layouts_more menu__item">
 				<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >Sign Up</a>
 			</div>
@@ -133,8 +133,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="container">
 								<div class="agileits-banner-info">
 								<h4>Hookee</h4>
-									<h3>Rent a Boyfriend or Girlfriend</h3>
-										<p><strong>Enjoy precious moment with others</strong></p>
+									<h3>On vacation and want a luxurious hotel to stay or room to rent? </h3>
+										<p><strong>Get Hooked to our partners </strong></p><br><br><br>
 									<div class="agileits_w3layouts_more menu__item">
 				<a href="hookeegh.com/signup"" class="menu__link" >Sign Up</a>
 			</div>
@@ -221,23 +221,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="advantages-main">
 				<h3 class="title-w3-agileits">Why Choose Us</h3>
 		   <div class="advantage-bottom">
-			 <div class="col-md-6 advantage-grid left-w3ls wow bounceInLeft" data-wow-delay="0.3s">
-			 	<div class="advantage-block ">
-					<i class="fa fa-credit-card" aria-hidden="true"></i>
-			 		<h4>Pay Less, Get Hooked Up! </h4>
-			 		<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>Decorated room, proper air conditioned</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>Private balcony</p>
-			 		
-			 	</div>
-			 </div>
-			 <div class="col-md-6 advantage-grid right-w3ls wow zoomIn" data-wow-delay="0.3s">
+			 
+			 <div class="col-md-12 advantage-grid right-w3ls wow zoomIn" data-wow-delay="0.3s">
 			 	<div class="advantage-block">
 					<i class="fa fa-clock-o" aria-hidden="true"></i>
-			 		<h4>24 Hour Service</h4>
-			 		<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>24 hours room service</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>24-hour Concierge service</p>
+			 		<h4>We are the best</h4>
+					<p><i class="fa fa-check" aria-hidden="true"></i> Pay Less, Get Hooked Up.</p>
+					<p><i class="fa fa-check" aria-hidden="true"></i> 24 Hours Service</p>
+					<p><i class="fa fa-check" aria-hidden="true"></i> High Level of Confidentiality & Privacy</p>
+					<p><i class="fa fa-check" aria-hidden="true"></i> Your Needs & Satisfaction Our Priority</p>
+
 			 	</div>
 			 </div>
 			<div class="clearfix"> </div>
