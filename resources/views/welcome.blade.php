@@ -96,16 +96,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!-- banner -->
 	<div id="home" class="w3ls-banner">
 		<!-- banner-text -->
-		<div class="slider">
+		<div style="font-family: Bookman Old Style;" class="slider">
 			<div class="callbacks_container">
 				<ul class="rslides callbacks callbacks1" id="slider4">
 					<li>
-						<div class="w3layouts-banner-top w3layouts-banner-top2">
+						<div class="w3layouts-banner-top">
 							<div class="container">
 								<div class="agileits-banner-info">
-								<h4>Hookee</h4>
-								<h3>want luxurious vacation?</h3>
-										<p><strong>Get Hooked Up</strong></p>
+								<h4 style="font-style: Brush Script MT">Hookee</h4>
+								<h3>Connecting people who  </h3>
+										<p><strong>want to get intimate</strong></p><br>
 									<div class="agileits_w3layouts_more menu__item">
 											<a href="#" class="menu__link" data-toggle="modal" >Sign Up</a>
 										</div>
@@ -114,13 +114,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 					</li>
 					<li>
-						<div class="w3layouts-banner-top">
+						<div class="w3layouts-banner-top w3layouts-banner-top1">
 
 							<div class="container">
 								<div class="agileits-banner-info">
 								<h4>Hookee</h4>
-									<h3>Connecting People</h3>
-										<p><strong>Who want to feel some intimacy</strong></p>
+									<h3 >Stressed and Want Sex?</h3>
+										<p ><strong> Get Hooked Up</strong></p><br>
 									<div class="agileits_w3layouts_more menu__item">
 				<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >Sign Up</a>
 			</div>
@@ -129,19 +129,85 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 					</li>
 					<li>
-						<div class="w3layouts-banner-top w3layouts-banner-top1">
+						<div class="w3layouts-banner-top w3layouts-banner-top2">
+
 							<div class="container">
 								<div class="agileits-banner-info">
 								<h4>Hookee</h4>
-									<h3>Rent a Boyfriend or Girlfriend</h3>
-										<p><strong>Enjoy precious moment with others</strong></p>
+									<h3>Want a room for vacation??</h3>
+										<p><strong> Get hooked to our partners</strong></p><br>
 									<div class="agileits_w3layouts_more menu__item">
-				<a href="hookeegh.com/signup"" class="menu__link" >Sign Up</a>
+				<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >Sign Up</a>
 			</div>
 								</div>	
 							</div>
 						</div>
 					</li>
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top3">
+
+							<div class="container">
+								<div class="agileits-banner-info">
+								<h4>Hookee</h4>
+									<h3>Stressed and need a massage?</h3>
+										<p><strong>In your home or office?</strong></p><br>
+									<div class="agileits_w3layouts_more menu__item">
+				<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >Sign Up</a>
+			</div>
+								</div>	
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top4">
+
+							<div class="container">
+								<div class="agileits-banner-info">
+								<h4  style="color: #ffff;">Hookee</h4>
+									<h3>Want some sex enhancers</h3>
+										<p><strong>We got you</strong></p><br>
+									<div class="agileits_w3layouts_more menu__item">
+				<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >Sign Up</a>
+			</div>
+								</div>	
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top5">
+
+							<div class="container">
+								<div class="agileits-banner-info">
+								<h4  style="">Hookee</h4>
+									<h3>Does your family want to</h3>
+										<p><strong>See your boyfriend/Girlfriend</strong></p><br>
+									<div class="agileits_w3layouts_more menu__item">
+				<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >Rent a Boyfriend/Girlfriend</a>
+			</div>
+								</div>	
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="w3layouts-banner-top w3layouts-banner-top6">
+
+							<div class="container">
+								<div class="agileits-banner-info">
+								<h4  style="">Hookee</h4>
+									<h3>Want a relationship?</h3>
+										<p><strong>Get Hooked Up</strong></p><br>
+									<div class="agileits_w3layouts_more menu__item">
+				<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >SIGN UP NOW</a>
+			</div>
+								</div>	
+							</div>
+						</div>
+					</li>
+
+
 					
 				</ul>
 			</div>
@@ -178,6 +244,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					@endforelse
 				
 					
+										
 				</ul>
 			</div>
 		</div>
@@ -189,14 +256,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				   <div class="ab-w3l-spa">
                             <h3 class="title-w3-agileits title-black-wthree">About Hookee GH</h3> 
 						   <p style="font-family: Bookman Old Style; font-size: 20px;" class="about-para-w3ls"> HooKee is a Ghanaian based, internationally operating, online hook-up and social network, room rentals, hotel advertisement, sexual content display and sexual health education website. </p>
-						   <div class="btn btn-medium btn-info">
-							<a style="color: #ffffff; font-size: 15px;" href="{{route('about')}}" class="menu__link" data-toggle="modal" >READ MORE</a>
-						</div>
-						<hr>
-						   <img src="images/about.jpg" class="img-responsive" alt="Hair Salon">
-										<div class="w3l-slider-img">
+						   <a style="color: #ffffff; font-size: 15px;" href="{{route('about')}}" class="btn btn-info" data-toggle="modal" >READ MORE</a>
+						  
+						<hr><br>
+						   <img src="images/about1.jpg" class="img-responsive" alt="">
+										{{-- <div class="w3l-slider-img">
 											<img src="images/a1.jpg" class="img-responsive" alt="Hair Salon">
-										</div>
+										</div> --}}
                                        <div class="w3ls-info-about">
 										    <h4> Hook up with Mature Adult Male & Females</h4>
 											<p>Feel some sexual intimacy today</p>
@@ -212,23 +278,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="advantages-main">
 				<h3 class="title-w3-agileits">Why Choose Us</h3>
 		   <div class="advantage-bottom">
-			 <div class="col-md-6 advantage-grid left-w3ls wow bounceInLeft" data-wow-delay="0.3s">
-			 	<div class="advantage-block ">
-					<i class="fa fa-credit-card" aria-hidden="true"></i>
-			 		<h4>Pay Less, Get Hooked Up! </h4>
-			 		<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>Decorated room, proper air conditioned</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>Private balcony</p>
-			 		
-			 	</div>
-			 </div>
-			 <div class="col-md-6 advantage-grid right-w3ls wow zoomIn" data-wow-delay="0.3s">
+			 
+			 <div class="col-md-12 advantage-grid right-w3ls wow zoomIn" data-wow-delay="0.3s">
 			 	<div class="advantage-block">
 					<i class="fa fa-clock-o" aria-hidden="true"></i>
-			 		<h4>24 Hour Service</h4>
-			 		<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>24 hours room service</p>
-					<p><i class="fa fa-check" aria-hidden="true"></i>24-hour Concierge service</p>
+			 		<h4>We are the best</h4>
+					<p><i class="fa fa-check" aria-hidden="true"></i> Pay Less, Get Hooked Up.</p>
+					<p><i class="fa fa-check" aria-hidden="true"></i> 24 Hours Service</p>
+					<p><i class="fa fa-check" aria-hidden="true"></i> High Level of Confidentiality & Privacy</p>
+					<p><i class="fa fa-check" aria-hidden="true"></i> Your Needs & Satisfaction Our Priority</p>
+
 			 	</div>
 			 </div>
 			<div class="clearfix"> </div>
@@ -238,7 +297,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!--//sevices-->
 <!-- team -->
-<div class="plans-section" id="rooms">
+{{-- <div class="plans-section" id="rooms">
 	<div class="container">
 	<h3 class="title-w3-agileits title-black-wthree">Book Hookees</h3>
 		   <div class="priceing-table-main">
@@ -295,15 +354,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
    
 </div>
 </div>
-</div>
+</div> --}}
 <!-- //team -->
 <!-- Gallery -->
+<hr>
 <section class="portfolio-w3ls" id="gallery">
-		 <h3 class="title-w3-agileits title-black-wthree">Hookup at a nearby hotel</h3>
+		 <h3 class="title-w3-agileits title-black-wthree">Available Hotels</h3>
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g1.jpg" class="swipebox"><img src="images/g1.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>Hookee GH</h4>
+						<h4>Volta Serene</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -311,7 +371,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g2.jpg" class="swipebox"><img src="images/g2.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>Hookee GH</h4>
+						<h4>Work & Happiness</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -319,7 +379,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g3.jpg" class="swipebox"><img src="images/g3.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>Hookee GH</h4>
+						<h4>Royal Senchi</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -327,7 +387,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g4.jpg" class="swipebox"><img src="images/g4.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
-						<h4>Hookee GH</h4>
+						<h4>Freedom Hotel</h4>
 							<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
 						</div>
 				</a>
@@ -497,16 +557,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  // Slideshow 4
 						  $("#slider4").responsiveSlides({
 							auto: true,
-							pager:true,
+							pager:false,
 							nav:false,
-							speed: 500,
-							namespace: "callbacks",
-							before: function () {
-							  $('.events').append("<li>before event fired.</li>");
-							},
-							after: function () {
-							  $('.events').append("<li>after event fired.</li>");
-							}
+							speed: 3500,
+							// namespace: "callbacks",
+							// before: function () {
+							//   $('.events').append("<li>before event fired.</li>");
+							// },
+							// after: function () {
+							//   $('.events').append("<li>after event fired.</li>");
+							// }
 						  });
 					
 						});
@@ -539,7 +599,7 @@ fit: true
 });
 </script>
 <!--//tabs-->
-<!-- smooth scrolling -->
+{{-- <!-- smooth scrolling -->
 	<script type="text/javascript">
 		$(document).ready(function() {
 		/*
@@ -556,7 +616,7 @@ fit: true
 	
 	<div class="arr-w3ls">
 	<a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	</div>
+	</div> --}}
 <!-- //smooth scrolling -->
 <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 </body>
