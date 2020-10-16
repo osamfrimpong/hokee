@@ -32,6 +32,8 @@ Route::prefix('admin')->namespace('Admin')->middleware('auth:admin')->name('admi
     Route::get('/home','AdminController@index')->name('home');
     Route::resource('services','ServicesController');
     Route::get('requests','HookRequestController@index')->name('requests.index');
+    Route::get('requests/publish/{request_id}','HookRequestController@publish')->name('requests.publish');
+    Route::post('requests/publish/{request_id}','HookRequestController@doPublish')->name('requests.dopublish');
     Route::get('requests/booking/{request_id}','HookRequestController@viewBooking')->name('requests.viewbooking');
     Route::post('requests/match','HookRequestController@matchHook')->name('requests.matchhook');
     Route::get('payments','HookPaymentController@index')->name('payments');

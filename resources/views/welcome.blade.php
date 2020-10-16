@@ -165,27 +165,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="w3ls_banner_bottom_grids">
 				<ul class="cbp-ig-grid">
-					<li>
+					@forelse ($services as $service)
+						<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_road"></span>
-							<h4 class="cbp-ig-title">Relationship & Dating<br> ($50)</h4>
-							<button onclick="location.href='https://google.com';" class="btn btn-small btn-info">Book Now</button>
+						<h4 class="cbp-ig-title">{{$service->title}}<br> (${{$service->price}})</h4>
+						<button onclick="location.href='{{route('service.requests',$service->id)}}';" class="btn btn-small btn-info">Book Now</button>
 						</div>
 					</li>
-					<li>
-						<div class="w3_grid_effect">
-							<span class="cbp-ig-icon w3_road"></span>
-							<h4 class="cbp-ig-title"> Rent a Boyfriend or Girlfriend<br> ($50)</h4>
-							<button onclick="location.href='https://google.com';" class="btn btn-small btn-info">Book Now</button>
-						</div>
-					</li>
-					<li>
-						<div class="w3_grid_effect">
-							<span class="cbp-ig-icon w3_road"></span>
-							<h4 class="cbp-ig-title">Special licking & Boobs suck / Blowjob & Handjob<br> ($50)</h4>
-							<button onclick="location.href='https://google.com';" class="btn btn-small btn-info">Book Now</button>
-						</div>
-					</li>
+					@empty
+						
+					@endforelse
+				
 					
 				</ul>
 			</div>

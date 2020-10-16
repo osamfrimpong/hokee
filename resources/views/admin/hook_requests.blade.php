@@ -62,11 +62,11 @@
         {{-- <td>Jul 1, 2013</td> --}}
         <td>
             <!-- View Request -->
-            @if ($request->matched == 1)
-                Matched
+            @if ($request->published == 1)
+                Published
             @else
-            <a href="{{route('admin.requests.viewbooking',$request->request_id)}}"><button  type="button" class="btn btn-sm btn-primary">
-              View Bookings
+            <a href="{{route('admin.requests.publish',$request->request_id)}}"><button  type="button" class="btn btn-sm btn-primary">
+              Publish
             </button></a>
             @endif
             
