@@ -22,7 +22,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <!-- font-awesome icons -->
 <link rel="stylesheet" href="{{asset('dashboard/css/font.css')}}" type="text/css"/>
-<link href="{{asset('dashboard/css/font-awesome.css')}}" rel="stylesheet">
  
 <link rel="stylesheet" href="{{asset('dashboard/css/morris.css')}}" type="text/css"/>
 <!-- calendar -->
@@ -35,6 +34,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="{{asset('dashboard/js/lightbox-plus-jquery.min.js')}}"> </script>
+<script src="https://kit.fontawesome.com/69a278711d.js" crossorigin="anonymous"></script><link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 
 </head>
 <body>
