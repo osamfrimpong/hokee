@@ -2,6 +2,7 @@
 
 @section('contents')
 <form method="POST" action="{{route('admin.requests.dopublish',$hookRequest->id)}}">
+    @csrf
 <textarea name="message" id="" cols="30" rows="10" required>{{
     $hookRequest->message}}</textarea>
     <br>
