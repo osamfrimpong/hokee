@@ -41,10 +41,10 @@ class ServicesController extends Controller
         $request->validate([
             'title' => 'required|unique:services',
             'price' => 'required|numeric',
-            'picture' => 'required|image',
+            'picture' => 'required',
         ]);
-        $file = $request->file('picture')->store('public/services');
-        Service::firstOrCreate(['title'=>$request->title,'price'=> $request->price],['picture'=>$file]);
+        // $file = $request->file('picture')->store('public/services');
+        Service::firstOrCreate(['title'=>$request->title,'price'=> $request->price],['picture'=>$request->picture]);
         return redirect()->route('admin.services.index');
     }
 
@@ -83,13 +83,13 @@ class ServicesController extends Controller
        $data = $request->all();       
 
         // $data['uuid'] = Str::uuid();
-        if($request->hasFile('picture'))
-        {
-        Storage::disk('local')->delete($service->picture);
-        $data['picture'] = $request->file('picture')->store('public/services');}
-        else{
-            $data['picture'] = $service->picture;
-        }
+        // if($request->hasFile('picture'))
+        // {
+        // Storage::disk('local')->delete($service->picture);
+        // $data['picture'] = $request->file('picture')->store('public/services');}
+        // else{
+        //     $data['picture'] = $service->picture;
+        // }
         $service->fill($data)->save();
         return redirect()->route('admin.services.index');
     }
@@ -102,7 +102,7 @@ class ServicesController extends Controller
      */
     public function destroy(Service $service)
     {
-        Storage::disk('local')->delete($service->picture);
+        // Storage::disk('local')->delete($service->picture);
         $service->delete();
         return redirect()->route('admin.home');
         

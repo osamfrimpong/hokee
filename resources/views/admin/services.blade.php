@@ -25,7 +25,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="">Choose Icon</label>
-                                    <select>
+                                    <select name="picture" required>
                                         <option value='fa-500px'>&#xf26e; fa-500px</option>
                                            <option value='fa-address-book'>&#xf2b9; fa-address-book</option>
                                            <option value='fa-address-book-o'>&#xf2ba; fa-address-book-o</option>

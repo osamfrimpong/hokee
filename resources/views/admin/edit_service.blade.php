@@ -24,11 +24,12 @@
                                     <label for="exampleInputPassword1">Price</label>
                                     <input type="number" name="price" value="{{$service->price}}"class="form-control" id="" placeholder="" required>
                                 </div>
-                                {{-- <div class="form-group">
-                                    {{$service->picture}}
-                                    <label for="exampleInputFile">Upload Image</label>
-                                    <input type="file" id="exampleInputFile" name="picture">
-                                </div> --}}
+                                <div class="form-group">
+                                    <label for="">Choose Icon</label>
+                                    <select name="picture" required>
+                                        <option value='fa-500px'>&#xf26e; fa-500px</option>
+                                    </select>
+                                </div>
 
                                 <button type="submit" class="btn btn-info">Submit</button>
                             </form>

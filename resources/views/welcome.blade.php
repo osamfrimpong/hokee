@@ -234,11 +234,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li>
 						<div class="w3_grid_effect">
 
-							<span><i class="fas fa-hot-tub fa-3x"></i></span>
-							<h4 class="cbp-ig-title">Relationship & Dating<br></h4><p style="font-size: 150%; font-family: ; color: #d34836;"><strong> $50</strong></p><br>
-							<button onclick="location.href='https://google.com';" class="btn btn-small btn-info">Book Now</button>
-
-							<span class="cbp-ig-icon w3_road"></span>
+							<span><i class="fas {{$service->picture}} fa-3x"></i></span>
 						<h4 class="cbp-ig-title">{{$service->title}}<br> (${{$service->price}})</h4>
 						<button onclick="location.href='{{route('service.requests',$service->id)}}';" class="btn btn-small btn-info">Book Now</button>
 
