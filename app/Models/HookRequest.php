@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class HookRequest extends Model
 {
     protected $fillable = [
-        'location', 'message', 'hookee','service_id','interested_in','request_id','hookee','paid','matched'
+        'location', 'message', 'hookee','service_id','interested_in','request_id','hookee','paid','matched','published'
     ];
 
     public function user(){
@@ -17,5 +17,9 @@ class HookRequest extends Model
 
     public function service(){
         return $this->belongsTo(Service::class);
+    }
+
+    public function hookMessage(){
+        return $this->hasOne(HookMessage::class);
     }
 }

@@ -39,4 +39,21 @@ class HookRequestController extends Controller
         }
         return redirect()->route('admin.requests.index');
     }
+
+    public function publish($request_id){
+        $hookRequest = HookRequest::findOrFail($request_id);
+        return view('admin.publish_request',compact('hookRequest'));
+    }
+
+    public function doPublish(Request $request,$request_id){
+        $hookRequest = HookRequest::findOrFail($request_id);
+        $hookMessage = ["hookee"=>$hookRequest->hookee,"message"=>$request->message,"request_id"=>$hookRequest->id];
+        if(HookMessage::create($hookMessage))
+        {
+            $hookRequest->published = 1;
+            $hookRequest->save();
+        }
+
+        return redirect()->route('admin.requests.index');
+    }
 }
