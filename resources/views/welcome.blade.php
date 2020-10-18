@@ -17,7 +17,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
 <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
-<link href="{{asset('css/font-awesome.css')}}" rel="stylesheet"> 
 <link rel="stylesheet" href="{{asset('css/chocolat.css')}}" type="text/css" media="screen">
 <link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css'/>
 <link rel="stylesheet" href="{{asset('css/flexslider.css')}}" type="text/css" media="screen" property="" />
@@ -27,7 +26,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--fonts-->
 <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
-<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+<script src="https://kit.fontawesome.com/69a278711d.js" crossorigin="anonymous"></script><link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 <!--//fonts-->
 </head>
 <body>
@@ -234,9 +233,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					@forelse ($services as $service)
 						<li>
 						<div class="w3_grid_effect">
-							<span class="cbp-ig-icon w3_road"></span>
+
+							<span><i class="fas {{$service->picture}} fa-3x"></i></span>
 						<h4 class="cbp-ig-title">{{$service->title}}<br> (${{$service->price}})</h4>
 						<button onclick="location.href='{{route('service.requests',$service->id)}}';" class="btn btn-small btn-info">Book Now</button>
+
 						</div>
 					</li>
 					@empty
@@ -255,7 +256,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		  <div class="container">
 				   <div class="ab-w3l-spa">
                             <h3 class="title-w3-agileits title-black-wthree">About Hookee GH</h3> 
-						   <p style="font-family: Bookman Old Style; font-size: 20px;" class="about-para-w3ls"> HooKee is a Ghanaian based, internationally operating, online hook-up and social network, room rentals, hotel advertisement, sexual content display and sexual health education website. </p>
+						   <p style="font-family: sans-serif; font-size: 20px;" class="about-para-w3ls"> HooKee is a Ghanaian based, internationally operating, online hook-up and social network, room rentals, hotel advertisement, sexual content display and sexual health education website. </p>
 						   <a style="color: #ffffff; font-size: 15px;" href="{{route('about')}}" class="btn btn-info" data-toggle="modal" >READ MORE</a>
 						  
 						<hr><br>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Models\Booking;
 use App\Mail\HookMatched;
+use App\Models\HookMessage;
 use App\Models\HookRequest;
 use App\Models\MatchedHook;
 use Illuminate\Support\Str;
@@ -41,7 +42,7 @@ class HookRequestController extends Controller
     }
 
     public function publish($request_id){
-        $hookRequest = HookRequest::findOrFail($request_id);
+        $hookRequest = HookRequest::where('request_id',$request_id)->get()->first();
         return view('admin.publish_request',compact('hookRequest'));
     }
 
