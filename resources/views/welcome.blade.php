@@ -234,9 +234,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li>
 						<div class="w3_grid_effect">
 
-							<span><i class="fas {{$service->picture}} fa-3x"></i></span>
-						<h4 class="cbp-ig-title">{{$service->title}}<br> (${{$service->price}})</h4>
-						<button onclick="location.href='{{route('service.requests',$service->id)}}';" class="btn btn-small btn-info">Book Now</button>
+							<span><i class="fas {{$service->picture}} fa-3x"></i></span><br>
+						<h3 class="cbp-ig-title">{{$service->title}}</h3><br> 
+						<p style="font-size: 150%; font-famiy: ; color: #d34836;"> <strong>${{$service->price}}</strong></p>
+						<button class="btn btn-small btn-info" onclick="location.href='{{route('service.requests',$service->id)}}';" >Book Now</button>
 
 						</div>
 					</li>
