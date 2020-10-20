@@ -35,7 +35,7 @@
                     <i class="fa fa-usd"></i>
                 </div>
                 <div class="col-md-8 market-update-left">
-                    <h4>Sales</h4>
+                    <h4>Special Hookees</h4>
                     <h3>{{$sales->total_sales->total_sales ?? 0}}</h3>
                 </div>
               <div class="clearfix"> </div>
@@ -44,10 +44,10 @@
         <div class="col-md-3 market-update-gd">
             <div class="market-update-block clr-block-4">
                 <div class="col-md-4 market-update-right">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <i class="fa fa-universal-access" aria-hidden="true"></i>
                 </div>
                 <div class="col-md-8 market-update-left">
-                    <h4>Requests Made</h4>
+                    <h4>Total Hookee Requests</h4>
                     <h3>{{$requests->count()}}</h3>
                 </div>
               <div class="clearfix"> </div>
@@ -100,7 +100,7 @@
                                     <th>NO</th>
                                     <th>TITLE</th>
                                     <th>PRICE</th>
-                                    <th>PICTURE</th>
+                                    {{-- <th>PICTURE</th> --}}
                                     <th colspan="2">Actions</th>
                                 </tr>
                             </thead>
@@ -113,7 +113,7 @@
                                 <td>{{$i++}}</td>
                                 <td>{{$service->title}}</td>
                                 <td>{{$service->price}}</td>
-                                <td><img src="{{asset(Storage::url($service->picture))}}"  height='120' width='120' /></td>
+                                {{-- <td><img src="{{asset(Storage::url($service->picture))}}"  height='120' width='120' /></td> --}}
                                 <td><a href="{{route('admin.services.edit',$service->id)}}" class="button primary">Edit</a></td>
 
                                 <td><form method="POST" action="{{route('admin.services.destroy',$service->id)}}" id="item-{{$service->id}}">
