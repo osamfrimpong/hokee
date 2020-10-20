@@ -95,7 +95,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
  <!-- rooms & rates -->
  <div class="plans-section" id="rooms">
 	<div class="container">
-	<h3 class="title-w3-agileits title-black-wthree">Service Name</h3>
+	<h3 class="title-w3-agileits title-black-wthree">Hookees Available for ....</h3>
 		   <div class="priceing-table-main">
 			<div class="col-md-3 price-grid">
 				<div class="price-block agile">
