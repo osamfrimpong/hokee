@@ -10,7 +10,9 @@ use App\Models\HookRequest;
 use App\Models\MatchedHook;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
 class UserDashboardController extends Controller
@@ -91,4 +93,13 @@ class UserDashboardController extends Controller
     }
 
     
+    public function getServiceRequests($service_id){
+        $title = "Requests";
+        $service = Service::findOrFail($service_id);
+        $requestsforvip = HookRequest::where('service_id',$service_id)->where('paid',1)->where('published',1)->get();
+        $requestsfornormal = HookRequest::where('service_id',$service_id)->where('paid',1)->where('published',1)->where('created_at','<=',Carbon::now()->subHours(1))->get();
+        $availableRequests = Auth::user()->account_type == 0 ? $requestsfornormal : $requestsforvip;
+        return view('service_requests',compact('title','service','availableRequests'));
+
+    }
 }

@@ -73,6 +73,7 @@ Route::prefix('user')->middleware('auth')->name('user.')->group(function(){
     Route::get('bookrequest/{request_id}','BookingController@bookrequest')->name('bookrequest');
     Route::get('booking/checkout','BookingController@checkout')->name('bookingcheckout');
     Route::get('request/view/{request_id}','UserDashboardController@viewRequest')->name('viewrequest');
+    Route::get('requests/service/{service_id}','UserDashboardController@getServiceRequests')->name('service.requests');
 
 });
     
@@ -80,5 +81,5 @@ Route::prefix('user')->middleware('auth')->name('user.')->group(function(){
 
 Route::post('/pay', 'RaveController@initialize')->name('pay');
 Route::get('/rave/callback', 'RaveController@callback')->name('callback');
-Route::get('/requests/service/{service_id}','HomeController@getServiceRequests')->name('service.requests');
+
 // Route::get('/testpay','RaveController@testpay')->name('testpay');
