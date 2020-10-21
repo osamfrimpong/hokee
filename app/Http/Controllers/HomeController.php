@@ -78,9 +78,4 @@ class HomeController extends Controller
     }
     
 
-    public function getServiceRequests($service_id){
-        $title = "Requests";
-        return view('service_requests',compact('title'));
-
-    }
 }

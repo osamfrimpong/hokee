@@ -20,6 +20,6 @@ class HookRequest extends Model
     }
 
     public function hookMessage(){
-        return $this->hasOne(HookMessage::class);
+        return $this->hasOne(HookMessage::class,'request_id','id');
     }
 }
