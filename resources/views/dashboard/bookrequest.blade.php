@@ -17,7 +17,7 @@
         <li class="list-group-item">Location: {{$hookRequest->location}}</li>
         <li class="list-group-item">Occupation: {{$hookRequest->user->occupation}}</li>
         <li class="list-group-item">Interested in: {{$hookRequest->service->title}}</li>
-        <p id="hookee-message"> {{$hookRequest->message}}</p>
+        <p id="hookee-message"> {{$hookRequest->hookMessage->message}}</p>
       </ul>
     <form action="{{route('user.book.store')}}" method="post" enctype="multipart/form-data">
         @csrf

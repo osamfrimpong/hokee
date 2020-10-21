@@ -24,7 +24,7 @@
      
                  
                     <div class="price-selet">	
-                        <a href="{{route('user.bookrequest',$availableRequest->id)}}" class="scroll" >Book Now</a>
+                        <a href="{{route('user.bookrequest',$availableRequest->request_id)}}" class="scroll" >Book Now</a>
                     </div>
                 </div>
             </div>
