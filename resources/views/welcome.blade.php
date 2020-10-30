@@ -15,7 +15,7 @@
 						<h3>Connecting people who  </h3>
 								<p><strong>want to get intimate</strong></p><br>
 							<div class="agileits_w3layouts_more menu__item">
-									<a href="#" class="menu__link" data-toggle="modal" >Sign Up</a>
+							<a href="{{route('register')}}" class="menu__link" data-toggle="modal" >Sign Up</a>
 								</div>
 						</div>
 					</div>
@@ -30,7 +30,7 @@
 							<h3 >Stressed and Want Sex?</h3>
 								<p ><strong> Get Hooked Up</strong></p><br>
 							<div class="agileits_w3layouts_more menu__item">
-		<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >Sign Up</a>
+		<a href="{{route('register')}}" class="menu__link" data-toggle="modal" >Sign Up</a>
 	</div>
 						</div>	
 					</div>
@@ -45,7 +45,7 @@
 							<h3>Want a room for vacation??</h3>
 								<p><strong> Get hooked to our partners</strong></p><br>
 							<div class="agileits_w3layouts_more menu__item">
-		<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >Sign Up</a>
+		<a href="{{route('register')}}" class="menu__link" data-toggle="modal" >Sign Up</a>
 	</div>
 						</div>	
 					</div>
@@ -60,7 +60,7 @@
 							<h3>Stressed and need a massage?</h3>
 								<p><strong>In your home or office?</strong></p><br>
 							<div class="agileits_w3layouts_more menu__item">
-		<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >Sign Up</a>
+		<a href="{{route('register')}}" class="menu__link" data-toggle="modal" >Sign Up</a>
 	</div>
 						</div>	
 					</div>
@@ -76,7 +76,7 @@
 							<h3>Want some sex enhancers</h3>
 								<p><strong>We got you</strong></p><br>
 							<div class="agileits_w3layouts_more menu__item">
-		<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >Sign Up</a>
+		<a href="{{route('register')}}" class="menu__link" data-toggle="modal" >Sign Up</a>
 	</div>
 						</div>	
 					</div>
@@ -92,7 +92,7 @@
 							<h3>Does your family want to</h3>
 								<p><strong>See your boyfriend/Girlfriend</strong></p><br>
 							<div class="agileits_w3layouts_more menu__item">
-		<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >Rent a Boyfriend/Girlfriend</a>
+		<a href="{{route('register')}}" class="menu__link" data-toggle="modal" >Rent a Boyfriend/Girlfriend</a>
 	</div>
 						</div>	
 					</div>
@@ -108,7 +108,7 @@
 							<h3>Want a relationship?</h3>
 								<p><strong>Get Hooked Up</strong></p><br>
 							<div class="agileits_w3layouts_more menu__item">
-		<a href="hookeegh.com/signup" class="menu__link" data-toggle="modal" >SIGN UP NOW</a>
+		<a href="{{route('register')}}" class="menu__link" data-toggle="modal" >SIGN UP NOW</a>
 	</div>
 						</div>	
 					</div>
