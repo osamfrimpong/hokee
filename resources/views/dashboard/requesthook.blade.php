@@ -45,12 +45,7 @@
                 <div class="form-group">
                     <label class="col-sm-3 control-label">Location</label>
                     <div class="col-sm-6">
-                        <select class="form-control" id="sel1" name="location" required>
-                            @foreach ($locations as $location)
-                        <option value="{{$location->name}}">{{$location->name}}</option>
-                            @endforeach
-  
-                          </select>
+                        <input class="form-control" id="focusedInput" name="location" type="text" value="" readonly>
                     </div>
                 </div>
                 <div class="form-group">
