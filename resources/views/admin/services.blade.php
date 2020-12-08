@@ -821,7 +821,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="panel">
+                    {{-- <section class="panel">
                         <header class="panel-heading">
                             Add Locations
                         </header>
@@ -837,7 +837,7 @@
                             </form>
                             </div>
                         </div>
-                    </section>
+                    </section> --}}
                     <section class="panel">
                         <header class="panel-heading">
                             Add Occupations

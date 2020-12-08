@@ -50,8 +50,8 @@ class UserDashboardController extends Controller
         $title = "RequestHook";
         $user = Auth::user();
         $services = Service::all();
-        $locations = Location::all();
-        return view('dashboard.requesthook',compact('title','user','services','locations'));
+        // $locations = Location::all();
+        return view('dashboard.requesthook',compact('title','user','services'));
     }
 
     public function addrequest(Request $request){
