@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Setting;
 use App\Models\Payment;
 use App\Models\Service;
 use App\Models\Location;
@@ -35,8 +36,9 @@ class UserDashboardController extends Controller
         $title = "Checkout";
         $service = session('service');
         $request_id = session('request_id');
+        $amount = session('request_amount');
         $user = Auth::user();
-       return view('dashboard.checkout',compact('title','service','request_id','user'));
+       return view('dashboard.checkout',compact('title','service','request_id','user','amount'));
     }
 
    
@@ -50,8 +52,8 @@ class UserDashboardController extends Controller
         $title = "RequestHook";
         $user = Auth::user();
         $services = Service::all();
-        $locations = Location::all();
-        return view('dashboard.requesthook',compact('title','user','services','locations'));
+        // $locations = Location::all();
+        return view('dashboard.requesthook',compact('title','user','services'));
     }
 
     public function addrequest(Request $request){
@@ -64,14 +66,15 @@ class UserDashboardController extends Controller
         $data['request_id'] = Str::uuid();
 
         $service = Service::findOrFail($request->service_id);
+        $settings = Setting::all()->first();
 
         
         HookRequest::create($data);
-        Payment::create(['amount'=>$service->price,'user_id'=>Auth::user()->id,'bill_id'=>$data['request_id'],'payment_type'=>0,'payment_method'=>'rave']);
+        Payment::create(['amount'=>$settings->request_amount,'user_id'=>Auth::user()->id,'bill_id'=>$data['request_id'],'payment_type'=>0,'payment_method'=>'rave']);
       
         
 
-        session(['service'=>$service,'request_id'=>$data['request_id']]);
+        session(['service'=>$service,'request_id'=>$data['request_id'],'request_amount'=>$settings->request_amount]);
 
         return redirect()->route('user.checkout');
     }
@@ -96,6 +99,7 @@ class UserDashboardController extends Controller
     public function getServiceRequests($service_id){
         $title = "Requests";
         $service = Service::findOrFail($service_id);
+        session(['service_amount'=>$service->price]);
         $requestsforvip = HookRequest::where('service_id',$service_id)->where('paid',1)->where('published',1)->get();
         $requestsfornormal = HookRequest::where('service_id',$service_id)->where('paid',1)->where('published',1)->where('created_at','<=',Carbon::now()->subHours(1))->get();
         $availableRequests = Auth::user()->account_type == 0 ? $requestsfornormal : $requestsforvip;

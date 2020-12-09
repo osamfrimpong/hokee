@@ -43,8 +43,8 @@ class BookingController extends Controller
         $data['booking_id'] = Str::uuid();
         $data['user_id'] = Auth::user()->id;
         Booking::create($data);
-        Payment::create(['amount'=>10,'user_id'=>Auth::user()->id,'bill_id'=>$data['booking_id'],'payment_type'=>1,'payment_method'=>'rave']);
-        session(['amount'=>10,'booking_id'=>$data['booking_id']]);
+        Payment::create(['amount'=>session('service_amount'),'user_id'=>Auth::user()->id,'bill_id'=>$data['booking_id'],'payment_type'=>1,'payment_method'=>'rave']);
+        session(['amount'=>session('service_amount'),'booking_id'=>$data['booking_id']]);
         return redirect()->route('bookingcheckout');
     }
 

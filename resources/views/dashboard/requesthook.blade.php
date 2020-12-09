@@ -44,9 +44,7 @@
                 </div>
                 <div class="form-group">
                     <label class="col-sm-3 control-label">Location</label>
-                    <div class="col-sm-6">
-                        <input class="form-control" id="focusedInput" name="location" type="text" value="" readonly>
-                    </div>
+                    <input class="form-control" id="focusedInput" type="text" value="" name="location" readonly>
                 </div>
                 <div class="form-group">
                     <label class="col-sm-3 control-label">Interested In?</label>

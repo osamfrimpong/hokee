@@ -42,6 +42,7 @@ Route::prefix('admin')->namespace('Admin')->middleware('auth:admin')->name('admi
     Route::resource('users','UsersController');
     Route::resource('locations','LocationController');
     Route::resource('occupations','OccupationController');
+    Route::resource('settings','SettingsController');
 });
 
 

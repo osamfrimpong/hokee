@@ -52,7 +52,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 @php
 $array = array('metaname' => 'size', 'metavalue' => 'big','request_id'=>$request_id);
 @endphp
-	<input type="hidden" name="amount" value="{{$service->price}}" /> 
+	<input type="hidden" name="amount" value="{{$amount}}" /> 
     <input type="hidden" name="payment_method" value="both" /> 
 	<input type="hidden" name="description" value="Hook Request - {{$service->title}}" /> 
     <input type="hidden" name="country" value="GH" /> 

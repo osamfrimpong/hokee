@@ -3,12 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Setting;
-use App\Models\Service;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Storage;
 
-class ServicesController extends Controller
+class SettingsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,9 +15,7 @@ class ServicesController extends Controller
      */
     public function index()
     {
-        $title = "Services";
-        $settings = Setting::all()->first();
-        return view('admin.services',compact('title','settings'));
+        //
     }
 
     /**
@@ -40,13 +36,7 @@ class ServicesController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'title' => 'required|unique:services',
-            'price' => 'required|numeric',
-            'picture' => 'required',
-        ]);
-        // $file = $request->file('picture')->store('public/services');
-        Service::firstOrCreate(['title'=>$request->title,'price'=> $request->price],['picture'=>$request->picture]);
+        Setting::create($request->all());
         return redirect()->route('admin.services.index');
     }
 
@@ -67,10 +57,9 @@ class ServicesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Service $service)
+    public function edit($id)
     {
-        $title = "Services";
-        return view('admin.edit_service',compact('title','service'));
+        //
     }
 
     /**
@@ -80,19 +69,12 @@ class ServicesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Service $service)
+    public function update(Request $request, $id)
     {
-       $data = $request->all();       
-
-        // $data['uuid'] = Str::uuid();
-        // if($request->hasFile('picture'))
-        // {
-        // Storage::disk('local')->delete($service->picture);
-        // $data['picture'] = $request->file('picture')->store('public/services');}
-        // else{
-        //     $data['picture'] = $service->picture;
-        // }
-        $service->fill($data)->save();
+        $settings = Setting::findOrFail($id);
+        $settings->title = $request->title;
+        $settings->request_amount = $request->request_amount;
+        $settings->save();
         return redirect()->route('admin.services.index');
     }
 
@@ -102,11 +84,8 @@ class ServicesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Service $service)
+    public function destroy($id)
     {
-        // Storage::disk('local')->delete($service->picture);
-        $service->delete();
-        return redirect()->route('admin.home');
-        
+        //
     }
 }

@@ -823,17 +823,24 @@
                     </section>
                     <section class="panel">
                         <header class="panel-heading">
-                            Add Locations
+                            Settings
                         </header>
                         <div class="panel-body">
                             <div class="position-center">
-                            <form role="form" method="POST" enctype="multipart/form-data" action="{{route('admin.locations.store')}}">
+                            <form role="form" method="POST" enctype="multipart/form-data" action="{{is_null($settings) ? route('admin.settings.store') : route('admin.settings.update',$settings->id)}}">
+                                @if (!is_null($settings))
+                                  @method('PUT')  
+                                @endif
                                 @csrf
                                 <div class="form-group">
-                                    <label for="">City or Major Town</label>
-                                    <input type="text" name="name" class="form-control" id="" placeholder="" required>
+                                    <label for="">Site Title</label>
+                                    <input type="text" name="title" class="form-control" id="" value="{{is_null($settings) ? '' : $settings->title }}" placeholder="" required>
                                 </div>
-                                <button type="submit" class="btn btn-info">Submit</button>
+                                <div class="form-group">
+                                    <label for="">Request Amount</label>
+                                    <input type="text" name="request_amount" class="form-control" id="" value="{{is_null($settings) ? '' : $settings->request_amount }}" placeholder="" required>
+                                </div>
+                                <button type="submit" class="btn btn-info">{{is_null($settings) ? 'Save' : 'Update' }}</button>
                             </form>
                             </div>
                         </div>
