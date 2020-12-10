@@ -95,17 +95,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		  <div class="container">
 				   <div class="ab-w3l-spa">
                             <h3 class="title-w3-agileits title-black-wthree">About Hookee GH</h3> 
-							<div style="font-family: Bookman Old Style; text-align: justify; font-size: 22px; line-height: 1.6;" class="well">HooKee is a Ghanaian based, internationally operating, online hook-up and social network, room rentals, hotel advertisement, sexual content display and sexual health education website. 
+							<div style="font-family: ; text-align: justify; font-size: 22px; line-height: 1.6;" class="well">HooKee is a Ghanaian based, internationally operating, online hook-up and social network, room rentals, hotel advertisement, sexual content display and sexual health education website. 
 
-								<br>HooKee features filling a statement or requesting form called "Brief" to match members who want some intimacy.
-								
-								At HooKee, requesting member's data is advertised, concealing the name, address and phone details and only given to the interested HooKee, who has paid for such information.<br>
-								
-								HooKee operates three types of accounts; Regular, VIP & Special. Regular HooKee is not charged for account creation, but VIP and Special Hookees are charged $20 for account creation each (to be renewed quarterly).<br> The  VIP account holder enjoys the privilege of getting to see "requesting HooKee's" info one hour before a Regular HooKee gets to see it on the website. Special HooKees write a form requesting what they want (special orders). <br>
-								
-								HooKee also advertises room of individuals, which are up for rents, hotels and sex enhancement devices like dildos, vibrators, condoms, penis enlargement devices among others, which are sold at a fee. 
-								
-								HooKee operates an embedded blog that holds sexual contents and write-ups that educate on sexual lifestyle. </div>
+								<br> Hookee is a Ghanaian based online connect and hookup service provider. Hookee also advertises hotels, rooms for rent, sex enhancing device at reasonable fees and excites its users with a blog on sexuality. </div>
 							{{-- <div class="btn btn-medium btn-info">
 							<a style="color: #ffffff; font-size: 15px;" href="{{route('about')}}" class="menu__link" data-toggle="modal" >READ MORE</a>
 						</div> --}}
