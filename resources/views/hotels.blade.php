@@ -100,64 +100,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner-bottom">
 		<div class="container">	
 			<div class="agileits_banner_bottom">
-				<h3><span>Get Hooked Up to a male or female , enjoy fantastic services</span> Connecting people who want to feel some intimacy.
-				<br>Connect and advertise hotel systems <br>
-				Sell sex enhancers and toys  </h3>
+				<h3><span>Get Hooked Up at our partnered hotels</span></h3>
 			</div>
-			<div class="w3ls_banner_bottom_grids">
-				<ul class="cbp-ig-grid">
-					<li>
-						<div class="w3_grid_effect">
-							<span class="cbp-ig-icon w3_road"></span>
-							<h4 class="cbp-ig-title">MASSAGE</h4>
-							<span class="cbp-ig-category">Hookee GH</span>
-						</div>
-					</li>
-					<li>
-						<div class="w3_grid_effect">
-							<span class="cbp-ig-icon w3_cube"></span>
-							<h4 class="cbp-ig-title">ONE NIGHT STAND</h4>
-							<span class="cbp-ig-category">Hookee GH</span>
-						</div>
-					</li>
-					<li>
-						<div class="w3_grid_effect">
-							<span class="fa fa-female fa-4x"></span>
-							<h4 class="cbp-ig-title">RENT A BOYFRIEND</h4>
-							<span class="cbp-ig-category">Hookee GH</span>
-						</div>
-					</li>
-					<li>
-						<div class="w3_grid_effect">
-							<span class="fa fa-male fa-4x"></span>
-							<h4 class="cbp-ig-title">RENT A GIRLFRIEND</h4>
-							<span class="cbp-ig-category">Hookee GH</span>
-						</div>
-					</li>
-				</ul>
-			</div>
+		
 		</div>
 	</div>
 <!-- //banner-bottom -->
-<!-- /about -->
- 	<div class="about-wthree" id="about">
-		  <div class="container">
-				   <div class="ab-w3l-spa">
-                            <h3 class="title-w3-agileits title-black-wthree">About Hookee GH</h3> 
-						   <p style="font-size: 25px; text-align: left;" class="about-para-w3ls">HooKee is a Ghanaian based, internationally operating an online hook-up, sexual content display, sexual health education and social networking website. <br>
-							HooKee features filling a statement or requesting form called "Brief" to match members who want some intimacy.
-						<br>
-						At HooKee, requesting member's data is advertised, concealing the name, address and phone details and only given to the interested HooKee, who has paid for such information.<br>
-					HooKee operates two types of accounts; Regular and VIP. Regular HooKee is not charged for account creation, but VIP HooKee is charged $20 for account creation (to be renewed quarterly). The  VIP account holder enjoys the privilege of getting to see "requesting HooKee's" info one hour before a Regular HooKee gets to see it on the website. </p>
-						   <p style="font-size: 25px; text-align: left;" class="about-para-w3ls"> HooKee operates two types of accounts; Regular and VIP. Regular HooKee is not charged for account creation, but VIP HooKee is charged $20 for account creation (to be renewed quarterly). The  VIP account holder enjoys the privilege of getting to see "requesting HooKee's" info one hour before a Regular HooKee gets to see it on the website. 
-						<br> HooKee also advertises hotel systems and sex enhancement devices like dildos, vibrators, condoms, penis enlargement devices among others, which are sold at a fee. 
-					<br> HooKee operates an embedded blog that holds sexual contents and write-ups that educate on sexual lifestyle.</p>
 
-		          </div>
-		   	<div class="clearfix"> </div>
-    </div>
-</div>
- 	<!-- //about -->
 <!--sevices-->
 
 <!--//sevices-->
