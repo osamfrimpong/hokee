@@ -209,39 +209,8 @@
 
 <hr>
 <section class="portfolio-w3ls" id="gallery">
- <h3 class="title-w3-agileits title-black-wthree">Available Hotels</h3>
-		<div class="col-md-3 gallery-grid gallery1">
-			<a href="images/g1.jpg" class="swipebox"><img src="images/g1.jpg" class="img-responsive" alt="/">
-				<div class="textbox">
-				<h4>Volta Serene</h4>
-					<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
-				</div>
-		</a>
-		</div>
-		<div class="col-md-3 gallery-grid gallery1">
-			<a href="images/g2.jpg" class="swipebox"><img src="images/g2.jpg" class="img-responsive" alt="/">
-				<div class="textbox">
-				<h4>Work & Happiness</h4>
-					<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
-				</div>
-		</a>
-		</div>
-		<div class="col-md-3 gallery-grid gallery1">
-			<a href="images/g3.jpg" class="swipebox"><img src="images/g3.jpg" class="img-responsive" alt="/">
-				<div class="textbox">
-				<h4>Royal Senchi</h4>
-					<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
-				</div>
-		</a>
-		</div>
-		<div class="col-md-3 gallery-grid gallery1">
-			<a href="images/g4.jpg" class="swipebox"><img src="images/g4.jpg" class="img-responsive" alt="/">
-				<div class="textbox">
-				<h4>Freedom Hotel</h4>
-					<p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
-				</div>
-		</a>
-		</div>
+ <h3 class="title-w3-agileits title-black-wthree">Our Blog Posts</h3>
+
 	
 	
 		<div class="clearfix"> </div>
