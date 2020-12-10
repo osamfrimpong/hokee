@@ -166,7 +166,9 @@
   <div class="container">
 		   <div class="ab-w3l-spa">
 					<h3 class="title-w3-agileits title-black-wthree">About Hookee GH</h3> 
-				   <p style="font-family: sans-serif; font-size: 20px;" class="about-para-w3ls"> HooKee is a Ghanaian based, internationally operating, online hook-up and social network, room rentals, hotel advertisement, sexual content display and sexual health education website. </p>
+				   <p style="font-family: georgia; font-size: 15px;" class="about-para-w3ls"> Hookee is a Ghanaian based online connect and hookup service provider.
+					Hookee also advertises hotels, rooms for rent, sex enhancing device at reasonable fees and excites its users with a blog on sexuality.
+					</p>
 				   <a style="color: #ffffff; font-size: 15px;" href="{{route('about')}}" class="btn btn-info" data-toggle="modal" >READ MORE</a>
 				  
 				<hr><br>
