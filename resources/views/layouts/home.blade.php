@@ -139,6 +139,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<ul class="social-icons3">
 								<li><a href="https://facebook.com/hookupprovider" class="fa fa-facebook icon-border facebook"> </a></li>
 								<li><a href="https://twitter.com/hookeegh" class="fa fa-twitter icon-border twitter"> </a></li>
+								<li><a href="https://instagram.com/hookeegh" class="fa fa-instagram icon-border instagram"> </a></li>
 								<li><a href="https://api.whatsapp.com/send?phone=233540244361" class="fa fa-whatsapp fa-2x icon-border "> </a></li>
 							</ul>
 			</div>
