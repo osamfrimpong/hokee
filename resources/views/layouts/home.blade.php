@@ -132,15 +132,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
 			<h4>Connect With Us</h4>
-			<p class="contact-agile1"><strong>Phone :</strong> +1 (100)222-23-33</p>
-			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:name@example.com">info@example.com</a></p>
+			<p class="contact-agile1"><strong>Phone :</strong> 0540244361</p>
+			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:hookeegh@gmail.com">hookeegh@gmail.com</a></p>
 																
 			<div class="social-bnr-agileits footer-icons-agileinfo">
 				<ul class="social-icons3">
-								<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
-								<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
-								<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
-								<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
+								<li><a href="https://facebook.com/hookupprovider" class="fa fa-facebook icon-border facebook"> </a></li>
+								<li><a href="https://twitter.com/hookeegh" class="fa fa-twitter icon-border twitter"> </a></li>
+								<li><a href="https://api.whatsapp.com/send?phone=233540244361" class="fa fa-whatsapp icon-border rss"> </a></li>
 							</ul>
 			</div>
 		</div>
