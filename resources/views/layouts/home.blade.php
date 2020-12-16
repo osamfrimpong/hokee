@@ -34,10 +34,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="banner-top">
 			<div class="social-bnr-agileits">
 				<ul class="social-icons3">
-								<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
-								<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
-								<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
-								<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
+					<li><a href="https://facebook.com/hookeeghofficial" class="fa fa-facebook icon-border facebook"> </a></li>
+					<li><a href="https://twitter.com/hookeegh" class="fa fa-twitter icon-border twitter"> </a></li>
+					<li><a href="https://instagram.com/hookeeghofficial" class="fa fa-instagram icon-border instagram"> </a></li>
+					<li><a href="https://api.whatsapp.com/send?phone=233540244361" class="fa fa-whatsapp icon-border "> </a></li>
 							</ul>
 			</div>
 			<div class="contact-bnr-w3-agile">
